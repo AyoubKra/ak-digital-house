@@ -11,15 +11,16 @@ const menuLinks = [
 ];
 
 const serviceLinks = [
-  { label: 'Branding & Creative Design', href: '/services' },
-  { label: 'Paid Ads & Lead Generation', href: '/services' },
-  { label: 'SEO & Website Optimization', href: '/services' },
-  { label: 'Website Design & Maintenance', href: '/services' },
+  { label: 'Website Design & Maintenance', href: '/services/website-design' },
+  { label: 'Paid Ads & Lead Generation', href: '/services/paid-ads' },
+  { label: 'SEO & Website Optimization', href: '/services/seo' },
+  { label: 'Branding & Creative Design', href: '/services/branding' },
 ];
 
 const navLinks = [
   { label: 'Privacy Policy', href: '/privacy-policy' },
   { label: 'Terms & Conditions', href: '/terms' },
+  { label: 'FAQs', href: '/faqs' },
 ];
 ---
 
@@ -136,17 +137,19 @@ const navLinks = [
     font-size: 0.875rem;
     color: rgba(255,255,255,0.55);
     text-decoration: none;
-    transition: color 0.15s ease;
+    display: inline-block;
+    transition: color 0.2s ease, transform 0.2s ease;
   }
 
   .footer-contact-link:hover {
     color: #ffffff;
+    transform: translateX(4px);
   }
 
   .footer-heading {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: #D91E45;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 0 0 20px;
@@ -165,11 +168,13 @@ const navLinks = [
     font-size: 0.875rem;
     color: rgba(255,255,255,0.55);
     text-decoration: none;
-    transition: color 0.15s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
   }
 
   .footer-link:hover {
     color: #ffffff;
+    transform: translateX(4px);
   }
 
   .footer-bottom {
