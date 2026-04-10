@@ -1,11 +1,11 @@
 export const designSystem = {
   colors: {
-    primary: '#FACC15',
+    primary: '#D91E45',
     secondary: '#1A1C1E',
-    dark: '#202020',
+    dark: '#242729',
     light: '#FFFFFF',
     muted: '#999999',
-    surface: '#F5F5F5',
+    surface: '#F9F9F9',
     grey: '#E8E8E8',
     border: '#E0E0E0',
   },
@@ -51,18 +51,18 @@ export const designSystem = {
 
   buttons: {
     primary: {
-      background: '#FACC15',
-      color: '#202020',
+      background: '#D91E45',
+      color: '#242729',
       hover: 'brightness(0.95)',
     },
     secondary: {
       background: '#FFFFFF',
-      border: '#FACC15',
-      color: '#FACC15',
+      border: '#D91E45',
+      color: '#D91E45',
     },
     ghost: {
       background: 'transparent',
-      color: '#202020',
+      color: '#242729',
     },
   },
 } as const;

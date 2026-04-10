@@ -5,12 +5,12 @@
 - Focus: Web Design, SEO, Digital Marketing Strategy
 - Target audience: Small to mid-size B2B/SaaS companies
 - Design style: Modern, professional, warm and inviting
-- Primary color: #FACC15 (Yellow - main brand color)
+- Primary color: #D91E45 (Yellow - main brand color)
 - Secondary color: #1A1C1E (Dark - accents)
 - Accent color: #0090FF (Blue - alerts/warnings only)
 - Font: Plus Jakarta Sans (all typography)
-- Dark text color: #202020 (optimal readability)
-- Light background: #F5F5F5 (light grey)
+- Dark text color: #242729 (optimal readability)
+- Light background: #F9F9F9 (light grey)
 - White background: #FFFFFF
 
 ## Site Structure
@@ -28,13 +28,13 @@
 - Footer.astro - dark footer with links, social, copyright
 
 ## Design System - Colors
-- Primary: #FACC15 (Yellow)
+- Primary: #D91E45 (Yellow)
 - Secondary: #1A1C1E (Dark)
-- Text Dark: #202020
+- Text Dark: #242729
 - Text Light: #FFFFFF
 - Text Muted: #999999
 - Background White: #FFFFFF
-- Background Light: #F5F5F5
+- Background Light: #F9F9F9
 - Background Dark: #1A1C1E
 - Borders: #E0E0E0
 - Accent Blue: #0090FF (Alerts only)
@@ -68,10 +68,10 @@
 ## Design System - Shadows
 - subtle: 0 1px 3px rgba(0, 0, 0, 0.08)
 - medium: 0 10px 30px rgba(0, 0, 0, 0.08)
-- prominent: 0 10px 30px rgba(250, 204, 21, 0.15)
+- prominent: 0 10px 30px rgba(217, 30, 69, 0.15)
 
 ## Design Rules (MUST FOLLOW)
-- Colors: ONLY #FACC15 (yellow), #1A1C1E (dark), #202020 (text), #F5F5F5 (light grey)
+- Colors: ONLY #D91E45 (yellow), #1A1C1E (dark), #242729 (text), #F9F9F9 (light grey)
 - Typography: ONLY Plus Jakarta Sans
 - Spacing: ONLY 8px, 16px, 24px, 32px, 48px
 - All components responsive (mobile-first)

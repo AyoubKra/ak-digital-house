@@ -28,7 +28,7 @@ const variantStyles = {
 };
 
 const classes = [
-  'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 cursor-pointer border-2',
+  'inline-flex items-center justify-center font-medium transition-all duration-200 cursor-pointer',
   sizeStyles[size],
   variantStyles[variant],
   className,
@@ -43,29 +43,36 @@ const Tag = href ? 'a' : 'button';
 
 <style>
   .btn-primary {
-    background-color: #FACC15;
-    color: #202020;
-    border-color: #FACC15;
+    background-color: #D91E45;
+    color: #ffffff;
+    border: 2px solid #D91E45;
+    border-radius: 1000px;
   }
   .btn-primary:hover {
-    filter: brightness(0.95);
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(217, 30, 69, 0.25);
+    color: #ffffff;
   }
 
   .btn-secondary {
     background-color: #FFFFFF;
-    color: #FACC15;
-    border-color: #FACC15;
+    color: #D91E45;
+    border: 2px solid #D91E45;
+    border-radius: 1000px;
   }
   .btn-secondary:hover {
-    background-color: #fdf9ec;
+    background-color: rgba(217, 30, 69, 0.06);
+    transform: translateY(-2px);
   }
 
   .btn-ghost {
     background-color: transparent;
-    color: #202020;
-    border-color: transparent;
+    color: #242729;
+    border: 2px solid transparent;
+    border-radius: 1000px;
   }
   .btn-ghost:hover {
-    background-color: #F5F5F5;
+    background-color: #F9F9F9;
   }
 </style>
