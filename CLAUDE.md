@@ -5,7 +5,7 @@
 - Focus: Web Design, SEO, Digital Marketing Strategy
 - Target audience: Small to mid-size B2B/SaaS companies
 - Design style: Modern, professional, warm and inviting
-- Primary color: #F3D677 (Yellow - main brand color)
+- Primary color: #FACC15 (Yellow - main brand color)
 - Secondary color: #1A1C1E (Dark - accents)
 - Accent color: #0090FF (Blue - alerts/warnings only)
 - Font: Plus Jakarta Sans (all typography)
@@ -28,7 +28,7 @@
 - Footer.astro - dark footer with links, social, copyright
 
 ## Design System - Colors
-- Primary: #F3D677 (Yellow)
+- Primary: #FACC15 (Yellow)
 - Secondary: #1A1C1E (Dark)
 - Text Dark: #202020
 - Text Light: #FFFFFF
@@ -68,10 +68,10 @@
 ## Design System - Shadows
 - subtle: 0 1px 3px rgba(0, 0, 0, 0.08)
 - medium: 0 10px 30px rgba(0, 0, 0, 0.08)
-- prominent: 0 10px 30px rgba(243, 214, 119, 0.15)
+- prominent: 0 10px 30px rgba(250, 204, 21, 0.15)
 
 ## Design Rules (MUST FOLLOW)
-- Colors: ONLY #F3D677 (yellow), #1A1C1E (dark), #202020 (text), #F5F5F5 (light grey)
+- Colors: ONLY #FACC15 (yellow), #1A1C1E (dark), #202020 (text), #F5F5F5 (light grey)
 - Typography: ONLY Plus Jakarta Sans
 - Spacing: ONLY 8px, 16px, 24px, 32px, 48px
 - All components responsive (mobile-first)

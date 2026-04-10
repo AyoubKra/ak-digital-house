@@ -5,7 +5,7 @@
    ============================================================ */
 @theme {
   /* Colors */
-  --color-primary: #F3D677;
+  --color-primary: #FACC15;
   --color-secondary: #1A1C1E;
   --color-dark: #202020;
   --color-light: #FFFFFF;
@@ -34,7 +34,7 @@
   /* Shadows */
   --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --shadow-prominent: 0 10px 30px rgba(243, 214, 119, 0.15);
+  --shadow-prominent: 0 10px 30px rgba(250, 204, 21, 0.15);
 }
 
 /* ============================================================
@@ -42,12 +42,12 @@
    ============================================================ */
 @layer utilities {
   .btn-primary {
-    background-color: #F3D677;
+    background-color: #FACC15;
     color: #202020;
     padding: 16px 25px;
     border-radius: 8px;
     font-weight: 600;
-    border: 2px solid #F3D677;
+    border: 2px solid #FACC15;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -61,11 +61,11 @@
 
   .btn-secondary {
     background-color: #FFFFFF;
-    color: #F3D677;
+    color: #FACC15;
     padding: 16px 25px;
     border-radius: 8px;
     font-weight: 600;
-    border: 2px solid #F3D677;
+    border: 2px solid #FACC15;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@
     transition: box-shadow 0.2s ease;
   }
   .card:hover {
-    box-shadow: 0 10px 30px rgba(243, 214, 119, 0.15);
+    box-shadow: 0 10px 30px rgba(250, 204, 21, 0.15);
   }
 }
 

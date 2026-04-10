@@ -1,6 +1,6 @@
 export const designSystem = {
   colors: {
-    primary: '#F3D677',
+    primary: '#FACC15',
     secondary: '#1A1C1E',
     dark: '#202020',
     light: '#FFFFFF',
@@ -51,14 +51,14 @@ export const designSystem = {
 
   buttons: {
     primary: {
-      background: '#F3D677',
+      background: '#FACC15',
       color: '#202020',
       hover: 'brightness(0.95)',
     },
     secondary: {
       background: '#FFFFFF',
-      border: '#F3D677',
-      color: '#F3D677',
+      border: '#FACC15',
+      color: '#FACC15',
     },
     ghost: {
       background: 'transparent',
