@@ -1,0 +1,381 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Navigation from '../components/ui/Navigation.astro';
+import Footer from '../components/ui/Footer.astro';
+import Button from '../components/ui/Button.astro';
+
+const services = [
+  {
+    icon: '🎨',
+    title: 'Web Design & Development',
+    description:
+      'We create beautiful, fast-loading websites designed to convert visitors into customers. Every site is fully responsive, mobile-optimized, and built with SEO best practices from the ground up.',
+    includes: [
+      'Responsive website design',
+      'Fast loading performance',
+      'Mobile optimization',
+      'SEO-ready structure',
+      'Content management system',
+    ],
+  },
+  {
+    icon: '📈',
+    title: 'SEO Optimization',
+    description:
+      'Improve your visibility in search results and attract organic traffic. We use proven strategies to boost rankings, increase qualified leads, and drive sustainable growth for your business.',
+    includes: [
+      'Keyword research & strategy',
+      'On-page optimization',
+      'Technical SEO audit',
+      'Link building',
+      'Monthly reporting',
+    ],
+  },
+  {
+    icon: '💡',
+    title: 'Digital Marketing Strategy',
+    description:
+      'Strategic, data-driven marketing campaigns that reach your ideal customers across multiple channels. We analyze, plan, execute, and optimize to maximize ROI and scale your business.',
+    includes: [
+      'Market analysis',
+      'Competitor research',
+      'Campaign planning',
+      'Multi-channel strategy',
+      'Performance tracking',
+    ],
+  },
+];
+
+const steps = [
+  {
+    number: '1',
+    title: 'Discovery',
+    description:
+      'We start by understanding your business, goals, target audience, and current challenges. This foundation guides every decision.',
+  },
+  {
+    number: '2',
+    title: 'Strategy',
+    description:
+      'Based on discoveries, we create a comprehensive, tailored strategy that aligns with your goals and market positioning.',
+  },
+  {
+    number: '3',
+    title: 'Execution',
+    description:
+      'We build, test, and launch your solution. Quality and timelines are non-negotiable. You stay informed every step.',
+  },
+  {
+    number: '4',
+    title: 'Growth',
+    description:
+      'We don\'t stop at launch. We monitor performance, optimize campaigns, and scale results to maximize your ROI.',
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Services — AK Digital House"
+      description="Strategic digital solutions tailored to your business. Web design, SEO, and digital marketing."
+    />
+  </head>
+  <body>
+
+    <!-- 1. NAVIGATION -->
+    <Navigation />
+
+    <!-- 2. PAGE HERO -->
+    <section class="page-hero">
+      <div class="section-inner">
+        <h1 class="page-hero-headline">Our Services</h1>
+        <p class="page-hero-sub">Strategic digital solutions tailored to your business</p>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES DETAILED -->
+    <section class="services-section">
+      <div class="section-inner">
+        <div class="services-grid">
+          {services.map(service => (
+            <div class="service-card">
+              <div class="service-card-header">
+                <span class="service-icon">{service.icon}</span>
+                <h2 class="service-title">{service.title}</h2>
+              </div>
+              <p class="service-desc">{service.description}</p>
+              <div class="service-includes">
+                <p class="includes-label">What's included:</p>
+                <ul class="includes-list">
+                  {service.includes.map(item => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div class="service-cta">
+                <Button href="/contact" variant="primary" size="md">Get a Quote</Button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROCESS SECTION -->
+    <section class="process-section">
+      <div class="section-inner">
+        <div class="process-header">
+          <h2 class="section-title">Our Process</h2>
+          <p class="section-sub">How we deliver results</p>
+        </div>
+        <div class="process-grid">
+          {steps.map(step => (
+            <div class="step-card">
+              <div class="step-number">{step.number}</div>
+              <h3 class="step-title">{step.title}</h3>
+              <p class="step-desc">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <Footer />
+
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    color: #202020;
+    background: #fff;
+  }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* ── Page Hero ── */
+  .page-hero {
+    background: #F5F5F5;
+    padding: 72px 24px;
+    text-align: center;
+  }
+
+  .page-hero-headline {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    color: #202020;
+    line-height: 1.2;
+    margin: 0 0 16px;
+  }
+
+  .page-hero-sub {
+    font-size: clamp(0.9375rem, 1vw, 1rem);
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── Services ── */
+  .services-section {
+    padding: 80px 24px;
+    background: #fff;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .service-card {
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .service-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+  }
+
+  .service-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .service-icon {
+    font-size: 1.75rem;
+    flex-shrink: 0;
+  }
+
+  .service-title {
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+    font-weight: 700;
+    color: #202020;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .service-desc {
+    font-size: 0.9375rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .service-includes {
+    flex: 1;
+  }
+
+  .includes-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #202020;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .includes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .includes-list li {
+    font-size: 0.9375rem;
+    color: #444;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .includes-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #F3D677;
+    font-weight: 700;
+  }
+
+  .service-cta {
+    margin-top: auto;
+  }
+
+  /* ── Process ── */
+  .process-section {
+    background: #F5F5F5;
+    padding: 80px 24px;
+  }
+
+  .process-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    color: #202020;
+    margin: 0 0 12px;
+    line-height: 1.2;
+  }
+
+  .section-sub {
+    font-size: clamp(0.9375rem, 1vw, 1rem);
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .step-card {
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .step-number {
+    width: 44px;
+    height: 44px;
+    background: #F3D677;
+    color: #202020;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-title {
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+    font-weight: 700;
+    color: #202020;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .step-desc {
+    font-size: 0.9375rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .services-section,
+    .process-section {
+      padding: 48px 16px;
+    }
+
+    .page-hero {
+      padding: 48px 16px;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .service-card,
+    .step-card {
+      padding: 24px;
+    }
+  }
+</style>

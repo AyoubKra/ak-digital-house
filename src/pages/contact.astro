@@ -1,0 +1,509 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Navigation from '../components/ui/Navigation.astro';
+import Footer from '../components/ui/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Contact — AK Digital House"
+      description="Have a project in mind? Get in touch and let's create something amazing."
+    />
+  </head>
+  <body>
+
+    <!-- 1. NAVIGATION -->
+    <Navigation />
+
+    <!-- 2. PAGE HERO -->
+    <section class="page-hero">
+      <div class="section-inner">
+        <h1 class="page-hero-headline">Let's Work Together</h1>
+        <p class="page-hero-sub">Have a project in mind? Get in touch and let's create something amazing</p>
+      </div>
+    </section>
+
+    <!-- 3. CONTACT SECTION -->
+    <section class="contact-section">
+      <div class="section-inner contact-grid">
+
+        <!-- LEFT: FORM -->
+        <div class="form-wrapper">
+          <div id="form-container">
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+                <span class="field-error" id="name-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                <span class="field-error" id="email-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone <span class="optional">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+                <span class="field-error" id="phone-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="project-type">Project Type <span class="required">*</span></label>
+                <select id="project-type" name="project_type" required>
+                  <option value="" disabled selected>Select a project type</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="seo">SEO Optimization</option>
+                  <option value="digital-marketing">Digital Marketing Strategy</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="field-error" id="project-type-error"></span>
+              </div>
+
+              <div class="field">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                <span class="field-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+            </form>
+          </div>
+
+          <div id="success-message" class="success-message" hidden>
+            <span class="success-icon">✓</span>
+            <div>
+              <p class="success-title">Message sent!</p>
+              <p class="success-sub">Thanks for reaching out! We'll be in touch shortly.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: CONTACT INFO -->
+        <aside class="contact-info">
+          <div class="info-item">
+            <div class="info-icon">✉</div>
+            <div>
+              <p class="info-label">Email</p>
+              <a href="mailto:contact@akdigitalhouse.com" class="info-value">
+                contact@akdigitalhouse.com
+              </a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">☎</div>
+            <div>
+              <p class="info-label">Phone</p>
+              <a href="tel:+19195551234" class="info-value">(919) 555-1234</a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <p class="info-label">Location</p>
+              <p class="info-value">Raleigh, North Carolina</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">◈</div>
+            <div>
+              <p class="info-label">Follow Us</p>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter/X">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- 4. FOOTER -->
+    <Footer />
+
+  </body>
+</html>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+  const successMsg = document.getElementById('success-message') as HTMLElement;
+  const formContainer = document.getElementById('form-container') as HTMLElement;
+
+  function showError(fieldId: string, message: string) {
+    const el = document.getElementById(`${fieldId}-error`) as HTMLElement;
+    const input = document.getElementById(fieldId) as HTMLElement;
+    if (el) el.textContent = message;
+    if (input) input.classList.add('input-error');
+  }
+
+  function clearError(fieldId: string) {
+    const el = document.getElementById(`${fieldId}-error`) as HTMLElement;
+    const input = document.getElementById(fieldId) as HTMLElement;
+    if (el) el.textContent = '';
+    if (input) input.classList.remove('input-error');
+  }
+
+  function validateEmail(email: string) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function validatePhone(phone: string) {
+    return /^[\d\s\-()+]{7,}$/.test(phone);
+  }
+
+  // Clear errors on input
+  ['name', 'email', 'phone', 'project-type', 'message'].forEach(id => {
+    document.getElementById(id)?.addEventListener('input', () => clearError(id));
+  });
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    const name = (document.getElementById('name') as HTMLInputElement).value.trim();
+    const email = (document.getElementById('email') as HTMLInputElement).value.trim();
+    const phone = (document.getElementById('phone') as HTMLInputElement).value.trim();
+    const projectType = (document.getElementById('project-type') as HTMLSelectElement).value;
+    const message = (document.getElementById('message') as HTMLTextAreaElement).value.trim();
+
+    if (!name) { showError('name', 'This field is required'); valid = false; }
+    else clearError('name');
+
+    if (!email) { showError('email', 'This field is required'); valid = false; }
+    else if (!validateEmail(email)) { showError('email', 'Please enter a valid email'); valid = false; }
+    else clearError('email');
+
+    if (phone && !validatePhone(phone)) { showError('phone', 'Please enter a valid phone number'); valid = false; }
+    else clearError('phone');
+
+    if (!projectType) { showError('project-type', 'This field is required'); valid = false; }
+    else clearError('project-type');
+
+    if (!message) { showError('message', 'This field is required'); valid = false; }
+    else clearError('message');
+
+    if (!valid) return;
+
+    // Submit
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    // Simulate submission (replace with Formspree or API call)
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    formContainer.hidden = true;
+    successMsg.hidden = false;
+  });
+</script>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    color: #202020;
+    background: #fff;
+  }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* ── Page Hero ── */
+  .page-hero {
+    background: #F5F5F5;
+    padding: 72px 24px;
+    text-align: center;
+  }
+
+  .page-hero-headline {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    color: #202020;
+    line-height: 1.2;
+    margin: 0 0 16px;
+  }
+
+  .page-hero-sub {
+    font-size: clamp(0.9375rem, 1vw, 1rem);
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── Contact Section ── */
+  .contact-section {
+    padding: 80px 24px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  /* ── Form ── */
+  .form-wrapper {
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    padding: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #202020;
+  }
+
+  .required {
+    color: #e53e3e;
+  }
+
+  .optional {
+    font-weight: 400;
+    color: #999;
+    font-size: 0.875rem;
+  }
+
+  input,
+  select,
+  textarea {
+    background: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #202020;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #F3D677;
+    box-shadow: 0 0 0 3px rgba(243, 214, 119, 0.2);
+    background: #fff;
+  }
+
+  input.input-error,
+  select.input-error,
+  textarea.input-error {
+    border-color: #e53e3e;
+    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.15);
+  }
+
+  textarea {
+    min-height: 150px;
+    resize: vertical;
+    line-height: 1.6;
+  }
+
+  select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+  }
+
+  .field-error {
+    font-size: 0.8125rem;
+    color: #e53e3e;
+    min-height: 1em;
+  }
+
+  .submit-btn {
+    margin-top: 8px;
+    padding: 14px 32px;
+    background: #F3D677;
+    color: #202020;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: filter 0.2s ease, transform 0.2s ease;
+    align-self: flex-start;
+  }
+
+  .submit-btn:hover:not(:disabled) {
+    filter: brightness(0.95);
+    transform: translateY(-2px);
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  /* ── Success Message ── */
+  .success-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px;
+  }
+
+  .success-icon {
+    width: 40px;
+    height: 40px;
+    background: #F3D677;
+    color: #202020;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .success-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #202020;
+    margin: 0 0 6px;
+  }
+
+  .success-sub {
+    font-size: 0.9375rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* ── Contact Info ── */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 8px;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .info-icon {
+    width: 44px;
+    height: 44px;
+    background: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    flex-shrink: 0;
+    color: #202020;
+  }
+
+  .info-label {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 4px;
+  }
+
+  .info-value {
+    font-size: 0.9375rem;
+    color: #202020;
+    text-decoration: none;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.15s ease;
+  }
+
+  a.info-value:hover {
+    color: #c9a800;
+  }
+
+  /* ── Social Links ── */
+  .social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .social-link {
+    color: #555;
+    transition: color 0.15s ease;
+  }
+
+  .social-link:hover {
+    color: #c9a800;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .contact-section {
+      padding: 48px 16px;
+    }
+
+    .page-hero {
+      padding: 48px 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .form-wrapper {
+      padding: 24px 20px;
+    }
+
+    .submit-btn {
+      width: 100%;
+    }
+  }
+</style>

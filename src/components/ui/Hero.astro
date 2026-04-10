@@ -1,0 +1,102 @@
+---
+interface Props {
+  headline: string;
+  subheadline: string;
+  cta_text?: string;
+  cta_href?: string;
+  background?: 'gradient' | 'white' | 'dark';
+}
+
+const {
+  headline,
+  subheadline,
+  cta_text,
+  cta_href = '#',
+  background = 'gradient',
+} = Astro.props;
+---
+
+<section class:list={['hero', `hero--${background}`]}>
+  <div class="hero-inner">
+    <h1 class="hero-headline">{headline}</h1>
+    <p class="hero-subheadline">{subheadline}</p>
+    {cta_text && (
+      <a href={cta_href} class="hero-cta">{cta_text}</a>
+    )}
+  </div>
+</section>
+
+<style>
+  .hero {
+    width: 100%;
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .hero--gradient {
+    background: linear-gradient(160deg, #F3D677 0%, #ffffff 60%);
+  }
+
+  .hero--white {
+    background: #ffffff;
+  }
+
+  .hero--dark {
+    background: #1A1C1E;
+  }
+
+  .hero--dark .hero-headline,
+  .hero--dark .hero-subheadline {
+    color: #ffffff;
+  }
+
+  .hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hero-headline {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    color: #202020;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .hero-subheadline {
+    font-size: clamp(0.9375rem, 1vw, 1rem);
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    background-color: #F3D677;
+    color: #202020;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid #F3D677;
+    text-decoration: none;
+    transition: filter 0.2s ease;
+  }
+
+  .hero-cta:hover {
+    filter: brightness(0.95);
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      padding: 48px 16px;
+    }
+  }
+</style>
