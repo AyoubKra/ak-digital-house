@@ -1,0 +1,183 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Navigation from '../components/ui/Navigation.astro';
+import Footer from '../components/ui/Footer.astro';
+
+const cases = [
+  {
+    client: 'E-commerce Brand',
+    service: 'Web Design & SEO',
+    headline: '40% Revenue Increase in 90 Days',
+    summary: 'A growing e-commerce retailer came to us with a high-traffic site that wasn\'t converting. We redesigned their product pages, improved site speed, and implemented a conversion-focused SEO strategy.',
+    results: ['40% increase in monthly revenue', '2.1x improvement in conversion rate', '65% reduction in page load time'],
+    tag: 'E-commerce',
+  },
+  {
+    client: 'SaaS Startup',
+    service: 'Web Design & Paid Ads',
+    headline: '500+ Users in the First Month',
+    summary: 'A SaaS startup needed to go from zero to users fast. We built their marketing site from scratch and launched a targeted Google and LinkedIn paid campaign to drive qualified sign-ups.',
+    results: ['500+ active users in first month', '3.2x ROAS on paid campaigns', 'Sub-$15 cost per trial signup'],
+    tag: 'Software',
+  },
+  {
+    client: 'B2B Consulting Firm',
+    service: 'Branding & Web Design',
+    headline: '25% More Inbound Leads After Rebrand',
+    summary: 'A consulting firm felt their brand no longer reflected their premium positioning. We refreshed their visual identity, rebuilt their website, and rewrote their core messaging.',
+    results: ['25% increase in inbound leads', 'Bounce rate down 38%', 'Average session duration up 2.4x'],
+    tag: 'Consulting',
+  },
+  {
+    client: 'Publishing Platform',
+    service: 'SEO & Content Strategy',
+    headline: '150% Organic Traffic Growth',
+    summary: 'An online publishing platform had strong content but poor search visibility. We audited their site, rebuilt their content architecture, and executed a 6-month SEO strategy.',
+    results: ['150% organic traffic growth', '4x increase in keyword rankings (top 10)', 'Monthly organic leads up 3x'],
+    tag: 'Publishing',
+  },
+  {
+    client: 'Marketing Agency',
+    service: 'Digital Marketing Strategy',
+    headline: '3x ROI on Ad Spend',
+    summary: 'A digital agency wanted to scale their own client acquisition. We built a multi-channel paid strategy combining Meta and Google Ads with a custom landing page sequence.',
+    results: ['3x ROI on total ad spend', 'Cost per lead reduced by 47%', '12 new enterprise clients in Q1'],
+    tag: 'Agency',
+  },
+  {
+    client: 'Fintech App',
+    service: 'Web Design & Branding',
+    headline: '4.8 Stars and 10k+ Downloads',
+    summary: 'A fintech startup needed a brand identity and marketing site that built trust fast. We designed their complete visual system and built a high-converting product landing page.',
+    results: ['4.8 star App Store rating', '10,000+ downloads in first 60 days', 'Featured in 3 fintech publications'],
+    tag: 'Fintech',
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title="Case Studies — AK Digital House"
+      description="Real results for real clients. Explore our case studies across web design, SEO, branding, and digital marketing."
+    />
+  </head>
+  <body>
+    <Navigation />
+
+    <section class="page-hero">
+      <div class="section-inner">
+        <h1 class="page-hero-headline">Case Studies</h1>
+        <p class="page-hero-sub">Real results we've delivered for real businesses</p>
+      </div>
+    </section>
+
+    <section class="cases-section">
+      <div class="section-inner">
+        <div class="cases-grid">
+          {cases.map(c => (
+            <article class="case-card">
+              <div class="case-header">
+                <span class="case-tag">{c.tag}</span>
+                <span class="case-service">{c.service}</span>
+              </div>
+              <h2 class="case-headline">{c.headline}</h2>
+              <p class="case-client">Client: <strong>{c.client}</strong></p>
+              <p class="case-summary">{c.summary}</p>
+              <div class="case-results">
+                {c.results.map(r => (
+                  <div class="result-item">
+                    <span class="result-dot"></span>
+                    <span>{r}</span>
+                  </div>
+                ))}
+              </div>
+              <a href="/contact" class="case-cta">Work With Us →</a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="section-inner cta-inner">
+        <h2 class="cta-headline">Ready to be our next success story?</h2>
+        <p class="cta-sub">Book a free strategy call and let's talk about your goals.</p>
+        <a href="/contact" class="cta-btn">Book a Free Strategy Call</a>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #242729; background: #fff; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+
+  .page-hero { background: #F9F9F9; padding: 72px 24px; text-align: center; }
+  .page-hero-headline { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 700; color: #1A1C1E; line-height: 1.2; margin: 0 0 16px; }
+  .page-hero-sub { font-size: clamp(0.9375rem, 1vw, 1rem); color: #555; line-height: 1.6; margin: 0; }
+
+  .cases-section { padding: 80px 24px; }
+
+  .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+
+  .case-card {
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .case-card:hover { box-shadow: 0 10px 30px rgba(217, 30, 69, 0.1); transform: translateY(-2px); }
+
+  .case-header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+  .case-tag {
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #D91E45; background: rgba(217,30,69,0.07); padding: 3px 10px; border-radius: 999px;
+  }
+
+  .case-service { font-size: 0.8125rem; color: #777; }
+
+  .case-headline { font-size: 1.0625rem; font-weight: 700; color: #1A1C1E; margin: 0; line-height: 1.3; }
+
+  .case-client { font-size: 0.875rem; color: #777; margin: 0; }
+
+  .case-summary { font-size: 0.9375rem; color: #555; line-height: 1.6; margin: 0; flex: 1; }
+
+  .case-results { display: flex; flex-direction: column; gap: 8px; }
+
+  .result-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.875rem; font-weight: 600; color: #242729; }
+
+  .result-dot { width: 8px; height: 8px; border-radius: 50%; background: #D91E45; flex-shrink: 0; margin-top: 5px; }
+
+  .case-cta { font-size: 0.875rem; font-weight: 600; color: #D91E45; text-decoration: none; margin-top: auto; }
+  .case-cta:hover { text-decoration: underline; }
+
+  /* CTA */
+  .cta-section { background: #1A1C1E; padding: 80px 24px; }
+  .cta-inner { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .cta-headline { font-size: clamp(1.5rem, 2.5vw, 1.75rem); font-weight: 700; color: #fff; margin: 0; line-height: 1.2; }
+  .cta-sub { font-size: clamp(0.9375rem, 1vw, 1rem); color: rgba(255,255,255,0.65); margin: 0; line-height: 1.6; }
+  .cta-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 16px 32px; background: #D91E45; color: #ffffff; font-size: 1rem;
+    font-weight: 500; border-radius: 1000px; text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+  }
+  .cta-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(217,30,69,0.25); color: #ffffff; }
+
+  @media (max-width: 900px) { .cases-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) {
+    .cases-grid { grid-template-columns: 1fr; }
+    .cases-section { padding: 48px 16px; }
+    .page-hero { padding: 48px 16px; }
+    .cta-section { padding: 48px 16px; }
+  }
+</style>
