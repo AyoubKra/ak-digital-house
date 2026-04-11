@@ -6,6 +6,8 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
@@ -34,7 +36,7 @@ export default defineConfig({
               ],
           },
       },
-	],
+    ],
 
   server: {
     port: 5173,
@@ -43,4 +45,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare(),
 });
