@@ -15,7 +15,9 @@ const resources = [
 
 <header class="nav-header">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">AK Digital House</a>
+    <a href="/" class="nav-logo">
+      <img src="/logo-color.png" alt="AK Digital House" class="nav-logo-img" />
+    </a>
 
     <nav class="nav-links" id="nav-links">
       <a href="/about" class="nav-link">About Us</a>
@@ -117,11 +119,16 @@ const resources = [
   }
 
   .nav-logo {
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #242729;
     text-decoration: none;
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .nav-logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
   }
 
   .nav-links {
