@@ -8,136 +8,288 @@ import Footer from '../components/ui/Footer.astro';
 <html lang="en">
   <head>
     <BaseHead
-      title="Contact — AK Digital House"
-      description="Have a project in mind? Get in touch and let's create something amazing."
+      title="Contact AK Digital House — Free Strategy Call | Raleigh, NC"
+      description="Book a free strategy call with AK Digital House. Serving Raleigh, Cary, Wake Forest, Apex, and the greater Triangle area with web design, SEO, paid ads, and branding."
     />
+
+    <!-- JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AK Digital House LLC",
+      "url": "https://www.akdigitalhouse.com",
+      "logo": "https://www.akdigitalhouse.com/logo-color.png",
+      "image": "https://www.akdigitalhouse.com/logo-color.png",
+      "description": "AK Digital House is a full-service digital marketing agency based in Raleigh, NC, providing web design, SEO, paid advertising, and branding services to businesses across the Triangle and beyond.",
+      "email": "contact@akdigitalhouse.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Raleigh",
+        "addressRegion": "NC",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Raleigh", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Cary", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Wake Forest", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Apex", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Holly Springs", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Garner", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Knightdale", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Morrisville", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Fuquay-Varina", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Rolesville", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Wendell", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Zebulon", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Clayton", "containedInPlace": { "@type": "State", "name": "North Carolina" } },
+        { "@type": "City", "name": "Smithfield", "containedInPlace": { "@type": "State", "name": "North Carolina" } }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/akdigitalhouse/",
+        "https://www.facebook.com/AKDigitalhousellc",
+        "https://www.tiktok.com/@akdigitalhouse",
+        "https://x.com/AkDigitalHouse",
+        "https://www.linkedin.com/company/ak-digital-house"
+      ]
+    }
+    </script>
   </head>
   <body>
-
-    <!-- 1. NAVIGATION -->
     <Navigation />
 
-    <!-- 2. PAGE HERO -->
+    <!-- HERO -->
     <section class="page-hero">
       <div class="section-inner">
-        <h1 class="page-hero-headline">Let's Work Together</h1>
-        <p class="page-hero-sub">Have a project in mind? Get in touch and let's create something amazing</p>
+        <span class="hero-label">Let's Talk</span>
+        <h1>Start Your Growth Journey</h1>
+        <p class="hero-sub">Tell us about your business and we'll put together a custom growth strategy — completely free.</p>
       </div>
     </section>
 
-    <!-- 3. CONTACT SECTION -->
+    <!-- MAIN CONTACT SECTION -->
     <section class="contact-section">
       <div class="section-inner contact-grid">
 
         <!-- LEFT: FORM -->
-        <div class="form-wrapper">
-          <div id="form-container">
-            <form id="contact-form" novalidate>
-              <div class="field">
-                <label for="name">Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required />
-                <span class="field-error" id="name-error"></span>
-              </div>
+        <div class="form-col">
 
-              <div class="field">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required />
-                <span class="field-error" id="email-error"></span>
-              </div>
-
-              <div class="field">
-                <label for="phone">Phone <span class="optional">(optional)</span></label>
-                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
-                <span class="field-error" id="phone-error"></span>
-              </div>
-
-              <div class="field">
-                <label for="project-type">Project Type <span class="required">*</span></label>
-                <select id="project-type" name="project_type" required>
-                  <option value="" disabled selected>Select a project type</option>
-                  <option value="web-design">Web Design</option>
-                  <option value="seo">SEO Optimization</option>
-                  <option value="digital-marketing">Digital Marketing Strategy</option>
-                  <option value="other">Other</option>
-                </select>
-                <span class="field-error" id="project-type-error"></span>
-              </div>
-
-              <div class="field">
-                <label for="message">Message <span class="required">*</span></label>
-                <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
-                <span class="field-error" id="message-error"></span>
-              </div>
-
-              <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
-            </form>
+          <!-- Strategy Notice -->
+          <div class="strategy-notice">
+            <span class="notice-icon">☕</span>
+            <div>
+              <p class="notice-title">From Strategy Call to Coffee</p>
+              <p class="notice-body">Every great partnership starts with a free strategy call. After we connect, on-site business visits and coffee strategy sessions are available for our local North Carolina partners.</p>
+            </div>
           </div>
 
-          <div id="success-message" class="success-message" hidden>
-            <span class="success-icon">✓</span>
-            <div>
-              <p class="success-title">Message sent!</p>
-              <p class="success-sub">Thanks for reaching out! We'll be in touch shortly.</p>
+          <!-- Form Card -->
+          <div class="form-wrapper">
+            <div id="form-container">
+              <h2 class="form-heading">Send Us a Message</h2>
+              <p class="form-subheading">Fill out the form and we'll get back to you within 24 hours.</p>
+
+              <form id="contact-form" novalidate>
+
+                <!-- Honeypot anti-spam (hidden from real users) -->
+                <div class="hp-field" aria-hidden="true">
+                  <label for="website">Website</label>
+                  <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+                </div>
+
+                <!-- Name + Company row -->
+                <div class="field-row">
+                  <div class="field">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required />
+                    <span class="field-error" id="name-error"></span>
+                  </div>
+                  <div class="field">
+                    <label for="company">Company Name <span class="optional">(optional)</span></label>
+                    <input type="text" id="company" name="company" placeholder="Acme Inc." autocomplete="organization" />
+                  </div>
+                </div>
+
+                <!-- Phone + Email row -->
+                <div class="field-row">
+                  <div class="field">
+                    <label for="phone">Phone <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="(919) 000-0000" autocomplete="tel" required />
+                    <span class="field-error" id="phone-error"></span>
+                  </div>
+                  <div class="field">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+                    <span class="field-error" id="email-error"></span>
+                  </div>
+                </div>
+
+                <!-- Subject -->
+                <div class="field">
+                  <label for="subject">What can we help you with? <span class="required">*</span></label>
+                  <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="website-design">Website Design &amp; Maintenance</option>
+                    <option value="paid-ads">Paid Ads &amp; Lead Generation</option>
+                    <option value="seo">SEO &amp; Website Optimization</option>
+                    <option value="branding">Branding &amp; Creative Design</option>
+                    <option value="full-service">Full-Service Digital Marketing</option>
+                    <option value="general">General Inquiry</option>
+                  </select>
+                  <span class="field-error" id="subject-error"></span>
+                </div>
+
+                <!-- Message -->
+                <div class="field">
+                  <label for="message">Tell Us About Your Business <span class="required">*</span></label>
+                  <textarea id="message" name="message" placeholder="What are your goals? What's your biggest challenge right now? What have you tried before?..." required></textarea>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn">
+                  Book My Free Strategy Call
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+
+                <p class="form-disclaimer">No spam. No commitment. Just a real conversation about your growth.</p>
+
+              </form>
+            </div>
+
+            <!-- Success State -->
+            <div id="success-message" class="success-message" hidden>
+              <div class="success-check">✓</div>
+              <h3 class="success-title">We've received your message!</h3>
+              <p class="success-sub">Thanks for reaching out. We'll review your details and be in touch within 24 business hours to schedule your free strategy call.</p>
+              <p class="success-sub">In the meantime, feel free to explore our <a href="/case-studies">case studies</a> or follow us on social media.</p>
             </div>
           </div>
         </div>
 
-        <!-- RIGHT: CONTACT INFO -->
-        <aside class="contact-info">
-          <div class="info-item">
-            <div class="info-icon">✉</div>
-            <div>
-              <p class="info-label">Email</p>
-              <a href="mailto:contact@akdigitalhouse.com" class="info-value">
-                contact@akdigitalhouse.com
+        <!-- RIGHT: INFO SIDEBAR -->
+        <aside class="contact-sidebar">
+
+          <!-- Contact Details -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-heading">Contact Details</h3>
+
+            <a href="mailto:contact@akdigitalhouse.com" class="contact-row">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">contact@akdigitalhouse.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+19199999999" class="contact-row">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 12.44 19.79 19.79 0 0 1 1.62 3.84 2 2 0 0 1 3.59 1.64h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.18a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">(919) XXX-XXXX</p>
+              </div>
+            </a>
+
+            <div class="contact-row no-link">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Raleigh, North Carolina</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours & Response Time -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-heading">Hours &amp; Response</h3>
+
+            <div class="hours-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D91E45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <p class="hours-label">Support Hours</p>
+                <p class="hours-value">Monday – Friday | 8:00 AM – 6:00 PM EST</p>
+              </div>
+            </div>
+
+            <div class="hours-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D91E45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <div>
+                <p class="hours-label">Response Time</p>
+                <p class="hours-value">Typically within 24h<br /><span class="hours-note">Max 72h on weekends</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-heading">Follow Us</h3>
+            <div class="social-grid">
+              <a href="https://www.instagram.com/akdigitalhouse/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+              <a href="https://www.facebook.com/AKDigitalhousellc" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Facebook">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+              <a href="https://www.tiktok.com/@akdigitalhouse" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="TikTok">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+                TikTok
+              </a>
+              <a href="https://x.com/AkDigitalHouse" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="X / Twitter">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                X / Twitter
+              </a>
+              <a href="https://www.linkedin.com/company/ak-digital-house" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
               </a>
             </div>
           </div>
 
-          <div class="info-item">
-            <div class="info-icon">☎</div>
-            <div>
-              <p class="info-label">Phone</p>
-              <a href="tel:+19199999999" class="info-value">(919) XXX-XXXX</a>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">📍</div>
-            <div>
-              <p class="info-label">Location</p>
-              <p class="info-value">Raleigh, North Carolina</p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon">◈</div>
-            <div>
-              <p class="info-label">Follow Us</p>
-              <div class="social-links">
-                <a href="#" class="social-link" aria-label="LinkedIn">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                </a>
-                <a href="#" class="social-link" aria-label="Twitter/X">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
-                <a href="#" class="social-link" aria-label="Facebook">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                </a>
-                <a href="#" class="social-link" aria-label="Instagram">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
         </aside>
-
       </div>
     </section>
 
-    <!-- 4. FOOTER -->
-    <Footer />
+    <!-- SERVING THE TRIANGLE -->
+    <section class="service-area">
+      <div class="section-inner">
+        <div class="service-area-header">
+          <span class="area-label">Service Area</span>
+          <h2>Serving the Triangle &amp; Beyond</h2>
+          <p>We partner with businesses across Wake County and the greater Triangle — in-person strategy sessions available for local clients.</p>
+        </div>
+        <div class="cities-grid">
+          {[
+            'Raleigh', 'Cary', 'Wake Forest', 'Apex',
+            'Holly Springs', 'Garner', 'Knightdale', 'Morrisville',
+            'Fuquay-Varina', 'Rolesville', 'Wendell', 'Zebulon',
+            'Pine Level', 'Clayton', 'Smithfield'
+          ].map(city => (
+            <div class="city-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
+              {city}
+            </div>
+          ))}
+        </div>
+        <p class="remote-note">We also work with clients nationwide — great results don't require a commute.</p>
+      </div>
+    </section>
 
+    <Footer />
   </body>
 </html>
 
@@ -169,176 +321,175 @@ import Footer from '../components/ui/Footer.astro';
     return /^[\d\s\-()+]{7,}$/.test(phone);
   }
 
-  // Clear errors on input
-  ['name', 'email', 'phone', 'project-type', 'message'].forEach(id => {
+  ['name', 'phone', 'email', 'subject', 'message'].forEach(id => {
     document.getElementById(id)?.addEventListener('input', () => clearError(id));
+    document.getElementById(id)?.addEventListener('change', () => clearError(id));
   });
 
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Honeypot check — if filled, it's a bot
+    const honeypot = (document.getElementById('website') as HTMLInputElement).value;
+    if (honeypot) return;
+
     let valid = true;
 
-    const name = (document.getElementById('name') as HTMLInputElement).value.trim();
-    const email = (document.getElementById('email') as HTMLInputElement).value.trim();
-    const phone = (document.getElementById('phone') as HTMLInputElement).value.trim();
-    const projectType = (document.getElementById('project-type') as HTMLSelectElement).value;
+    const name    = (document.getElementById('name') as HTMLInputElement).value.trim();
+    const phone   = (document.getElementById('phone') as HTMLInputElement).value.trim();
+    const email   = (document.getElementById('email') as HTMLInputElement).value.trim();
+    const subject = (document.getElementById('subject') as HTMLSelectElement).value;
     const message = (document.getElementById('message') as HTMLTextAreaElement).value.trim();
 
-    if (!name) { showError('name', 'This field is required'); valid = false; }
-    else clearError('name');
+    if (!name)  { showError('name', 'Full name is required'); valid = false; } else clearError('name');
 
-    if (!email) { showError('email', 'This field is required'); valid = false; }
-    else if (!validateEmail(email)) { showError('email', 'Please enter a valid email'); valid = false; }
-    else clearError('email');
-
-    if (phone && !validatePhone(phone)) { showError('phone', 'Please enter a valid phone number'); valid = false; }
+    if (!phone) { showError('phone', 'Phone number is required'); valid = false; }
+    else if (!validatePhone(phone)) { showError('phone', 'Please enter a valid phone number'); valid = false; }
     else clearError('phone');
 
-    if (!projectType) { showError('project-type', 'This field is required'); valid = false; }
-    else clearError('project-type');
+    if (!email) { showError('email', 'Email address is required'); valid = false; }
+    else if (!validateEmail(email)) { showError('email', 'Please enter a valid email address'); valid = false; }
+    else clearError('email');
 
-    if (!message) { showError('message', 'This field is required'); valid = false; }
-    else clearError('message');
+    if (!subject) { showError('subject', 'Please select a subject'); valid = false; } else clearError('subject');
+
+    if (!message) { showError('message', 'Please tell us about your business'); valid = false; } else clearError('message');
 
     if (!valid) return;
 
-    // Submit
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
 
-    // Simulate submission (replace with Formspree or API call)
+    // Replace the line below with Formspree, Netlify Forms, or your API endpoint
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     formContainer.hidden = true;
-    successMsg.hidden = false;
+    successMsg.removeAttribute('hidden');
   });
 </script>
 
 <style>
-  body {
-    margin: 0;
-    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-    color: #242729;
-    background: #fff;
-  }
+  body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #242729; background: #fff; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
 
-  .section-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  /* ── Page Hero ── */
+  /* ── Hero ── */
   .page-hero {
-    background: #F9F9F9;
-    padding: 72px 24px;
+    background: linear-gradient(160deg, #fde8ed 0%, #fff 60%);
+    padding: 80px 24px 72px;
     text-align: center;
   }
-
-  .page-hero-headline {
-    font-size: clamp(1.75rem, 3vw, 2.25rem);
+  .hero-label {
+    display: inline-block;
+    font-size: 0.75rem;
     font-weight: 700;
-    color: #242729;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #D91E45;
+    background: rgba(217,30,69,0.08);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  .page-hero h1 {
+    font-size: clamp(1.875rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    color: #1A1C1E;
     line-height: 1.2;
     margin: 0 0 16px;
   }
-
-  .page-hero-sub {
-    font-size: clamp(0.9375rem, 1vw, 1rem);
+  .hero-sub {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
     color: #555;
-    line-height: 1.6;
-    margin: 0;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 560px;
   }
 
   /* ── Contact Section ── */
-  .contact-section {
-    padding: 80px 24px;
-  }
+  .contact-section { padding: 72px 24px 80px; }
 
   .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    grid-template-columns: 1fr 380px;
+    gap: 40px;
     align-items: start;
   }
 
-  /* ── Form ── */
+  /* ── Strategy Notice ── */
+  .strategy-notice {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: #fff8f0;
+    border: 1px solid #fde4b2;
+    border-left: 4px solid #f59e0b;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+  .notice-icon { font-size: 1.5rem; flex-shrink: 0; line-height: 1; }
+  .notice-title { font-size: 0.9375rem; font-weight: 700; color: #1A1C1E; margin: 0 0 4px; }
+  .notice-body { font-size: 0.875rem; color: #666; line-height: 1.7; margin: 0; }
+
+  /* ── Form Wrapper ── */
   .form-wrapper {
     background: #fff;
     border: 1px solid #E8E8E8;
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 40px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  }
+  .form-heading { font-size: 1.25rem; font-weight: 700; color: #1A1C1E; margin: 0 0 6px; }
+  .form-subheading { font-size: 0.9375rem; color: #777; margin: 0 0 28px; }
+
+  form { display: flex; flex-direction: column; gap: 18px; }
+
+  /* Honeypot — invisible to real users */
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
 
-  .field {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
+  .field { display: flex; flex-direction: column; gap: 6px; }
 
-  label {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: #242729;
-  }
+  label { font-size: 0.875rem; font-weight: 600; color: #1A1C1E; }
+  .required { color: #D91E45; }
+  .optional { font-weight: 400; color: #aaa; font-size: 0.8125rem; }
 
-  .required {
-    color: #e53e3e;
-  }
-
-  .optional {
-    font-weight: 400;
-    color: #999;
-    font-size: 0.875rem;
-  }
-
-  input,
-  select,
-  textarea {
+  input, select, textarea {
     background: #F9F9F9;
-    border: 1px solid #E0E0E0;
-    border-radius: 6px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 8px;
     padding: 12px 16px;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-family: inherit;
     color: #242729;
     outline: none;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
     width: 100%;
     box-sizing: border-box;
   }
-
-  input::placeholder,
-  textarea::placeholder {
-    color: #aaa;
-  }
-
-  input:focus,
-  select:focus,
-  textarea:focus {
+  input::placeholder, textarea::placeholder { color: #bbb; }
+  input:focus, select:focus, textarea:focus {
     border-color: #D91E45;
-    box-shadow: 0 0 0 3px rgba(217, 30, 69, 0.2);
+    box-shadow: 0 0 0 3px rgba(217,30,69,0.12);
     background: #fff;
   }
-
-  input.input-error,
-  select.input-error,
-  textarea.input-error {
+  input.input-error, select.input-error, textarea.input-error {
     border-color: #e53e3e;
-    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.15);
+    box-shadow: 0 0 0 3px rgba(229,62,62,0.1);
   }
-
-  textarea {
-    min-height: 150px;
-    resize: vertical;
-    line-height: 1.6;
-  }
-
+  textarea { min-height: 140px; resize: vertical; line-height: 1.6; }
   select {
     cursor: pointer;
     appearance: none;
@@ -347,163 +498,230 @@ import Footer from '../components/ui/Footer.astro';
     background-position: right 14px center;
     padding-right: 40px;
   }
-
-  .field-error {
-    font-size: 0.8125rem;
-    color: #e53e3e;
-    min-height: 1em;
-  }
+  .field-error { font-size: 0.8125rem; color: #e53e3e; min-height: 1.1em; }
 
   .submit-btn {
-    margin-top: 8px;
-    padding: 14px 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
     background: #D91E45;
-    color: #ffffff;
+    color: #fff;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: inherit;
     border: none;
     border-radius: 1000px;
     cursor: pointer;
-    transition: filter 0.2s ease, transform 0.2s ease;
+    transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     align-self: flex-start;
   }
-
   .submit-btn:hover:not(:disabled) {
-    filter: brightness(0.95);
+    filter: brightness(1.08);
     transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(217,30,69,0.25);
+  }
+  .submit-btn:disabled { opacity: 0.65; cursor: not-allowed; }
+
+  .form-disclaimer {
+    font-size: 0.8125rem;
+    color: #aaa;
+    margin: 0;
+    line-height: 1.5;
   }
 
-  .submit-btn:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-  }
-
-  /* ── Success Message ── */
+  /* ── Success State ── */
   .success-message {
+    text-align: center;
+    padding: 48px 24px;
     display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
-
-  .success-icon {
-    width: 40px;
-    height: 40px;
+  .success-check {
+    width: 56px;
+    height: 56px;
     background: #D91E45;
-    color: #ffffff;
-    font-size: 1.25rem;
+    color: #fff;
+    font-size: 1.5rem;
     font-weight: 700;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    margin-bottom: 8px;
   }
+  .success-title { font-size: 1.25rem; font-weight: 700; color: #1A1C1E; margin: 0; }
+  .success-sub { font-size: 0.9375rem; color: #555; line-height: 1.7; margin: 0; max-width: 400px; }
+  .success-sub a { color: #D91E45; text-decoration: none; }
+  .success-sub a:hover { text-decoration: underline; }
 
-  .success-title {
-    font-size: 1.125rem;
+  /* ── Sidebar ── */
+  .contact-sidebar { display: flex; flex-direction: column; gap: 20px; }
+
+  .sidebar-card {
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+  .sidebar-heading {
+    font-size: 0.75rem;
     font-weight: 700;
-    color: #242729;
-    margin: 0 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #D91E45;
+    margin: 0 0 20px;
   }
 
-  .success-sub {
-    font-size: 0.9375rem;
-    color: #555;
-    margin: 0;
-    line-height: 1.6;
-  }
-
-  /* ── Contact Info ── */
-  .contact-info {
+  .contact-row {
     display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding-top: 8px;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #F0F0F0;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.15s ease;
   }
+  .contact-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .contact-row:first-of-type { padding-top: 0; }
+  a.contact-row:hover .contact-value { color: #D91E45; }
+  .contact-row.no-link { cursor: default; }
 
-  .info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .info-icon {
-    width: 44px;
-    height: 44px;
+  .contact-icon {
+    width: 40px;
+    height: 40px;
     background: #F9F9F9;
-    border: 1px solid #E0E0E0;
-    border-radius: 8px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.125rem;
+    color: #555;
     flex-shrink: 0;
-    color: #242729;
   }
+  .contact-label { font-size: 0.75rem; font-weight: 700; color: #aaa; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 2px; }
+  .contact-value { font-size: 0.9rem; color: #242729; margin: 0; line-height: 1.4; transition: color 0.15s ease; }
 
-  .info-label {
-    font-size: 0.8125rem;
-    font-weight: 700;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin: 0 0 4px;
-  }
-
-  .info-value {
-    font-size: 0.9375rem;
-    color: #242729;
-    text-decoration: none;
-    line-height: 1.5;
-    margin: 0;
-    transition: color 0.15s ease;
-  }
-
-  a.info-value:hover {
-    color: #D91E45;
-  }
-
-  /* ── Social Links ── */
-  .social-links {
+  .hours-row {
     display: flex;
     gap: 12px;
-    margin-top: 4px;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #F0F0F0;
   }
+  .hours-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .hours-row:first-of-type { padding-top: 0; }
+  .hours-row svg { flex-shrink: 0; margin-top: 2px; }
+  .hours-label { font-size: 0.75rem; font-weight: 700; color: #aaa; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 2px; }
+  .hours-value { font-size: 0.875rem; color: #242729; margin: 0; line-height: 1.5; }
+  .hours-note { font-size: 0.8125rem; color: #aaa; }
 
-  .social-link {
-    color: #555;
-    transition: color 0.15s ease;
+  .social-grid { display: flex; flex-direction: column; gap: 8px; }
+  .social-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: #F9F9F9;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #242729;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
   }
-
-  .social-link:hover {
+  .social-pill:hover {
+    background: rgba(217,30,69,0.06);
+    border-color: rgba(217,30,69,0.3);
     color: #D91E45;
+  }
+
+  /* ── Service Area ── */
+  .service-area {
+    background: #F9F9F9;
+    padding: 80px 24px;
+    border-top: 1px solid #E8E8E8;
+  }
+  .service-area-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .area-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #D91E45;
+    background: rgba(217,30,69,0.08);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .service-area-header h2 {
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+    font-weight: 700;
+    color: #1A1C1E;
+    margin: 0 0 12px;
+    line-height: 1.2;
+  }
+  .service-area-header p {
+    font-size: 0.9375rem;
+    color: #666;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  .cities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .city-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #242729;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .city-tag:hover {
+    border-color: #D91E45;
+    box-shadow: 0 2px 8px rgba(217,30,69,0.1);
+  }
+  .remote-note {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #aaa;
+    margin: 0;
   }
 
   /* ── Responsive ── */
-  @media (max-width: 768px) {
-    .contact-grid {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-
-    .contact-section {
-      padding: 48px 16px;
-    }
-
-    .page-hero {
-      padding: 48px 16px;
-    }
+  @media (max-width: 900px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-sidebar { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   }
-
+  @media (max-width: 768px) {
+    .contact-section { padding: 48px 16px 56px; }
+    .page-hero { padding: 56px 16px 48px; }
+    .service-area { padding: 56px 16px; }
+    .field-row { grid-template-columns: 1fr; }
+    .contact-sidebar { grid-template-columns: 1fr; }
+  }
   @media (max-width: 480px) {
-    .form-wrapper {
-      padding: 24px 20px;
-    }
-
-    .submit-btn {
-      width: 100%;
-    }
+    .form-wrapper { padding: 24px 20px; }
+    .submit-btn { width: 100%; justify-content: center; }
   }
 </style>
