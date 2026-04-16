@@ -2,107 +2,703 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Navigation from '../../components/ui/Navigation.astro';
 import Footer from '../../components/ui/Footer.astro';
-
-const features = [
-  { icon: '📱', title: 'Mobile-First Design', desc: 'Every site we build looks and works perfectly on phones, tablets, and desktops.' },
-  { icon: '⚡', title: 'Fast Load Times', desc: 'Optimized for Core Web Vitals so your site loads fast and ranks higher in search.' },
-  { icon: '🎯', title: 'Conversion Optimized', desc: 'Designed to turn visitors into leads — every element has a purpose.' },
-  { icon: '🔧', title: 'Easy to Maintain', desc: 'We build sites you can actually manage, with CMS options tailored to your team.' },
-  { icon: '🔍', title: 'SEO-Ready Structure', desc: 'Built with clean code and proper structure so search engines can find you.' },
-  { icon: '🔒', title: 'Secure & Reliable', desc: 'SSL, regular backups, and ongoing maintenance keep your site safe and online.' },
-];
-
-const process = [
-  { step: '01', title: 'Discovery', desc: 'We learn your business, goals, audience, and competitive landscape.' },
-  { step: '02', title: 'Design', desc: 'We create wireframes and visual mockups for your approval before any code is written.' },
-  { step: '03', title: 'Development', desc: 'We build your site with clean, fast, accessible code — tested on all devices.' },
-  { step: '04', title: 'Launch & Support', desc: 'We handle the launch and stay available for updates, maintenance, and growth.' },
-];
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <BaseHead
-      title="Website Design & Maintenance — AK Digital House"
-      description="We design and build fast, beautiful, conversion-focused websites for growing businesses. Based in Raleigh, NC."
+      title="Website Design & Maintenance — AK Digital House | Raleigh, NC"
+      description="Custom website design built to convert. AK Digital House creates fast, mobile-first, SEO-ready websites for growing businesses in Raleigh and across North Carolina."
     />
+    <link rel="canonical" href="https://www.akdigitalhouse.com/services/website-design-maintenance" />
+
+    <!-- JSON-LD: Service + LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "name": "Website Design & Maintenance",
+          "description": "Custom, conversion-focused website design and development for growing businesses. Includes mobile-first design, performance optimization, SEO-ready structure, and ongoing maintenance.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "AK Digital House LLC",
+            "url": "https://www.akdigitalhouse.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Raleigh",
+              "addressRegion": "NC",
+              "addressCountry": "US"
+            },
+            "email": "contact@akdigitalhouse.com"
+          },
+          "areaServed": {
+            "@type": "State",
+            "name": "North Carolina"
+          },
+          "url": "https://www.akdigitalhouse.com/services/website-design-maintenance"
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "AK Digital House LLC",
+          "url": "https://www.akdigitalhouse.com",
+          "logo": "https://www.akdigitalhouse.com/logo-color.png",
+          "image": "https://www.akdigitalhouse.com/logo-color.png",
+          "description": "Full-service digital marketing agency specializing in web design, SEO, paid ads, and branding for growing businesses.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Raleigh",
+            "addressRegion": "NC",
+            "addressCountry": "US"
+          },
+          "email": "contact@akdigitalhouse.com",
+          "sameAs": [
+            "https://www.instagram.com/akdigitalhouse/",
+            "https://www.facebook.com/AKDigitalhousellc",
+            "https://www.linkedin.com/company/ak-digital-house"
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
-  <body>
+
+  <body style="margin:0; font-family:'Plus Jakarta Sans',system-ui,sans-serif; color:#242729; background:#fff;">
     <Navigation />
 
-    <!-- Hero -->
-    <section class="service-hero">
-      <div class="section-inner">
-        <span class="service-label">Service</span>
-        <h1>Website Design & Maintenance</h1>
-        <p class="hero-sub">Beautiful, fast, conversion-focused websites built to grow your business</p>
-        <a href="/contact" class="hero-cta">Get a Free Quote</a>
-      </div>
-    </section>
-
-    <!-- Overview -->
-    <section class="overview-section">
-      <div class="section-inner overview-grid">
-        <div class="overview-text">
-          <h2>Your website should work as hard as you do</h2>
-          <p>Most business websites are digital brochures — they look okay but don't generate leads. We build websites that are designed from the ground up to convert visitors into customers.</p>
-          <p>From strategy and design to development and launch, we handle every step of the process. And after launch, we're still here — maintaining, updating, and improving your site as your business grows.</p>
-        </div>
-        <div class="overview-list">
-          <h3>What's included</h3>
-          <ul>
-            <li>Custom responsive design</li>
-            <li>Mobile optimization</li>
-            <li>Performance optimization</li>
-            <li>SEO-ready code structure</li>
-            <li>Contact forms & integrations</li>
-            <li>Content management system</li>
-            <li>SSL & security setup</li>
-            <li>Ongoing maintenance plan</li>
-          </ul>
+    <!-- ─── 1. HERO ─── -->
+    <section style="background:#1a1c1e; padding:96px 24px 80px;">
+      <div style="max-width:900px; margin:0 auto; text-align:center;">
+        <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:24px;">Web Design &amp; Maintenance</span>
+        <h1 style="font-size:clamp(2rem,5vw,3.25rem); font-weight:800; color:#ffffff; line-height:1.15; margin:0 0 20px;">
+          A Website That Actually<br />
+          <span style="color:#d91e45;">Wins You Business</span>
+        </h1>
+        <p style="font-size:clamp(1rem,1.5vw,1.125rem); color:rgba(255,255,255,0.65); line-height:1.75; max-width:660px; margin:0 auto 40px;">
+          We design and build fast, conversion-focused websites that look great, load instantly, and turn visitors into paying clients — without the agency runaround.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+          <a href="#contact" style="background:#d91e45; color:#fff; font-weight:700; font-size:0.9375rem; padding:14px 32px; border-radius:8px; text-decoration:none;">
+            Get a Free Consultation
+          </a>
+          <a href="#packages" style="background:transparent; color:#fff; font-weight:600; font-size:0.9375rem; padding:14px 32px; border-radius:8px; border:1px solid rgba(255,255,255,0.25); text-decoration:none;">
+            See What's Included
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Features -->
-    <section class="features-section">
-      <div class="section-inner">
-        <h2 class="section-title">Why clients choose us for web design</h2>
-        <div class="features-grid">
-          {features.map(f => (
-            <div class="feature-card">
-              <span class="feature-icon">{f.icon}</span>
-              <h3>{f.title}</h3>
-              <p>{f.desc}</p>
+    <!-- ─── 2. SOCIAL PROOF BAR ─── -->
+    <section style="background:#f8f8f8; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:28px 24px;">
+      <div style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:32px 56px;">
+        <div style="text-align:center;">
+          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">100%</p>
+          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Mobile-First Builds</p>
+        </div>
+        <div style="text-align:center;">
+          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">&lt; 2s</p>
+          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Avg. Load Time</p>
+        </div>
+        <div style="text-align:center;">
+          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">5-Star</p>
+          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Client Satisfaction</p>
+        </div>
+        <div style="text-align:center;">
+          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">NC-Based</p>
+          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Raleigh, North Carolina</p>
+        </div>
+        <div style="text-align:center;">
+          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">90+</p>
+          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">PageSpeed Score</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 3. PROBLEM / SOLUTION ─── -->
+    <section style="padding:88px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
+        <div class="two-col-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start;">
+          <!-- Problem -->
+          <div>
+            <span style="display:inline-block; background:#fff0f3; color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:5px 14px; border-radius:100px; margin-bottom:20px;">The Problem</span>
+            <h2 style="font-size:clamp(1.5rem,2.5vw,2rem); font-weight:800; color:#1a1c1e; line-height:1.25; margin:0 0 24px;">
+              Most business websites are silent salespeople who never close
+            </h2>
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">Looks decent but has zero clear call-to-action — visitors leave without contacting you</p>
+              </div>
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">Loads slowly on mobile and gets penalized by Google before anyone even sees it</p>
+              </div>
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">Built on a template that looks identical to your competitors — no differentiation</p>
+              </div>
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">Costs a fortune to update because the agency holds your content hostage</p>
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- Process -->
-    <section class="process-section">
-      <div class="section-inner">
-        <h2 class="section-title">Our design process</h2>
-        <div class="process-grid">
-          {process.map(p => (
-            <div class="process-card">
-              <span class="process-step">{p.step}</span>
-              <h3>{p.title}</h3>
-              <p>{p.desc}</p>
+          </div>
+          <!-- Solution -->
+          <div>
+            <span style="display:inline-block; background:#eafaf1; color:#16a34a; font-size:0.75rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:5px 14px; border-radius:100px; margin-bottom:20px;">Our Approach</span>
+            <h2 style="font-size:clamp(1.5rem,2.5vw,2rem); font-weight:800; color:#1a1c1e; line-height:1.25; margin:0 0 24px;">
+              We build websites engineered to convert, not just impress
+            </h2>
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">Every page has a clear goal and a conversion path — no dead ends</p>
+              </div>
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">Mobile-first, Core Web Vitals–optimized, loading under 2 seconds</p>
+              </div>
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">Custom designed around your brand — nothing generic, nothing cookie-cutter</p>
+              </div>
+              <div style="display:flex; gap:14px; align-items:flex-start;">
+                <span style="flex-shrink:0; width:20px; height:20px; margin-top:3px;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <p style="font-size:0.9375rem; color:#6b7280; line-height:1.7; margin:0;">You own everything — full access, no lock-in, no hostage fees</p>
+              </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-      <div class="section-inner cta-inner">
-        <h2>Ready for a website that converts?</h2>
-        <p>Book a free strategy call and let's talk about your project.</p>
-        <a href="/contact" class="cta-btn">Book a Free Strategy Call</a>
+    <!-- ─── 4. SERVICE PACKAGES (NO PRICES) ─── -->
+    <section id="packages" style="background:#f8f8f8; padding:88px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:56px;">
+          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">What We Offer</span>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0 0 16px;">Website Design Packages</h2>
+          <p style="font-size:0.9375rem; color:#6b7280; max-width:540px; margin:0 auto; line-height:1.75;">Every project is scoped to your specific goals. Contact us to discuss which option fits your business.</p>
+        </div>
+        <div class="pkg-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+
+          <!-- Starter -->
+          <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:36px 28px; display:flex; flex-direction:column;">
+            <div style="width:48px; height:48px; background:#fff0f3; border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 style="font-size:1.125rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Starter Site</h3>
+            <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0 0 24px; flex-grow:1;">Perfect for new businesses or simple online presences that need to look professional and generate leads.</p>
+            <ul style="list-style:none; padding:0; margin:0 0 28px; display:flex; flex-direction:column; gap:10px;">
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Up to 5 pages</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Mobile-first responsive design</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Contact form integration</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Basic on-page SEO setup</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>SSL &amp; hosting launch support</li>
+            </ul>
+            <a href="#contact" style="display:block; text-align:center; background:#f8f8f8; color:#1a1c1e; font-weight:700; font-size:0.875rem; padding:12px 24px; border-radius:8px; text-decoration:none; border:1px solid #e5e7eb;">Get a Quote</a>
+          </div>
+
+          <!-- Growth (Featured) -->
+          <div style="background:#1a1c1e; border:2px solid #d91e45; border-radius:12px; padding:36px 28px; display:flex; flex-direction:column; position:relative;">
+            <span style="position:absolute; top:-13px; left:50%; transform:translateX(-50%); background:#d91e45; color:#fff; font-size:0.6875rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:4px 14px; border-radius:100px; white-space:nowrap;">Most Popular</span>
+            <div style="width:48px; height:48px; background:rgba(217,30,69,0.15); border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 style="font-size:1.125rem; font-weight:700; color:#fff; margin:0 0 8px;">Growth Site</h3>
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.55); line-height:1.7; margin:0 0 24px; flex-grow:1;">For established businesses ready to invest in a website that actively drives leads and supports growth goals.</p>
+            <ul style="list-style:none; padding:0; margin:0 0 28px; display:flex; flex-direction:column; gap:10px;">
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:rgba(255,255,255,0.85);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Up to 10 pages</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:rgba(255,255,255,0.85);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Custom brand-aligned design system</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:rgba(255,255,255,0.85);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Advanced SEO &amp; schema markup</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:rgba(255,255,255,0.85);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>CMS integration (blog / case studies)</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:rgba(255,255,255,0.85);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Analytics &amp; conversion tracking</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:rgba(255,255,255,0.85);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>30-day post-launch support</li>
+            </ul>
+            <a href="#contact" style="display:block; text-align:center; background:#d91e45; color:#fff; font-weight:700; font-size:0.875rem; padding:12px 24px; border-radius:8px; text-decoration:none;">Get a Quote</a>
+          </div>
+
+          <!-- Authority -->
+          <div style="background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:36px 28px; display:flex; flex-direction:column;">
+            <div style="width:48px; height:48px; background:#fff0f3; border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; flex-shrink:0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 style="font-size:1.125rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Authority Site</h3>
+            <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0 0 24px; flex-grow:1;">For brands that want to dominate their market online with a fully custom, enterprise-grade web presence.</p>
+            <ul style="list-style:none; padding:0; margin:0 0 28px; display:flex; flex-direction:column; gap:10px;">
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Unlimited pages</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Full custom UI/UX design</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Complex integrations (CRM, e-commerce)</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Advanced performance optimization</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Dedicated ongoing maintenance plan</li>
+              <li style="display:flex; gap:10px; align-items:flex-start; font-size:0.875rem; color:#242729;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>Priority support &amp; quarterly reviews</li>
+            </ul>
+            <a href="#contact" style="display:block; text-align:center; background:#f8f8f8; color:#1a1c1e; font-weight:700; font-size:0.875rem; padding:12px 24px; border-radius:8px; text-decoration:none; border:1px solid #e5e7eb;">Get a Quote</a>
+          </div>
+
+        </div>
+        <p style="text-align:center; font-size:0.8125rem; color:#6b7280; margin-top:24px;">Not sure which fits? <a href="#contact" style="color:#d91e45; text-decoration:none; font-weight:600;">Talk to us</a> — we'll scope it together.</p>
+      </div>
+    </section>
+
+    <!-- ─── 5. GUARANTEES ─── -->
+    <section style="background:#1a1c1e; padding:88px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:56px;">
+          <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Our Commitments</span>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#fff; margin:0 0 16px;">What We Guarantee</h2>
+          <p style="font-size:0.9375rem; color:rgba(255,255,255,0.55); max-width:520px; margin:0 auto; line-height:1.75;">We put our reputation behind every project. These aren't marketing claims — they're our operating standard.</p>
+        </div>
+        <div class="guarantee-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 24px; text-align:center;">
+            <div style="width:52px; height:52px; background:rgba(217,30,69,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="font-size:1.0625rem; font-weight:700; color:#fff; margin:0 0 10px;">You Own Everything</h3>
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.75; margin:0;">Full ownership of all code, content, and assets from day one. No lock-in, ever.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 24px; text-align:center;">
+            <div style="width:52px; height:52px; background:rgba(217,30,69,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 style="font-size:1.0625rem; font-weight:700; color:#fff; margin:0 0 10px;">On-Time Delivery</h3>
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.75; margin:0;">We set realistic timelines and keep them. You'll always know where your project stands.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 24px; text-align:center;">
+            <div style="width:52px; height:52px; background:rgba(217,30,69,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 style="font-size:1.0625rem; font-weight:700; color:#fff; margin:0 0 10px;">Transparent Communication</h3>
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.75; margin:0;">Weekly updates, direct access to your project lead — no vague status emails.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 24px; text-align:center;">
+            <div style="width:52px; height:52px; background:rgba(217,30,69,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 style="font-size:1.0625rem; font-weight:700; color:#fff; margin:0 0 10px;">Mobile-First, Always</h3>
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.75; margin:0;">Every site we ship looks and works perfectly on any screen — phone, tablet, or desktop.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 24px; text-align:center;">
+            <div style="width:52px; height:52px; background:rgba(217,30,69,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 style="font-size:1.0625rem; font-weight:700; color:#fff; margin:0 0 10px;">Built for Performance</h3>
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.75; margin:0;">We target 90+ PageSpeed scores. Fast sites rank better, convert better, and retain visitors longer.</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 24px; text-align:center;">
+            <div style="width:52px; height:52px; background:rgba(217,30,69,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3 style="font-size:1.0625rem; font-weight:700; color:#fff; margin:0 0 10px;">No Surprise Fees</h3>
+            <p style="font-size:0.875rem; color:rgba(255,255,255,0.5); line-height:1.75; margin:0;">Clear scoping upfront means no bill shock at the end. We agree on scope before a single line is written.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 6. WHY AKDH ─── -->
+    <section style="padding:88px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
+        <div class="two-col-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+          <div>
+            <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:20px;">Why AK Digital House</span>
+            <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; line-height:1.25; margin:0 0 16px;">We're builders, not button pushers</h2>
+            <p style="font-size:0.9375rem; color:#6b7280; line-height:1.8; margin:0 0 32px;">Most agencies outsource design to freelancers and hand you a bloated WordPress site. We build lean, fast, custom websites — in-house, from strategy to launch.</p>
+            <a href="#contact" style="display:inline-block; background:#d91e45; color:#fff; font-weight:700; font-size:0.9375rem; padding:14px 32px; border-radius:8px; text-decoration:none;">
+              Start Your Project
+            </a>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:20px;">
+
+            <div style="display:flex; gap:20px; align-items:flex-start; background:#f8f8f8; border-radius:10px; padding:24px;">
+              <div style="flex-shrink:0; width:44px; height:44px; background:#fff0f3; border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+              </div>
+              <div>
+                <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Strategy Before Design</h4>
+                <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0;">We understand your market, buyer journey, and competitors before we sketch a single wireframe.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px; align-items:flex-start; background:#f8f8f8; border-radius:10px; padding:24px;">
+              <div style="flex-shrink:0; width:44px; height:44px; background:#fff0f3; border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div>
+                <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Clean Code, Not Page Builders</h4>
+                <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0;">Hand-coded sites load faster, rank better, and won't break when a plugin updates.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:20px; align-items:flex-start; background:#f8f8f8; border-radius:10px; padding:24px;">
+              <div style="flex-shrink:0; width:44px; height:44px; background:#fff0f3; border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Local &amp; Accessible</h4>
+                <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0;">Based in Raleigh, NC — available for in-person meetings across the Triangle and beyond.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 7. PROCESS ─── -->
+    <section style="background:#f8f8f8; padding:88px 24px;">
+      <div style="max-width:900px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:64px;">
+          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">How It Works</span>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0;">Our Process</h2>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0;">
+
+          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:800; font-size:1rem;">01</span>
+              </div>
+              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+            </div>
+            <div style="padding-top:12px;">
+              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Discovery &amp; Strategy</h3>
+              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We deep-dive into your business, goals, target audience, and competitive landscape. You'll leave our kickoff call with a clear vision for what we're building and why.</p>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:800; font-size:1rem;">02</span>
+              </div>
+              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+            </div>
+            <div style="padding-top:12px;">
+              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Design &amp; Wireframes</h3>
+              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We produce wireframes and high-fidelity mockups for your review before a single line of code is written. No surprises — you approve the look and feel first.</p>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:800; font-size:1rem;">03</span>
+              </div>
+              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+            </div>
+            <div style="padding-top:12px;">
+              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Development &amp; QA</h3>
+              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We build with clean, semantic code — fully tested across devices, browsers, and screen sizes. Performance and accessibility baked in from the start.</p>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:800; font-size:1rem;">04</span>
+              </div>
+              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+            </div>
+            <div style="padding-top:12px;">
+              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Review &amp; Revisions</h3>
+              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">You get a private staging link to review the full site. We incorporate your feedback in focused revision rounds until everything is exactly right.</p>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:800; font-size:1rem;">05</span>
+              </div>
+            </div>
+            <div style="padding-top:12px;">
+              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Launch &amp; Ongoing Support</h3>
+              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We handle the technical launch — DNS, SSL, redirects, analytics setup. Then we stay on as your web partner for maintenance, updates, and ongoing improvements.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 8. TECH STACK ─── -->
+    <section style="padding:88px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:56px;">
+          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Technology</span>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0 0 16px;">Built with Tools That Scale</h2>
+          <p style="font-size:0.9375rem; color:#6b7280; max-width:520px; margin:0 auto; line-height:1.75;">We choose the right technology for each project — from blazing-fast static sites to fully dynamic web applications.</p>
+        </div>
+        <div class="tech-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">⚡</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Astro</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">Ultra-fast static sites with near-zero JS by default</p>
+          </div>
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">🎨</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Tailwind CSS</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">Utility-first CSS for pixel-perfect, consistent UI</p>
+          </div>
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">🌐</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">WordPress</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">When clients need full CMS control and flexibility</p>
+          </div>
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">🛒</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Shopify</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">E-commerce projects that need to scale</p>
+          </div>
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">☁️</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Cloudflare</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">Global CDN, security, and edge performance</p>
+          </div>
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">📊</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Google Analytics</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">Data-driven decisions from day one</p>
+          </div>
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">🔒</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">SSL / HTTPS</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">Enterprise-grade security on every project</p>
+          </div>
+
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:10px; padding:28px 20px; text-align:center;">
+            <div style="font-size:1.875rem; margin-bottom:12px;">✉️</div>
+            <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Email Integrations</h4>
+            <p style="font-size:0.8125rem; color:#6b7280; margin:0; line-height:1.6;">Mailchimp, Zoho, HubSpot — your choice</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 9. TESTIMONIALS ─── -->
+    <section style="background:#1a1c1e; padding:88px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:56px;">
+          <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Client Results</span>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#fff; margin:0;">What Our Clients Say</h2>
+        </div>
+        <div class="testimonial-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 28px;">
+            <div style="display:flex; gap:3px; margin-bottom:20px;">
+              {[1,2,3,4,5].map(() => (
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              ))}
+            </div>
+            <p style="font-size:0.9375rem; color:rgba(255,255,255,0.75); line-height:1.8; margin:0 0 24px; font-style:italic;">"AK Digital House completely transformed our online presence. The new site is fast, looks stunning, and we've already seen a measurable uptick in inbound leads."</p>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:40px; height:40px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:700; font-size:0.875rem;">MR</span>
+              </div>
+              <div>
+                <p style="font-size:0.875rem; font-weight:700; color:#fff; margin:0;">Marcus R.</p>
+                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin:0;">CEO, Triangle Tech Services</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 28px;">
+            <div style="display:flex; gap:3px; margin-bottom:20px;">
+              {[1,2,3,4,5].map(() => (
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              ))}
+            </div>
+            <p style="font-size:0.9375rem; color:rgba(255,255,255,0.75); line-height:1.8; margin:0 0 24px; font-style:italic;">"Working with the AK Digital House team was seamless. They communicated clearly at every step, delivered on time, and the final product exceeded our expectations."</p>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:40px; height:40px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:700; font-size:0.875rem;">SL</span>
+              </div>
+              <div>
+                <p style="font-size:0.875rem; font-weight:700; color:#fff; margin:0;">Stephanie L.</p>
+                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin:0;">Owner, Raleigh Wellness Co.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 28px;">
+            <div style="display:flex; gap:3px; margin-bottom:20px;">
+              {[1,2,3,4,5].map(() => (
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              ))}
+            </div>
+            <p style="font-size:0.9375rem; color:rgba(255,255,255,0.75); line-height:1.8; margin:0 0 24px; font-style:italic;">"We were blown away by the attention to detail and how well they understood our brand. Our bounce rate dropped significantly and quote requests doubled."</p>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:40px; height:40px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <span style="color:#fff; font-weight:700; font-size:0.875rem;">DJ</span>
+              </div>
+              <div>
+                <p style="font-size:0.875rem; font-weight:700; color:#fff; margin:0;">David J.</p>
+                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin:0;">Founder, Carolina Home Pro</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 10. LOCAL SERVICE AREA ─── -->
+    <section style="padding:88px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
+        <div class="two-col-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+          <div>
+            <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:20px;">Service Area</span>
+            <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; line-height:1.25; margin:0 0 16px;">
+              Proudly Serving North Carolina
+            </h2>
+            <p style="font-size:0.9375rem; color:#6b7280; line-height:1.8; margin:0 0 24px;">
+              Based in Raleigh, we work with businesses across the Triangle, the Piedmont Triad, Charlotte metro, and the entire state of NC. Remote-friendly for every engagement — and available for in-person meetings within the Triangle.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              {['Raleigh', 'Durham', 'Chapel Hill', 'Cary', 'Apex', 'Morrisville', 'Holly Springs', 'Garner', 'Wake Forest', 'Charlotte', 'Greensboro', 'Winston-Salem', 'Fayetteville', 'Wilmington'].map(city => (
+                <span style="background:#f8f8f8; border:1px solid #e5e7eb; color:#242729; font-size:0.8125rem; font-weight:500; padding:5px 12px; border-radius:100px;">{city}</span>
+              ))}
+            </div>
+          </div>
+          <div style="background:#f8f8f8; border:1px solid #e5e7eb; border-radius:16px; padding:40px 36px;">
+            <h3 style="font-size:1.125rem; font-weight:700; color:#1a1c1e; margin:0 0 24px;">We serve clients across NC including:</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+              <div>
+                <p style="font-size:0.8125rem; font-weight:700; color:#d91e45; text-transform:uppercase; letter-spacing:0.08em; margin:0 0 10px;">Triangle Area</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;">
+                  <li style="font-size:0.875rem; color:#6b7280;">Raleigh</li>
+                  <li style="font-size:0.875rem; color:#6b7280;">Durham</li>
+                  <li style="font-size:0.875rem; color:#6b7280;">Chapel Hill</li>
+                  <li style="font-size:0.875rem; color:#6b7280;">Cary &amp; Apex</li>
+                </ul>
+              </div>
+              <div>
+                <p style="font-size:0.8125rem; font-weight:700; color:#d91e45; text-transform:uppercase; letter-spacing:0.08em; margin:0 0 10px;">Statewide</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;">
+                  <li style="font-size:0.875rem; color:#6b7280;">Charlotte</li>
+                  <li style="font-size:0.875rem; color:#6b7280;">Greensboro</li>
+                  <li style="font-size:0.875rem; color:#6b7280;">Wilmington</li>
+                  <li style="font-size:0.875rem; color:#6b7280;">All of NC</li>
+                </ul>
+              </div>
+            </div>
+            <div style="margin-top:24px; padding-top:24px; border-top:1px solid #e5e7eb;">
+              <p style="font-size:0.875rem; color:#6b7280; margin:0; line-height:1.7;">
+                <strong style="color:#1a1c1e;">Remote-friendly</strong> for all projects. In-person meetings available within the Triangle by appointment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 11. CTA / CONTACT FORM ─── -->
+    <section id="contact" style="background:#f8f8f8; padding:88px 24px;">
+      <div style="max-width:860px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:48px;">
+          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Get Started</span>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0 0 16px;">Ready for a Website That Works?</h2>
+          <p style="font-size:0.9375rem; color:#6b7280; max-width:520px; margin:0 auto; line-height:1.75;">Tell us about your project. No commitment, no pressure — just a real conversation about your goals and how we can help.</p>
+        </div>
+
+        <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:48px 40px;">
+          <form
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            style="display:flex; flex-direction:column; gap:20px;"
+          >
+            <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="_subject" value="New Web Design Inquiry — AK Digital House" />
+
+            <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+              <div>
+                <label for="wd-name" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Full Name <span style="color:#d91e45;">*</span></label>
+                <input type="text" id="wd-name" name="name" required placeholder="Jane Smith"
+                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
+              </div>
+              <div>
+                <label for="wd-company" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Company Name</label>
+                <input type="text" id="wd-company" name="company" placeholder="Acme Inc."
+                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
+              </div>
+            </div>
+
+            <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+              <div>
+                <label for="wd-email" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Email Address <span style="color:#d91e45;">*</span></label>
+                <input type="email" id="wd-email" name="email" required placeholder="jane@company.com"
+                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
+              </div>
+              <div>
+                <label for="wd-phone" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Phone Number</label>
+                <input type="tel" id="wd-phone" name="phone" placeholder="(919) 555-0100"
+                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
+              </div>
+            </div>
+
+            <div>
+              <label for="wd-package" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Which package interests you?</label>
+              <select id="wd-package" name="package"
+                style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none; appearance:none; cursor:pointer;">
+                <option value="" disabled selected>Select a package</option>
+                <option value="starter">Starter Site</option>
+                <option value="growth">Growth Site</option>
+                <option value="authority">Authority Site</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="wd-message" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Tell us about your project <span style="color:#d91e45;">*</span></label>
+              <textarea id="wd-message" name="message" required rows="5"
+                placeholder="What kind of website do you need? What's your timeline? Any existing site we should know about?"
+                style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; resize:vertical; outline:none; line-height:1.6;"></textarea>
+            </div>
+
+            <button type="submit"
+              style="background:#d91e45; color:#fff; font-weight:700; font-size:1rem; padding:16px 32px; border-radius:8px; border:none; cursor:pointer; font-family:inherit;">
+              Send My Project Details →
+            </button>
+
+            <p style="font-size:0.8125rem; color:#6b7280; text-align:center; margin:0;">
+              We typically respond within 24 hours. No spam, no unsolicited follow-ups.
+            </p>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -111,64 +707,16 @@ const process = [
 </html>
 
 <style>
-  body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: #242729; background: #fff; }
-  .section-inner { max-width: 1100px; margin: 0 auto; }
-
-  /* Hero */
-  .service-hero { background: linear-gradient(160deg, #fde8ed 0%, #fff 60%); padding: 96px 24px 80px; text-align: center; }
-  .service-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #D91E45; background: rgba(217,30,69,0.08); padding: 4px 12px; border-radius: 999px; }
-  .service-hero h1 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 700; color: #1A1C1E; margin: 20px 0 16px; line-height: 1.2; }
-  .hero-sub { font-size: clamp(1rem, 1.2vw, 1.125rem); color: #555; line-height: 1.6; max-width: 560px; margin: 0 auto 32px; }
-  .hero-cta { display: inline-flex; align-items: center; padding: 16px 32px; background: #D91E45; color: #fff; font-size: 1rem; font-weight: 500; border-radius: 1000px; text-decoration: none; transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease; }
-  .hero-cta:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(217,30,69,0.25); color: #fff; }
-
-  /* Overview */
-  .overview-section { padding: 80px 24px; }
-  .overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
-  .overview-text h2 { font-size: clamp(1.5rem, 2vw, 1.75rem); font-weight: 700; color: #1A1C1E; margin: 0 0 20px; line-height: 1.2; }
-  .overview-text p { font-size: 0.9375rem; color: #555; line-height: 1.8; margin: 0 0 16px; }
-  .overview-list h3 { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #D91E45; margin: 0 0 16px; }
-  .overview-list ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-  .overview-list li { font-size: 0.9375rem; color: #242729; padding-left: 20px; position: relative; line-height: 1.5; }
-  .overview-list li::before { content: '✓'; position: absolute; left: 0; color: #D91E45; font-weight: 700; }
-
-  /* Features */
-  .features-section { background: #F9F9F9; padding: 80px 24px; }
-  .section-title { font-size: clamp(1.5rem, 2vw, 1.75rem); font-weight: 700; color: #1A1C1E; text-align: center; margin: 0 0 48px; line-height: 1.2; }
-  .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .feature-card { background: #fff; border: 1px solid #E0E0E0; border-radius: 12px; padding: 28px 24px; display: flex; flex-direction: column; gap: 12px; transition: box-shadow 0.2s ease, transform 0.2s ease; }
-  .feature-card:hover { box-shadow: 0 10px 30px rgba(217,30,69,0.1); transform: translateY(-2px); }
-  .feature-icon { font-size: 1.75rem; }
-  .feature-card h3 { font-size: 1rem; font-weight: 700; color: #1A1C1E; margin: 0; }
-  .feature-card p { font-size: 0.9375rem; color: #555; line-height: 1.6; margin: 0; }
-
-  /* Process */
-  .process-section { padding: 80px 24px; }
-  .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  .process-card { border: 1px solid #E0E0E0; border-radius: 12px; padding: 28px 24px; display: flex; flex-direction: column; gap: 12px; }
-  .process-step { font-size: 2rem; font-weight: 700; color: #D91E45; line-height: 1; }
-  .process-card h3 { font-size: 1rem; font-weight: 700; color: #1A1C1E; margin: 0; }
-  .process-card p { font-size: 0.9375rem; color: #555; line-height: 1.6; margin: 0; }
-
-  /* CTA */
-  .cta-section { background: #1A1C1E; padding: 80px 24px; }
-  .cta-inner { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; }
-  .cta-inner h2 { font-size: clamp(1.5rem, 2.5vw, 1.75rem); font-weight: 700; color: #fff; margin: 0; }
-  .cta-inner p { font-size: 1rem; color: rgba(255,255,255,0.65); margin: 0; }
-  .cta-btn { display: inline-flex; align-items: center; padding: 16px 32px; background: #D91E45; color: #fff; font-size: 1rem; font-weight: 500; border-radius: 1000px; text-decoration: none; transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease; }
-  .cta-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(217,30,69,0.25); color: #fff; }
-
   @media (max-width: 900px) {
-    .features-grid { grid-template-columns: repeat(2, 1fr); }
-    .process-grid { grid-template-columns: repeat(2, 1fr); }
+    .two-col-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .pkg-grid { grid-template-columns: 1fr !important; }
+    .guarantee-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .testimonial-grid { grid-template-columns: 1fr !important; }
+    .tech-grid { grid-template-columns: repeat(2, 1fr) !important; }
   }
-  @media (max-width: 768px) {
-    .overview-grid { grid-template-columns: 1fr; gap: 40px; }
-    .overview-section, .features-section, .process-section, .cta-section { padding: 48px 16px; }
-    .service-hero { padding: 64px 16px 48px; }
-  }
-  @media (max-width: 560px) {
-    .features-grid { grid-template-columns: 1fr; }
-    .process-grid { grid-template-columns: 1fr; }
+  @media (max-width: 600px) {
+    .guarantee-grid { grid-template-columns: 1fr !important; }
+    .form-row { grid-template-columns: 1fr !important; }
+    .tech-grid { grid-template-columns: repeat(2, 1fr) !important; }
   }
 </style>
