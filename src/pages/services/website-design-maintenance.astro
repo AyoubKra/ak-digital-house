@@ -8,7 +8,7 @@ import Footer from '../../components/ui/Footer.astro';
 <html lang="en" class="scroll-smooth">
   <head>
     <BaseHead
-      title="Website Design & Maintenance — AK Digital House | Raleigh, NC"
+      title="Website Design & Development — AK Digital House | Raleigh, NC"
       description="Custom website design built to convert. AK Digital House creates fast, mobile-first, SEO-ready websites for growing businesses in Raleigh and across North Carolina."
     />
     <link rel="canonical" href="https://www.akdigitalhouse.com/services/website-design-maintenance" />
@@ -69,23 +69,41 @@ import Footer from '../../components/ui/Footer.astro';
     <Navigation />
 
     <!-- ─── 1. HERO ─── -->
-    <section style="background:#1a1c1e; padding:96px 24px 80px;">
-      <div style="max-width:900px; margin:0 auto; text-align:center;">
-        <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:24px;">Web Design &amp; Maintenance</span>
-        <h1 style="font-size:clamp(2rem,5vw,3.25rem); font-weight:800; color:#ffffff; line-height:1.15; margin:0 0 20px;">
-          A Website That Actually<br />
-          <span style="color:#d91e45;">Wins You Business</span>
-        </h1>
-        <p style="font-size:clamp(1rem,1.5vw,1.125rem); color:rgba(255,255,255,0.65); line-height:1.75; max-width:660px; margin:0 auto 40px;">
-          We design and build fast, conversion-focused websites that look great, load instantly, and turn visitors into paying clients — without the agency runaround.
-        </p>
-        <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
-          <a href="#contact" style="background:#d91e45; color:#fff; font-weight:700; font-size:0.9375rem; padding:14px 32px; border-radius:8px; text-decoration:none;">
-            Get a Free Consultation
-          </a>
-          <a href="#packages" style="background:transparent; color:#fff; font-weight:600; font-size:0.9375rem; padding:14px 32px; border-radius:8px; border:1px solid rgba(255,255,255,0.25); text-decoration:none;">
-            See What's Included
-          </a>
+    <section class="hero-section">
+      <div class="hero-inner">
+        <!-- Left: Content -->
+        <div class="hero-content">
+          <span class="hero-label">Web Design &amp; Development</span>
+          <h1 class="hero-headline">
+            Your Website Should Be<br />
+            <span class="hero-accent">Making You Money. Is It?</span>
+          </h1>
+          <p class="hero-desc">
+            Your next customer just landed on your website, waited 6 seconds for it to load, and left. Right now, that same customer is booking your competitor. We build fast, conversion-ready websites for Raleigh small businesses and startups — live in 3 weeks or less, built to turn every visitor into a long-term paying client.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Launch My Website →</a>
+            <a href="#packages" class="btn-secondary">See How It Works ↓</a>
+          </div>
+          <!-- Trust badges -->
+          <div class="hero-badges">
+            <div class="badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              <span>1 Year Free Maintenance</span>
+            </div>
+            <div class="badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>Loads Under 2 Seconds</span>
+            </div>
+            <div class="badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M12 14v4"/><path d="M9 18h6"/><path d="M8 6l-1-1M16 6l1-1M6 11H4M20 11h-2"/></svg>
+              <span>Affordable Pricing</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Image -->
+        <div class="hero-image-wrap">
+          <img src="/Web Design & Development .svg" alt="Web Design & Development" class="hero-image" />
         </div>
       </div>
     </section>
@@ -707,7 +725,117 @@ import Footer from '../../components/ui/Footer.astro';
 </html>
 
 <style>
+  /* ── Hero ── */
+  .hero-section {
+    background: linear-gradient(135deg, #fff 0%, rgba(217,30,69,0.06) 50%, #fff 100%);
+    padding: 88px 24px 80px;
+    overflow: hidden;
+  }
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .hero-label {
+    display: inline-block;
+    background: rgba(217,30,69,0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+  }
+  .hero-headline {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    line-height: 1.15;
+    margin: 0 0 20px;
+  }
+  .hero-accent { color: #d91e45; }
+  .hero-desc {
+    font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+    color: #6b7280;
+    line-height: 1.8;
+    margin: 0 0 36px;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    background: #d91e45;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    padding: 14px 32px;
+    border-radius: 1000px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  }
+  .btn-primary:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(217,30,69,0.28);
+  }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: #1a1c1e;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    padding: 14px 32px;
+    border-radius: 1000px;
+    border: 1.5px solid #1a1c1e;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+  .btn-secondary:hover {
+    background: #1a1c1e;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #242729;
+  }
+  .hero-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+  }
+
+  /* ── Responsive grids ── */
   @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-image-wrap { order: -1; }
+    .hero-image { max-width: 380px; margin: 0 auto; }
     .two-col-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
     .pkg-grid { grid-template-columns: 1fr !important; }
     .guarantee-grid { grid-template-columns: repeat(2, 1fr) !important; }
