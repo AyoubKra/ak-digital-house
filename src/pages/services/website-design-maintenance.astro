@@ -73,11 +73,9 @@ import Footer from '../../components/ui/Footer.astro';
       <div class="hero-inner">
         <!-- Left: Content -->
         <div class="hero-content">
-          <span class="hero-label">Web Design &amp; Development</span>
-          <h1 class="hero-headline">
-            Your Website Should Be<br />
-            <span class="hero-accent">Making You Money. Is It?</span>
-          </h1>
+          <span class="hero-label">Service</span>
+          <h1 class="hero-headline">Web Design &amp; Development</h1>
+          <h2 class="hero-subheadline">Your Website Should Be Making You Money. <span class="hero-accent">Is It?</span></h2>
           <p class="hero-desc">
             Your next customer just landed on your website, waited 6 seconds for it to load, and left. Right now, that same customer is booking your competitor. We build fast, conversion-ready websites for Raleigh small businesses and startups — live in 3 weeks or less, built to turn every visitor into a long-term paying client.
           </p>
@@ -103,7 +101,7 @@ import Footer from '../../components/ui/Footer.astro';
         </div>
         <!-- Right: Image -->
         <div class="hero-image-wrap">
-          <img src="/Web Design & Development .svg" alt="Web Design & Development" class="hero-image" />
+          <img src="/Website design and development service.svg" alt="Web Design & Development" class="hero-image" />
         </div>
       </div>
     </section>
@@ -752,10 +750,18 @@ import Footer from '../../components/ui/Footer.astro';
     margin-bottom: 24px;
   }
   .hero-headline {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
+    font-weight: 700;
+    color: #d91e45;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0 0 14px;
+  }
+  .hero-subheadline {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
     font-weight: 800;
     color: #1a1c1e;
-    line-height: 1.15;
+    line-height: 1.2;
     margin: 0 0 20px;
   }
   .hero-accent { color: #d91e45; }
