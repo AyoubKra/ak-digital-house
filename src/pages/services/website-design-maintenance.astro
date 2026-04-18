@@ -2,6 +2,26 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Navigation from '../../components/ui/Navigation.astro';
 import Footer from '../../components/ui/Footer.astro';
+
+const reviewsRow1 = [
+  { name: "Alex M.", role: "Business Owner", location: "United States", bg: "d91e45", text: "AKDH was amazing, exceeded expectations, and super happy to work with him, will be working with him again immediately after this project." },
+  { name: "Rachel T.", role: "Entrepreneur", location: "United States", bg: "1e3a5f", text: "AKDH was amazing. My sales landing page looks amazing. Will definitely be using him for more projects in the future!" },
+  { name: "Jordan K.", role: "Startup Founder", location: "United States", bg: "14532d", text: "Great experience with AKDH. He goes above and beyond and he is really professional. Did a wonderful job." },
+  { name: "Priya S.", role: "Small Business Owner", location: "United States", bg: "4c1d95", text: "It was my first time working with a freelancer and the experience has been great. AKDH is very responsive, works great with requirements, and even provides opinions based on his experience, making the process collaborative." },
+  { name: "Daniel W.", role: "Site Owner", location: "United States", bg: "7c2d12", text: "AKDH quickly pinpointed the problems on my site and resolved them, boosting its performance. Communication was clear, no hidden fees, just great work at a fair price. He truly exceeded my expectations!" },
+  { name: "Chris B.", role: "E-commerce Owner", location: "United States", bg: "1e3a5f", text: "AKDH completed the job successfully and on time and he was responsive to my feedback." },
+  { name: "Leila K.", role: "Brand Strategist", location: "United States", bg: "14532d", text: "It's been an absolute pleasure working with AKDH. He combines professionalism with forward-thinking strategies, patience, and excellent time management. Thank you sincerely for your support." },
+];
+
+const reviewsRow2 = [
+  { name: "Mia L.", role: "Creative Director", location: "United States", bg: "d91e45", text: "Went above and beyond with making edits to my website. Definitely has an eye for detail. Communication is quick, easy, and on point." },
+  { name: "Thomas R.", role: "Marketing Manager", location: "United States", bg: "1e3a5f", text: "Very responsive, fast delivery and a fine result. Many thanks." },
+  { name: "Sofia N.", role: "Sales Manager", location: "United States", bg: "14532d", text: "AKDH exceeded my expectations. He was very responsive and helpful. Together we worked on a sales landing page that ended up looking great. Even after completing his job AKDH remained available to assist." },
+  { name: "Marcus H.", role: "Business Owner", location: "United States", bg: "7c2d12", text: "He was great — exceeded my expectations and did a great job ahead of schedule. Easy to communicate with and very knowledgeable and creative. Loved what we did for my landing page." },
+  { name: "Natalie K.", role: "Agency Owner", location: "United States", bg: "4c1d95", text: "Great experience with AKDH. He goes above and beyond and he is really professional. Did a wonderful job." },
+  { name: "Omar P.", role: "Product Manager", location: "United States", bg: "1e3a5f", text: "AKDH is very responsive and has done a great job working with the requirements and making adjustments after review. Making the process truly collaborative." },
+  { name: "Brianna F.", role: "E-commerce Founder", location: "United States", bg: "d91e45", text: "Went above and beyond with making edits to my website. Definitely has an eye for detail. Communication is quick, easy, and on point." },
+];
 ---
 
 <!doctype html>
@@ -73,8 +93,7 @@ import Footer from '../../components/ui/Footer.astro';
       <div class="hero-inner">
         <!-- Left: Content -->
         <div class="hero-content">
-          <span class="hero-label">Service</span>
-          <h1 class="hero-headline">Web Design &amp; Development</h1>
+          <h1 class="hero-label">Website Design &amp; Development</h1>
           <h2 class="hero-subheadline">Your Website Should Be Making You Money. <span class="hero-accent">Is It?</span></h2>
           <p class="hero-desc">
             Your next customer just landed on your website, waited 6 seconds for it to load, and left. Right now, that same customer is booking your competitor. We build fast, conversion-ready websites for Raleigh small businesses and startups — live in 3 weeks or less, built to turn every visitor into a long-term paying client.
@@ -86,16 +105,16 @@ import Footer from '../../components/ui/Footer.astro';
           <!-- Trust badges -->
           <div class="hero-badges">
             <div class="badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-              <span>1 Year Free Maintenance</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polygon points="12 13.5 12.9 15.4 15 15.73 13.5 17.2 13.82 19.3 12 18.27 10.18 19.3 10.5 17.2 9 15.73 11.1 15.4 12 13.5"/></svg>
+              <span>1yr Free Maintenance</span>
             </div>
             <div class="badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              <span>Loads Under 2 Seconds</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+              <span>&lt; 2s Loading</span>
             </div>
             <div class="badge">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M12 14v4"/><path d="M9 18h6"/><path d="M8 6l-1-1M16 6l1-1M6 11H4M20 11h-2"/></svg>
-              <span>Affordable Pricing</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2z"/><path d="M2 9v1c0 1.1.9 2 2 2h1"/><circle cx="16" cy="11" r="0.5" fill="#d91e45"/></svg>
+              <span>No Hidden Fees</span>
             </div>
           </div>
         </div>
@@ -106,28 +125,93 @@ import Footer from '../../components/ui/Footer.astro';
       </div>
     </section>
 
-    <!-- ─── 2. SOCIAL PROOF BAR ─── -->
-    <section style="background:#f8f8f8; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb; padding:28px 24px;">
-      <div style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:32px 56px;">
-        <div style="text-align:center;">
-          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">100%</p>
-          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Mobile-First Builds</p>
+    <!-- ─── 2. SUB-SERVICES ─── -->
+    <section class="sub-services-section">
+      <div class="sub-services-inner">
+
+        <div class="sub-services-header">
+          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">What We Build</span>
+          <h2 class="sub-h2">One Website Type Won't Fit Every Goal. We Build the Right One for Yours.</h2>
+          <p class="sub-subtext">Whether you need a campaign page that converts, a store that sells, or a brand presence that ranks — we scope the build around the outcome, not a template.</p>
         </div>
-        <div style="text-align:center;">
-          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">&lt; 2s</p>
-          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Avg. Load Time</p>
-        </div>
-        <div style="text-align:center;">
-          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">5-Star</p>
-          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Client Satisfaction</p>
-        </div>
-        <div style="text-align:center;">
-          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">NC-Based</p>
-          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">Raleigh, North Carolina</p>
-        </div>
-        <div style="text-align:center;">
-          <p style="font-size:1.625rem; font-weight:800; color:#1a1c1e; margin:0 0 2px;">90+</p>
-          <p style="font-size:0.8125rem; color:#6b7280; margin:0;">PageSpeed Score</p>
+
+        <div class="sub-grid">
+
+          <!-- Card 1 — Landing Pages -->
+          <div class="sub-card">
+            <div class="sub-card-top">
+              <span class="sub-card-num">01</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3 class="sub-card-title">High-Converting Landing Pages</h3>
+            <p class="sub-card-tagline">Turn Ad Spend Into Booked Clients</p>
+            <p class="sub-card-desc">A homepage can't do everything. Landing pages do one thing <b>CONVERT</b>. We build focused, fast-optimized pages for a single goal: turning your ad traffic into phone calls, form fills, and booked appointments.</p>
+            <ul class="sub-card-features">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>One page, one goal</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">no distractions, just conversions</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Loads in under 2 seconds</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">fast enough to keep every visitor</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Mobile-perfect on any screen</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">phones, tablets, desktops</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Instant lead notifications</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">know the second someone reaches out</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Ad-ready from day one</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">Google, Meta, and TikTok plug straight in</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Tracks every click and sale</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">full visibility on what's working</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Built-in contact and booking forms</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">no third-party tools needed</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>SEO-optimized from the ground up</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">ranks even without paid ads</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Update anything yourself</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">no developer needed for changes</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Designed to build trust fast</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">social proof, guarantees, and CTAs in the right places</small></span></li>
+            </ul>
+            <div class="sub-card-divider"></div>
+            <a href="#contact" class="sub-card-cta">Start Generating Leads <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+
+          <!-- Card 2 — E-Commerce -->
+          <div class="sub-card">
+            <div class="sub-card-top">
+              <span class="sub-card-num">02</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            </div>
+            <h3 class="sub-card-title">Results-Driven E-Commerce</h3>
+            <p class="sub-card-tagline">Your Online Store, Built to Sell</p>
+            <p class="sub-card-desc">Most online stores look fine and convert terribly. We build custom e-commerce websites where every page, products, cart, and checkout is designed to remove friction, build trust, and close the sale.</p>
+            <ul class="sub-card-features">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Sells while you sleep</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">24/7 automated sales</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Fast, secure checkout</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">fewer abandoned carts</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Works on every device</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">mobile, tablet, desktop</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>All major payments accepted</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">Stripe, PayPal, cards</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Manage products yourself</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">no developer needed</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Ranks on Google</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">built-in SEO on every page</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Full sales dashboard</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">track orders and revenue live</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Abandoned cart reminders</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">win back lost sales automatically</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Grows with your business</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">no rebuild as you scale</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Live in 3 weeks</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">faster than any Triangle agency</small></span></li>
+            </ul>
+            <div class="sub-card-divider"></div>
+            <a href="#contact" class="sub-card-cta">Launch Your Store <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+
+          <!-- Card 3 — Brand & Authority Static Sites -->
+          <div class="sub-card">
+            <div class="sub-card-top">
+              <span class="sub-card-num">03</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v8h4"/><path d="M18 9h2a2 2 0 0 1 2 2v11h-4"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+            </div>
+            <h3 class="sub-card-title">Brand &amp; Authority Static Sites</h3>
+            <p class="sub-card-tagline">Visibility, Credibility, and Bookings</p>
+            <p class="sub-card-desc">You built your business from the ground up. Your website should reflect that fast, professional, and always working for you. We build clean, secure static sites for small businesses and startups that load instantly, rank on Google, and turn visitors into booked appointments.</p>
+            <ul class="sub-card-features">
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Live in less than 3 weeks</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">faster launch and immediate start</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Loads under 2 seconds</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">fast enough to keep every visitor</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Books appointments automatically</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">your calendar fills itself</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Ranks on Google from day one</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">local SEO built into every page</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Shows up where your customers search</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">neighborhood-level targeting built in</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>1 year of free maintenance</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">full security and updates included</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Looks great on every device</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">mobile, tablet, and desktop</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Easy to update yourself</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">no developer needed for simple changes</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Secure and protected</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">no plugins, no vulnerabilities, no worries</small></span></li>
+              <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:4px;"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Built to grow with you</strong><br/><small style="color:#6b7280;font-size:0.8rem;line-height:1.5;">add pages & features as your business grow</small></span></li>
+            </ul>
+            <div class="sub-card-divider"></div>
+            <a href="#contact" class="sub-card-cta">Build Your Brand <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -526,68 +610,61 @@ import Footer from '../../components/ui/Footer.astro';
     </section>
 
     <!-- ─── 9. TESTIMONIALS ─── -->
-    <section style="background:#1a1c1e; padding:88px 24px;">
-      <div style="max-width:1100px; margin:0 auto;">
-        <div style="text-align:center; margin-bottom:56px;">
-          <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Client Results</span>
-          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#fff; margin:0;">What Our Clients Say</h2>
+    <section style="background:#0f0f12; padding:88px 0; overflow:hidden;">
+      <div style="max-width:1100px; margin:0 auto; padding:0 24px; text-align:center; margin-bottom:56px;">
+        <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Client Results</span>
+        <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#fff; margin:0;">What Our Clients Say</h2>
+      </div>
+
+      <!-- Row 1: scrolls left -->
+      <div class="review-outer" style="margin-bottom:20px;">
+        <div class="review-track">
+          {[...reviewsRow1, ...reviewsRow1].map((r) => (
+            <div class="review-card">
+              <div style="display:flex; gap:3px; margin-bottom:16px;">
+                {[...Array(5)].map(() => <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>)}
+              </div>
+              <p class="review-text">"{r.text}"</p>
+              <div class="review-author">
+                <img
+                  src={`https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(r.name)}&backgroundColor=${r.bg}&textColor=ffffff&radius=50&fontSize=38&fontWeight=700`}
+                  alt={r.name}
+                  class="review-avatar-img"
+                  loading="lazy"
+                />
+                <div>
+                  <p class="review-name">{r.name}</p>
+                  <p class="review-role">{r.role} · {r.location}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-        <div class="testimonial-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+      </div>
 
-          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 28px;">
-            <div style="display:flex; gap:3px; margin-bottom:20px;">
-              {[1,2,3,4,5].map(() => (
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              ))}
-            </div>
-            <p style="font-size:0.9375rem; color:rgba(255,255,255,0.75); line-height:1.8; margin:0 0 24px; font-style:italic;">"AK Digital House completely transformed our online presence. The new site is fast, looks stunning, and we've already seen a measurable uptick in inbound leads."</p>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <div style="width:40px; height:40px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:700; font-size:0.875rem;">MR</span>
+      <!-- Row 2: scrolls right -->
+      <div class="review-outer">
+        <div class="review-track review-track-reverse">
+          {[...reviewsRow2, ...reviewsRow2].map((r) => (
+            <div class="review-card">
+              <div style="display:flex; gap:3px; margin-bottom:16px;">
+                {[...Array(5)].map(() => <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>)}
               </div>
-              <div>
-                <p style="font-size:0.875rem; font-weight:700; color:#fff; margin:0;">Marcus R.</p>
-                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin:0;">CEO, Triangle Tech Services</p>
-              </div>
-            </div>
-          </div>
-
-          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 28px;">
-            <div style="display:flex; gap:3px; margin-bottom:20px;">
-              {[1,2,3,4,5].map(() => (
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              ))}
-            </div>
-            <p style="font-size:0.9375rem; color:rgba(255,255,255,0.75); line-height:1.8; margin:0 0 24px; font-style:italic;">"Working with the AK Digital House team was seamless. They communicated clearly at every step, delivered on time, and the final product exceeded our expectations."</p>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <div style="width:40px; height:40px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:700; font-size:0.875rem;">SL</span>
-              </div>
-              <div>
-                <p style="font-size:0.875rem; font-weight:700; color:#fff; margin:0;">Stephanie L.</p>
-                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin:0;">Owner, Raleigh Wellness Co.</p>
+              <p class="review-text">"{r.text}"</p>
+              <div class="review-author">
+                <img
+                  src={`https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(r.name)}&backgroundColor=${r.bg}&textColor=ffffff&radius=50&fontSize=38&fontWeight=700`}
+                  alt={r.name}
+                  class="review-avatar-img"
+                  loading="lazy"
+                />
+                <div>
+                  <p class="review-name">{r.name}</p>
+                  <p class="review-role">{r.role} · {r.location}</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:32px 28px;">
-            <div style="display:flex; gap:3px; margin-bottom:20px;">
-              {[1,2,3,4,5].map(() => (
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              ))}
-            </div>
-            <p style="font-size:0.9375rem; color:rgba(255,255,255,0.75); line-height:1.8; margin:0 0 24px; font-style:italic;">"We were blown away by the attention to detail and how well they understood our brand. Our bounce rate dropped significantly and quote requests doubled."</p>
-            <div style="display:flex; align-items:center; gap:12px;">
-              <div style="width:40px; height:40px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:700; font-size:0.875rem;">DJ</span>
-              </div>
-              <div>
-                <p style="font-size:0.875rem; font-weight:700; color:#fff; margin:0;">David J.</p>
-                <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); margin:0;">Founder, Carolina Home Pro</p>
-              </div>
-            </div>
-          </div>
-
+          ))}
         </div>
       </div>
     </section>
@@ -837,8 +914,192 @@ import Footer from '../../components/ui/Footer.astro';
     display: block;
   }
 
+  /* ── Sub-services section ── */
+  .sub-services-section {
+    background: #f8f8f8;
+    padding: 88px 24px;
+  }
+  .sub-services-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sub-services-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .sub-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #d91e45;
+    margin: 0 0 16px;
+  }
+  .sub-h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    line-height: 1.25;
+    max-width: 700px;
+    margin: 0 auto 16px;
+  }
+  .sub-subtext {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    max-width: 672px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+  .sub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .sub-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .sub-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
+  .sub-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .sub-card-num {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #d91e45;
+  }
+  .sub-card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1a1c1e;
+    margin: 0 0 6px;
+  }
+  .sub-card-tagline {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #d91e45;
+    margin: 0 0 12px;
+  }
+  .sub-card-desc {
+    font-size: 0.875rem;
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 0 0 24px;
+  }
+  .sub-card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+  }
+  .sub-card-features li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    color: #242729;
+  }
+  .sub-card-divider {
+    border-top: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+  }
+  .sub-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #d91e45;
+    text-decoration: none;
+    margin-top: auto;
+  }
+  .sub-card-cta:hover {
+    text-decoration: underline;
+  }
+
+  /* ── Review infinite scroll ── */
+  @keyframes review-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes review-right {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  .review-outer {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  }
+  .review-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    padding: 8px 0 16px;
+    animation: review-left 50s linear infinite;
+  }
+  .review-track:hover { animation-play-state: paused; }
+  .review-track-reverse { animation-name: review-right; }
+  .review-card {
+    flex-shrink: 0;
+    width: 320px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .review-text {
+    font-size: 0.9375rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.75;
+    margin: 0 0 24px;
+    flex: 1;
+  }
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+  }
+  .review-avatar-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .review-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+  }
+  .review-role {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    margin: 0;
+  }
+
   /* ── Responsive grids ── */
   @media (max-width: 900px) {
+    .sub-grid { grid-template-columns: 1fr !important; }
+    .sub-services-section { padding: 64px 24px; }
     .hero-inner { grid-template-columns: 1fr; gap: 40px; }
     .hero-image-wrap { order: -1; }
     .hero-image { max-width: 380px; margin: 0 auto; }
