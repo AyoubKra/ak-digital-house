@@ -127,9 +127,16 @@ const reviewsRow2 = [
 
     <!-- ─── 2. OUR COMMITMENTS ─── -->
     <section class="wdmc-section">
+      <!-- Top: centered eyebrow + heading + description -->
+      <div class="wdmc-header">
+        <span class="wdmc-eyebrow">Our Commitments</span>
+        <h2 class="wdmc-h2">We Don't Just Promise Results. We Put Them in Writing.</h2>
+        <p class="wdmc-sub">Every project we take on comes with a set of non-negotiable standards. Not because we have to — because that's the only way we work.</p>
+      </div>
+
       <div class="wdmc-inner">
 
-        <!-- Left: circular image (hub) -->
+        <!-- Left: image -->
         <div class="wdmc-img-col">
           <div class="wdmc-img-wrap">
             <img
@@ -140,12 +147,8 @@ const reviewsRow2 = [
           </div>
         </div>
 
-        <!-- Right: header + spoke items -->
+        <!-- Right: spoke items only -->
         <div class="wdmc-content">
-          <span class="wdmc-eyebrow">Our Commitments</span>
-          <h2 class="wdmc-h2">We Don't Just Promise Results. We Put Them in Writing.</h2>
-          <p class="wdmc-sub">Every project we take on comes with a set of non-negotiable standards. Not because we have to — because that's the only way we work.</p>
-
           <div class="wdmc-list">
 
             <!-- 1 — Timer -->
@@ -328,75 +331,89 @@ const reviewsRow2 = [
     </section>
 
     <!-- ─── 7. PROCESS ─── -->
-    <section style="background:#f8f8f8; padding:88px 24px;">
-      <div style="max-width:900px; margin:0 auto;">
-        <div style="text-align:center; margin-bottom:64px;">
-          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">How It Works</span>
-          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0;">Our Process</h2>
-        </div>
-        <div style="display:flex; flex-direction:column; gap:0;">
+    <section class="proc-section">
 
-          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
-            <div style="display:flex; flex-direction:column; align-items:center;">
-              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:800; font-size:1rem;">01</span>
+      <div class="proc-header">
+        <span class="proc-eyebrow">How It Works</span>
+        <h2 class="proc-h2">From Strategy to Launch in 3 Weeks or Less</h2>
+      </div>
+
+      <div class="proc-track">
+
+        <!-- S-curve wave connector (desktop only) -->
+        <svg class="proc-wave-svg" viewBox="0 0 1100 96" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M 110 48 C 165 90, 275 90, 330 48 C 385 6, 495 6, 550 48 C 605 90, 715 90, 770 48 C 825 6, 935 6, 990 48" stroke="#d91e45" stroke-width="5" stroke-linecap="round" fill="none"/>
+        </svg>
+
+        <div class="proc-steps">
+
+          <!-- 1 -->
+          <div class="proc-step">
+            <div class="proc-icon-col">
+              <div class="proc-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
-              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+              <div class="proc-num-badge">01</div>
             </div>
-            <div style="padding-top:12px;">
-              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Discovery &amp; Strategy</h3>
-              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We deep-dive into your business, goals, target audience, and competitive landscape. You'll leave our kickoff call with a clear vision for what we're building and why.</p>
+            <div class="proc-text-col">
+              <h3 class="proc-title">Discovery &amp; Strategy</h3>
+              <p class="proc-body">We learn your business, goals, and audience — then define the exact pages, features, and approach your website needs.</p>
             </div>
           </div>
 
-          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
-            <div style="display:flex; flex-direction:column; align-items:center;">
-              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:800; font-size:1rem;">02</span>
+          <!-- 2 -->
+          <div class="proc-step">
+            <div class="proc-icon-col">
+              <div class="proc-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
               </div>
-              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+              <div class="proc-num-badge">02</div>
             </div>
-            <div style="padding-top:12px;">
-              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Design &amp; Wireframes</h3>
-              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We produce wireframes and high-fidelity mockups for your review before a single line of code is written. No surprises — you approve the look and feel first.</p>
+            <div class="proc-text-col">
+              <h3 class="proc-title">Structure &amp; Content</h3>
+              <p class="proc-body">We map your pages and content flow before building anything. Every section is planned around conversions, not just layout.</p>
             </div>
           </div>
 
-          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
-            <div style="display:flex; flex-direction:column; align-items:center;">
-              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:800; font-size:1rem;">03</span>
+          <!-- 3 -->
+          <div class="proc-step">
+            <div class="proc-icon-col">
+              <div class="proc-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
               </div>
-              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+              <div class="proc-num-badge">03</div>
             </div>
-            <div style="padding-top:12px;">
-              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Development &amp; QA</h3>
-              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We build with clean, semantic code — fully tested across devices, browsers, and screen sizes. Performance and accessibility baked in from the start.</p>
+            <div class="proc-text-col">
+              <h3 class="proc-title">Development &amp; Build</h3>
+              <p class="proc-body">We build every page fast, mobile-first, and fully functional. Forms, payments, and booking tools integrated from the start.</p>
             </div>
           </div>
 
-          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px; padding-bottom:40px;">
-            <div style="display:flex; flex-direction:column; align-items:center;">
-              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:800; font-size:1rem;">04</span>
+          <!-- 4 -->
+          <div class="proc-step">
+            <div class="proc-icon-col">
+              <div class="proc-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
               </div>
-              <div style="width:2px; background:#e5e7eb; flex-grow:1; margin-top:8px;"></div>
+              <div class="proc-num-badge">04</div>
             </div>
-            <div style="padding-top:12px;">
-              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Review &amp; Revisions</h3>
-              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">You get a private staging link to review the full site. We incorporate your feedback in focused revision rounds until everything is exactly right.</p>
+            <div class="proc-text-col">
+              <h3 class="proc-title">Testing &amp; Launch</h3>
+              <p class="proc-body">Tested across every device and browser. You review, we fix anything outstanding, then we go live.</p>
             </div>
           </div>
 
-          <div style="display:grid; grid-template-columns:80px 1fr; gap:24px;">
-            <div style="display:flex; flex-direction:column; align-items:center;">
-              <div style="width:52px; height:52px; background:#d91e45; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-                <span style="color:#fff; font-weight:800; font-size:1rem;">05</span>
+          <!-- 5 -->
+          <div class="proc-step">
+            <div class="proc-icon-col">
+              <div class="proc-circle">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
               </div>
+              <div class="proc-num-badge">05</div>
             </div>
-            <div style="padding-top:12px;">
-              <h3 style="font-size:1.0625rem; font-weight:700; color:#1a1c1e; margin:0 0 8px;">Launch &amp; Ongoing Support</h3>
-              <p style="font-size:0.9375rem; color:#6b7280; line-height:1.75; margin:0;">We handle the technical launch — DNS, SSL, redirects, analytics setup. Then we stay on as your web partner for maintenance, updates, and ongoing improvements.</p>
+            <div class="proc-text-col">
+              <h3 class="proc-title">1 Year Free Support</h3>
+              <p class="proc-body">Security monitoring, performance updates, and small content edits — free for your first 12 months after launch.</p>
             </div>
           </div>
 
@@ -405,51 +422,97 @@ const reviewsRow2 = [
     </section>
 
     <!-- ─── 6. WHY AKDH ─── -->
-    <section style="padding:88px 24px;">
-      <div style="max-width:1100px; margin:0 auto;">
-        <div class="two-col-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
-          <div>
-            <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:20px;">Why AK Digital House</span>
-            <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; line-height:1.25; margin:0 0 16px;">We're builders, not button pushers</h2>
-            <p style="font-size:0.9375rem; color:#6b7280; line-height:1.8; margin:0 0 32px;">Most agencies outsource design to freelancers and hand you a bloated WordPress site. We build lean, fast, custom websites — in-house, from strategy to launch.</p>
-            <a href="#contact" style="display:inline-block; background:#d91e45; color:#fff; font-weight:700; font-size:0.9375rem; padding:14px 32px; border-radius:8px; text-decoration:none;">
-              Start Your Project
-            </a>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:20px;">
+    <section class="why-section">
 
-            <div style="display:flex; gap:20px; align-items:flex-start; background:#f8f8f8; border-radius:10px; padding:24px;">
-              <div style="flex-shrink:0; width:44px; height:44px; background:#fff0f3; border-radius:8px; display:flex; align-items:center; justify-content:center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+      <!-- Top: centered header -->
+      <div class="why-header">
+        <span class="why-eyebrow">Why AK Digital House</span>
+        <h2 class="why-h2">We're Builders, Not Button Pushers</h2>
+        <p class="why-sub">Most agencies hand you a bloated WordPress site built by a freelancer they outsourced to. We build every website in-house — from strategy to launch — with one goal: growing your business.</p>
+      </div>
+
+      <div class="why-inner">
+
+        <!-- Left: 2×3 grid -->
+        <div class="why-left">
+          <div class="why-grid">
+
+            <!-- 1 Brain -->
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.44-4.14Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.44-4.14Z"/></svg>
               </div>
               <div>
-                <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Strategy Before Design</h4>
-                <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0;">We understand your market, buyer journey, and competitors before we sketch a single wireframe.</p>
+                <h3 class="why-title">Strategy Before Design</h3>
+                <p class="why-body">We study your market, your audience, and your competitors before we build a single page. Every decision has a reason behind it.</p>
               </div>
             </div>
 
-            <div style="display:flex; gap:20px; align-items:flex-start; background:#f8f8f8; border-radius:10px; padding:24px;">
-              <div style="flex-shrink:0; width:44px; height:44px; background:#fff0f3; border-radius:8px; display:flex; align-items:center; justify-content:center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <!-- 2 Code2 -->
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
               </div>
               <div>
-                <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Clean Code, Not Page Builders</h4>
-                <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0;">Hand-coded sites load faster, rank better, and won't break when a plugin updates.</p>
+                <h3 class="why-title">Built Clean, Built Fast</h3>
+                <p class="why-body">No page builders, no unnecessary plugins. Clean, hand-crafted code that loads faster, ranks better, and never breaks when a plugin updates.</p>
               </div>
             </div>
 
-            <div style="display:flex; gap:20px; align-items:flex-start; background:#f8f8f8; border-radius:10px; padding:24px;">
-              <div style="flex-shrink:0; width:44px; height:44px; background:#fff0f3; border-radius:8px; display:flex; align-items:center; justify-content:center;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <!-- 3 Users -->
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div>
-                <h4 style="font-size:0.9375rem; font-weight:700; color:#1a1c1e; margin:0 0 6px;">Local &amp; Accessible</h4>
-                <p style="font-size:0.875rem; color:#6b7280; line-height:1.7; margin:0;">Based in Raleigh, NC — available for in-person meetings across the Triangle and beyond.</p>
+                <h3 class="why-title">You Work With Us Directly</h3>
+                <p class="why-body">No account managers, no outsourcing. You have direct access to the people building your website from day one to launch day.</p>
+              </div>
+            </div>
+
+            <!-- 4 MapPin -->
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3 class="why-title">Raleigh-Based, Triangle-Focused</h3>
+                <p class="why-body">We are based in Raleigh, NC and available for in-person meetings across the Triangle. Local knowledge, local commitment.</p>
+              </div>
+            </div>
+
+            <!-- 5 AI (Sparkles) -->
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+              </div>
+              <div>
+                <h3 class="why-title">AI-Native From the Ground Up</h3>
+                <p class="why-body">We use AI at every stage — design, content, and development — to move faster and deliver smarter results than traditional agencies.</p>
+              </div>
+            </div>
+
+            <!-- 6 HeartHandshake -->
+            <div class="why-item">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg>
+              </div>
+              <div>
+                <h3 class="why-title">We Grow With You</h3>
+                <p class="why-body">We are a small agency that takes on selected clients. When you win, we win. That is why every client gets our full attention, not a ticket queue.</p>
               </div>
             </div>
 
           </div>
         </div>
+
+        <!-- Right: image -->
+        <div class="why-img-col">
+          <div class="why-img-wrap">
+            <img src="/business-solutions.svg" alt="AK Digital House team building websites" class="why-img" />
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1277,6 +1340,7 @@ const reviewsRow2 = [
     .guarantee-grid { grid-template-columns: 1fr !important; }
     .form-row { grid-template-columns: 1fr !important; }
     .tech-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .nc-coverage { grid-template-columns: 1fr !important; }
   }
 /* ── Service Area ── */
   .service-area {
@@ -1373,6 +1437,11 @@ const reviewsRow2 = [
     background: #ffffff;
     padding: 96px 24px;
   }
+  .wdmc-header {
+    max-width: 700px;
+    margin: 0 auto 56px;
+    text-align: center;
+  }
   .wdmc-inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -1425,7 +1494,7 @@ const reviewsRow2 = [
     font-size: 0.9375rem;
     color: #6b7280;
     line-height: 1.75;
-    margin: 0 0 40px;
+    margin: 0;
   }
   /* Spoke list — vertical trunk */
   .wdmc-list {
@@ -1539,10 +1608,287 @@ const reviewsRow2 = [
     }
     .wdmc-img-col { display: none; }
     .wdmc-section { padding: 64px 24px; }
+    .wdmc-header { margin-bottom: 40px; }
   }
   @media (max-width: 600px) {
     .wdmc-section { padding: 48px 20px; }
     .wdmc-card { border-radius: 12px; }
+  }
+
+  /* ── Our Process ── */
+  .proc-section {
+    background: #ffffff;
+    padding: 96px 24px;
+  }
+  .proc-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 64px;
+  }
+  .proc-eyebrow {
+    display: inline-block;
+    background: rgba(217, 30, 69, 0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+  .proc-h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    line-height: 1.25;
+    margin: 0;
+  }
+  .proc-track {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .proc-wave-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .proc-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .proc-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  /* Desktop: icon-col stacks circle above badge */
+  .proc-icon-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .proc-text-col {
+    display: contents; /* transparent on desktop — children flow into proc-step */
+  }
+  .proc-circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .proc-num-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #d91e45;
+    color: #ffffff;
+    font-size: 0.6875rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    flex-shrink: 0;
+  }
+  .proc-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #1a1c1e;
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+  .proc-body {
+    font-size: 0.8125rem;
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 0;
+  }
+  @media (max-width: 900px) {
+    .proc-wave-svg { display: none; }
+    .proc-steps {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    .proc-step {
+      flex-direction: row;
+      text-align: left;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 0;
+    }
+    .proc-icon-col {
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 20%;
+      min-width: 0;
+      position: relative;
+    }
+    .proc-circle {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 0;
+      position: relative;
+    }
+    /* Badge pinned to top-right corner of circle */
+    .proc-num-badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      width: 24px;
+      height: 24px;
+      font-size: 0.625rem;
+      margin-bottom: 0;
+      box-shadow: 0 2px 6px rgba(217, 30, 69, 0.4);
+    }
+    .proc-text-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      min-width: 0;
+    }
+    .proc-title { margin-bottom: 6px; }
+  }
+  @media (max-width: 600px) {
+    .proc-section { padding: 64px 20px; }
+    .proc-header { margin-bottom: 48px; }
+  }
+
+  /* ── Why AK Digital House ── */
+  .why-section {
+    background: linear-gradient(135deg, #fff 0%, rgba(217,30,69,0.06) 50%, #fff 100%);
+    padding: 96px 24px;
+  }
+  .why-header {
+    max-width: 700px;
+    margin: 0 auto 56px;
+    text-align: center;
+  }
+  .why-eyebrow {
+    display: inline-block;
+    background: rgba(217, 30, 69, 0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+  .why-h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    line-height: 1.25;
+    margin: 0 0 14px;
+  }
+  .why-sub {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.75;
+    margin: 0;
+  }
+  .why-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.67fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .why-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+  .why-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background: #fff0f3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .why-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #1a1c1e;
+    margin: 0 0 6px;
+    line-height: 1.3;
+  }
+  .why-body {
+    font-size: 0.8125rem;
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 0;
+  }
+  /* Right image */
+  .why-img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-img-wrap {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+    background: #f0f0f0;
+  }
+  .why-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Responsive */
+  @media (max-width: 900px) {
+    .why-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .why-img-col {
+      order: -1;
+    }
+    .why-img-wrap { max-width: 100%; }
+    .why-section { padding: 64px 24px; }
+    .why-header { margin-bottom: 40px; }
+  }
+  @media (max-width: 600px) {
+    .why-grid { grid-template-columns: 1fr; }
+    .why-section { padding: 48px 20px; }
   }
 
   /* ── Section inner (width constraint) ── */
