@@ -61,7 +61,7 @@ const process = [
           </div>
         </div>
         <div class="hero-image-wrap">
-          <img src="/brand and graphic design service.svg" alt="Branding & Creative Design" class="hero-image" />
+          <img src="/brand-design-service.svg" alt="Branding & Creative Design" class="hero-image" />
         </div>
       </div>
     </section>
@@ -130,7 +130,55 @@ const process = [
         <a href="/contact" class="cta-btn">Book a Free Strategy Call</a>
       </div>
     </section>
+   <!-- SERVING THE TRIANGLE -->
+    <section class="service-area">
+      <div class="section-inner">
+        <div class="service-area-header">
+          <span class="area-label">Service Area</span>
+          <h2>Proudly Serving North Carolina</h2>
+          <p>Based in Raleigh, we partner with businesses across the entire state of North Carolina — from the Triangle to Charlotte, Wilmington, Asheville, and everywhere in between. Distance is never a barrier to great work.</p>
+        </div>
 
+        <div class="nc-coverage">
+          <div class="nc-coverage-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D91E45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <p class="nc-item-title">Triangle Area</p>
+              <p class="nc-item-sub">In-person visits available within ~30 min of Raleigh</p>
+            </div>
+          </div>
+          <div class="nc-coverage-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D91E45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div>
+              <p class="nc-item-title">All of North Carolina</p>
+              <p class="nc-item-sub">Full digital services remotely — Charlotte, Wilmington, Asheville, Greensboro & more</p>
+            </div>
+          </div>
+          <div class="nc-coverage-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D91E45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <div>
+              <p class="nc-item-title">Nationwide</p>
+              <p class="nc-item-sub">We welcome clients from any state — results travel further than we do</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cities-label">Local Triangle cities we serve:</div>
+        <div class="cities-grid">
+          {[
+            'Raleigh', 'Cary', 'Durham', 'Morrisville',
+            'Apex', 'Wake Forest', 'Garner', 'Knightdale',
+            'Holly Springs', 'Fuquay-Varina', 'Rolesville', 'Wendell',
+            'Zebulon', 'Clayton'
+          ].map(city => (
+            <div class="city-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
+              {city}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
     <Footer />
   </body>
 </html>
@@ -194,4 +242,96 @@ const process = [
   @media (max-width: 900px) { .features-grid { grid-template-columns: repeat(2, 1fr); } .process-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 768px) { .overview-grid { grid-template-columns: 1fr; gap: 40px; } .overview-section, .features-section, .process-section, .cta-section { padding: 48px 16px; } .service-hero { padding: 64px 16px 48px; } }
   @media (max-width: 560px) { .features-grid { grid-template-columns: 1fr; } .process-grid { grid-template-columns: 1fr; } }
+
+/* ── Service Area ── */
+  .service-area {
+    background: #F9F9F9;
+    padding: 80px 24px;
+    border-top: 1px solid #E8E8E8;
+  }
+  .service-area-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .area-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #D91E45;
+    background: rgba(217,30,69,0.08);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .service-area-header h2 {
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+    font-weight: 700;
+    color: #1A1C1E;
+    margin: 0 0 12px;
+    line-height: 1.2;
+  }
+  .service-area-header p {
+    font-size: 0.9375rem;
+    color: #666;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  .cities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .city-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #242729;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .city-tag:hover {
+    border-color: #D91E45;
+    box-shadow: 0 2px 8px rgba(217,30,69,0.1);
+  }
+  .cities-label {
+    text-align: center;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #aaa;
+    margin: 0 0 14px;
+  }
+
+  /* NC Coverage grid */
+  .nc-coverage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .nc-coverage-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .nc-coverage-item svg { flex-shrink: 0; margin-top: 2px; }
+  .nc-item-title { font-size: 0.9375rem; font-weight: 700; color: #1A1C1E; margin: 0 0 4px; }
+  .nc-item-sub { font-size: 0.8125rem; color: #666; line-height: 1.5; margin: 0; }
+
+
 </style>
