@@ -1358,8 +1358,24 @@ const reviewsRow2 = [
   /* FAQ responsive */
   @media (max-width: 768px) {
     .faq-grid { grid-template-columns: 1fr !important; }
-    .faq-nav { flex-direction: row; flex-wrap: wrap; position: static; gap: 8px; margin-bottom: 24px; }
-    .faq-navitem { font-size: 0.8125rem; padding: 10px 14px; }
+    .faq-nav {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      position: static;
+      gap: 8px;
+      margin-bottom: 24px;
+      padding-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .faq-nav::-webkit-scrollbar { display: none; }
+    .faq-navitem {
+      font-size: 0.8125rem;
+      padding: 10px 14px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
     .faq-navitem svg { display: none; }
   }
 
