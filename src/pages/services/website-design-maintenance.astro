@@ -968,24 +968,7 @@ const reviewsRow2 = [
 
     <Footer />
 
-    <script>
-      (function () {
-        var nav = document.querySelector('.faq-nav');
-        var arrL = document.querySelector('.faq-arr-l');
-        var arrR = document.querySelector('.faq-arr-r');
-        if (!nav || !arrL || !arrR) return;
 
-        function update() {
-          arrL.classList.toggle('faq-arr--hidden', nav.scrollLeft <= 2);
-          arrR.classList.toggle('faq-arr--hidden', nav.scrollLeft + nav.clientWidth >= nav.scrollWidth - 2);
-        }
-
-        arrL.addEventListener('click', function () { nav.scrollBy({ left: -160, behavior: 'smooth' }); });
-        arrR.addEventListener('click', function () { nav.scrollBy({ left: 160, behavior: 'smooth' }); });
-        nav.addEventListener('scroll', update, { passive: true });
-        update();
-      })();
-    </script>
   </body>
 </html>
 
@@ -1324,9 +1307,10 @@ const reviewsRow2 = [
   #faqtab5:checked ~ .faq-grid .faq-nav label[for="faqtab5"],
   #faqtab6:checked ~ .faq-grid .faq-nav label[for="faqtab6"] {
     background: #fff;
-    color: #d91e45;
-    font-weight: 600;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    color: #1a1c1e;
+    font-weight: 700;
+    border: 1.5px solid #e0e0e0;
+    box-shadow: none;
   }
   /* Panel visibility */
   .faq-panel { display: none; }
@@ -1382,68 +1366,40 @@ const reviewsRow2 = [
     line-height: 1.8;
     margin: 0;
   }
-  /* Arrow buttons (mobile only) */
+  /* Arrow buttons — hidden, kept in markup but unused */
   .faq-nav-outer { display: block; }
-  .faq-arr { display: none; }
+  .faq-arr { display: none !important; }
 
   /* FAQ responsive */
   @media (max-width: 768px) {
     .faq-grid { grid-template-columns: 1fr !important; }
-    .faq-nav-outer {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 24px;
-    }
-    .faq-arr {
-      display: flex;
-      flex-shrink: 0;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      border: 1.5px solid #e0e0e0;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      cursor: pointer;
-      color: #1a1c1e;
-      padding: 0;
-      transition: opacity 0.2s;
-    }
-    .faq-arr.faq-arr--hidden { opacity: 0.2; pointer-events: none; }
     .faq-nav {
-      flex: 1;
-      min-width: 0;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      overflow-x: auto;
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      flex-direction: unset;
       position: static;
       gap: 8px;
-      margin-bottom: 0;
-      padding: 4px 0;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
+      margin-bottom: 24px;
     }
-    .faq-nav::-webkit-scrollbar { display: none; }
     .faq-navitem {
       font-size: 0.8125rem;
-      padding: 10px 14px;
-      white-space: nowrap;
-      flex-shrink: 0;
+      padding: 10px 12px;
+      justify-content: center;
+      text-align: center;
     }
     .faq-navitem svg { display: none; }
-    /* Active tab: solid brand color on mobile so it's unmissable */
-    #faqtab1:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab1"],
-    #faqtab2:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab2"],
-    #faqtab3:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab3"],
-    #faqtab4:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab4"],
-    #faqtab5:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab5"],
-    #faqtab6:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab6"] {
-      background: #d91e45;
-      color: #fff;
-      box-shadow: 0 3px 10px rgba(217,30,69,0.3);
-      font-weight: 600;
+    /* Active tab: white bg + light grey border */
+    #faqtab1:checked ~ .faq-grid .faq-nav label[for="faqtab1"],
+    #faqtab2:checked ~ .faq-grid .faq-nav label[for="faqtab2"],
+    #faqtab3:checked ~ .faq-grid .faq-nav label[for="faqtab3"],
+    #faqtab4:checked ~ .faq-grid .faq-nav label[for="faqtab4"],
+    #faqtab5:checked ~ .faq-grid .faq-nav label[for="faqtab5"],
+    #faqtab6:checked ~ .faq-grid .faq-nav label[for="faqtab6"] {
+      background: #fff;
+      color: #1a1c1e;
+      border: 1.5px solid #e0e0e0;
+      box-shadow: none;
+      font-weight: 700;
     }
   }
 
