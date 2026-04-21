@@ -686,14 +686,22 @@ const reviewsRow2 = [
 
           <div class="faq-grid">
             <!-- Left nav -->
-            <nav class="faq-nav">
-              <label for="faqtab1" class="faq-navitem">The Process <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
-              <label for="faqtab2" class="faq-navitem">Design &amp; Performance <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
-              <label for="faqtab3" class="faq-navitem">Ownership &amp; Hosting <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
-              <label for="faqtab4" class="faq-navitem">Pricing &amp; Payment <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
-              <label for="faqtab5" class="faq-navitem">AI &amp; How We Build <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
-              <label for="faqtab6" class="faq-navitem">Results &amp; Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
-            </nav>
+            <div class="faq-nav-outer">
+              <button class="faq-arr faq-arr-l" aria-label="Scroll left" tabindex="-1">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <nav class="faq-nav">
+                <label for="faqtab1" class="faq-navitem">The Process <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
+                <label for="faqtab2" class="faq-navitem">Design &amp; Performance <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
+                <label for="faqtab3" class="faq-navitem">Ownership &amp; Hosting <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
+                <label for="faqtab4" class="faq-navitem">Pricing &amp; Payment <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
+                <label for="faqtab5" class="faq-navitem">AI &amp; How We Build <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
+                <label for="faqtab6" class="faq-navitem">Results &amp; Support <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></label>
+              </nav>
+              <button class="faq-arr faq-arr-r" aria-label="Scroll right" tabindex="-1">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
 
             <!-- Right panels -->
             <div class="faq-panels">
@@ -959,6 +967,25 @@ const reviewsRow2 = [
     </section>
 
     <Footer />
+
+    <script>
+      (function () {
+        var nav = document.querySelector('.faq-nav');
+        var arrL = document.querySelector('.faq-arr-l');
+        var arrR = document.querySelector('.faq-arr-r');
+        if (!nav || !arrL || !arrR) return;
+
+        function update() {
+          arrL.classList.toggle('faq-arr--hidden', nav.scrollLeft <= 2);
+          arrR.classList.toggle('faq-arr--hidden', nav.scrollLeft + nav.clientWidth >= nav.scrollWidth - 2);
+        }
+
+        arrL.addEventListener('click', function () { nav.scrollBy({ left: -160, behavior: 'smooth' }); });
+        arrR.addEventListener('click', function () { nav.scrollBy({ left: 160, behavior: 'smooth' }); });
+        nav.addEventListener('scroll', update, { passive: true });
+        update();
+      })();
+    </script>
   </body>
 </html>
 
@@ -1355,9 +1382,36 @@ const reviewsRow2 = [
     line-height: 1.8;
     margin: 0;
   }
+  /* Arrow buttons (mobile only) */
+  .faq-nav-outer { position: relative; }
+  .faq-arr {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1.5px solid #e0e0e0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #1a1c1e;
+    transition: opacity 0.2s, background 0.2s;
+    padding: 0;
+  }
+  .faq-arr:hover { background: #f9f9f9; }
+  .faq-arr.faq-arr--hidden { opacity: 0; pointer-events: none; }
+  .faq-arr-l { left: 0; }
+  .faq-arr-r { right: 0; }
+
   /* FAQ responsive */
   @media (max-width: 768px) {
     .faq-grid { grid-template-columns: 1fr !important; }
+    .faq-arr { display: flex; }
     .faq-nav {
       flex-direction: row;
       flex-wrap: nowrap;
@@ -1365,7 +1419,7 @@ const reviewsRow2 = [
       position: static;
       gap: 8px;
       margin-bottom: 24px;
-      padding-bottom: 4px;
+      padding: 4px 36px 4px;
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
     }
@@ -1377,6 +1431,18 @@ const reviewsRow2 = [
       flex-shrink: 0;
     }
     .faq-navitem svg { display: none; }
+    /* Active tab: solid brand color on mobile so it's unmissable */
+    #faqtab1:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab1"],
+    #faqtab2:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab2"],
+    #faqtab3:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab3"],
+    #faqtab4:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab4"],
+    #faqtab5:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab5"],
+    #faqtab6:checked ~ .faq-grid .faq-nav-outer .faq-nav label[for="faqtab6"] {
+      background: #d91e45;
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(217,30,69,0.3);
+      font-weight: 600;
+    }
   }
 
   /* ── Responsive grids ── */
