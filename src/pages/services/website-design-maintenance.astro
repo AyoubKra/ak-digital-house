@@ -605,7 +605,7 @@ const reviewsRow2 = [
     </section>
 
 <!-- ─── 9. TESTIMONIALS ─── -->
-    <section style="background:#0f0f12; padding:88px 0; overflow:hidden;">
+    <section style="background:#1A1C1E; padding:88px 0; overflow:hidden;">
       <div style="max-width:1100px; margin:0 auto; padding:0 24px; text-align:center; margin-bottom:56px;">
         <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Client Results</span>
         <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#fff; margin:0;">What Our Clients Say</h2>
@@ -841,7 +841,7 @@ const reviewsRow2 = [
     </section>
 
     <!-- ─── 12. CTA / CONTACT FORM ─── -->
-    <section id="contact" style="background:#f8f8f8; padding:88px 24px;">
+    <section id="contact" style="background:#F9F9F9; padding:88px 24px;">
       <div style="max-width:860px; margin:0 auto;">
         <div style="text-align:center; margin-bottom:48px;">
           <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Get Started</span>
@@ -950,18 +950,41 @@ const reviewsRow2 = [
         </div>
 
         <div class="cities-label">Local Triangle cities we serve:</div>
-        <div class="cities-grid">
-          {[
-            'Raleigh', 'Cary', 'Durham', 'Morrisville',
-            'Apex', 'Wake Forest', 'Garner', 'Knightdale',
-            'Holly Springs', 'Fuquay-Varina', 'Rolesville', 'Wendell',
-            'Zebulon', 'Clayton'
-          ].map(city => (
-            <div class="city-tag">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
-              {city}
+
+        <div class="cities-scroll">
+          <!-- Row 1: scroll left -->
+          <div class="city-row-wrap">
+            <div class="city-row cr-l cr-s1">
+              {['Raleigh','Cary','Durham','Morrisville','Apex','Raleigh','Cary','Durham','Morrisville','Apex'].map(city => (
+                <span class="city-tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
+                  {city}
+                </span>
+              ))}
             </div>
-          ))}
+          </div>
+          <!-- Row 2: scroll right -->
+          <div class="city-row-wrap">
+            <div class="city-row cr-r cr-s2">
+              {['Wake Forest','Garner','Knightdale','Holly Springs','Fuquay-Varina','Wake Forest','Garner','Knightdale','Holly Springs','Fuquay-Varina'].map(city => (
+                <span class="city-tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
+                  {city}
+                </span>
+              ))}
+            </div>
+          </div>
+          <!-- Row 3: scroll left -->
+          <div class="city-row-wrap">
+            <div class="city-row cr-l cr-s3">
+              {['Rolesville','Wendell','Zebulon','Clayton','Rolesville','Wendell','Zebulon','Clayton'].map(city => (
+                <span class="city-tag">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
+                  {city}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -993,7 +1016,7 @@ const reviewsRow2 = [
     color: #d91e45;
     font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     padding: 6px 16px;
     border-radius: 100px;
@@ -1089,7 +1112,7 @@ const reviewsRow2 = [
 
   /* ── Sub-services section ── */
   .sub-services-section {
-    background: #f8f8f8;
+    background: #F9F9F9;
     padding: 88px 24px;
   }
   .sub-services-inner {
@@ -1407,9 +1430,14 @@ const reviewsRow2 = [
   @media (max-width: 900px) {
     .sub-grid { grid-template-columns: 1fr !important; }
     .sub-services-section { padding: 64px 24px; }
-    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
-    .hero-image-wrap { order: -1; }
-    .hero-image { max-width: 380px; margin: 0 auto; }
+    .hero-section { padding: 32px 24px 64px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 8px; }
+    .hero-image-wrap { order: -1; width: 100%; }
+    .hero-image { max-width: 100%; width: 100%; margin: 0 auto; }
+    .hero-content { text-align: center; }
+    .hero-buttons { justify-content: center; }
+    .hero-badges { justify-content: center; flex-wrap: wrap; gap: 10px; }
+    .badge { font-size: 0.75rem; gap: 5px; }
     .two-col-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
     .pkg-grid { grid-template-columns: 1fr !important; }
     .guarantee-grid { grid-template-columns: repeat(2, 1fr) !important; }
@@ -1424,7 +1452,7 @@ const reviewsRow2 = [
   }
 /* ── Service Area ── */
   .service-area {
-    background: #F9F9F9;
+    background: #ffffff;
     padding: 80px 24px;
     border-top: 1px solid #E8E8E8;
   }
@@ -1458,13 +1486,25 @@ const reviewsRow2 = [
     margin: 0 auto;
     line-height: 1.7;
   }
-  .cities-grid {
+  /* City scrolling rows */
+  @keyframes cr-scroll-left  { from{transform:translateX(0)}    to{transform:translateX(-50%)} }
+  @keyframes cr-scroll-right { from{transform:translateX(-50%)} to{transform:translateX(0)}    }
+
+  .cities-scroll { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; overflow: hidden; }
+  .city-row-wrap { overflow: hidden; }
+  .city-row {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
-    margin-bottom: 24px;
+    width: max-content;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
+  .cr-l { animation-name: cr-scroll-left; }
+  .cr-r { animation-name: cr-scroll-right; }
+  .cr-s1 { animation-duration: 22s; }
+  .cr-s2 { animation-duration: 28s; }
+  .cr-s3 { animation-duration: 18s; }
+
   .city-tag {
     display: inline-flex;
     align-items: center;
@@ -1476,11 +1516,8 @@ const reviewsRow2 = [
     font-size: 0.875rem;
     font-weight: 500;
     color: #242729;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  }
-  .city-tag:hover {
-    border-color: #D91E45;
-    box-shadow: 0 2px 8px rgba(217,30,69,0.1);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   .cities-label {
     text-align: center;
@@ -1507,6 +1544,7 @@ const reviewsRow2 = [
     border: 1px solid #E8E8E8;
     border-radius: 12px;
     padding: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   }
   .nc-coverage-item svg { flex-shrink: 0; margin-top: 2px; }
   .nc-item-title { font-size: 0.9375rem; font-weight: 700; color: #1A1C1E; margin: 0 0 4px; }
@@ -1988,7 +2026,7 @@ const reviewsRow2 = [
   }
 
   .stack-section {
-    background: #f8f8f8;
+    background: #F9F9F9;
     padding: 88px 0;
   }
   .stack-inner {
@@ -2055,11 +2093,11 @@ const reviewsRow2 = [
   }
   .mq-fade-l {
     left: 0;
-    background: linear-gradient(to right, #f8f8f8, transparent);
+    background: linear-gradient(to right, #F9F9F9, transparent);
   }
   .mq-fade-r {
     right: 0;
-    background: linear-gradient(to left, #f8f8f8, transparent);
+    background: linear-gradient(to left, #F9F9F9, transparent);
   }
 
   /* Scrolling track */
