@@ -516,51 +516,91 @@ const reviewsRow2 = [
       </div>
     </section>
 
-        <!-- ─── 7. TECHNOLOGIES ─── -->
-    <section style="background:#fff; padding:72px 24px;">
-      <div style="max-width:1100px; margin:0 auto;">
-        <div style="text-align:center; margin-bottom:48px;">
-          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Technologies</span>
-          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0 0 16px;">Built with the Right Tools for Every Project</h2>
-          <p style="font-size:0.9375rem; color:#6b7280; max-width:520px; margin:0 auto; line-height:1.75;">We combine proven technologies to deliver fast, reliable, and scalable websites — chosen specifically for your project type and goals.</p>
+    <!-- ─── 7. TECHNOLOGIES ─── -->
+    <section class="stack-section">
+      <div class="stack-inner">
+
+        <!-- Header -->
+        <div class="stack-header">
+          <span class="stack-eyebrow">Our Stack</span>
+          <h2 class="stack-h2">The Tools Behind Every Build</h2>
+          <p class="stack-sub">We choose every tool for one reason — it delivers a faster, more reliable, better-performing website for your business.</p>
         </div>
 
-        <div style="display:flex; flex-direction:column; gap:28px;">
-
-          <!-- Row 1: Primary Build Stack -->
-          <div>
-            <p style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#9ca3af; text-align:center; margin:0 0 14px;">Primary Build Stack</p>
-            <div class="tech-row">
-              <div class="tech-pill"><span class="tech-icon">⚡</span>Astro</div>
-              <div class="tech-pill"><span class="tech-icon">🎨</span>Tailwind CSS</div>
-              <div class="tech-pill"><span class="tech-icon">🌐</span>WordPress</div>
-              <div class="tech-pill"><span class="tech-icon">🛒</span>WooCommerce</div>
+        <!-- Row 1: Build & Development -->
+        <div class="stack-category">
+          <p class="stack-label">Build &amp; Development</p>
+          <div class="mq-outer">
+            <div class="mq-fade-l"></div>
+            <div class="mq-fade-r"></div>
+            <div class="mq-track mq-left mq-35">
+              <div class="mq-badge"><img src="/tech/astro.svg" alt="Astro" width="64" height="32" class="mq-logo" /><span class="mq-name">Astro</span></div>
+              <div class="mq-badge"><img src="/tech/tailwind.svg" alt="Tailwind CSS" width="64" height="32" class="mq-logo" /><span class="mq-name">Tailwind CSS</span></div>
+              <div class="mq-badge"><img src="/tech/wordpress.svg" alt="WordPress" width="64" height="32" class="mq-logo" /><span class="mq-name">WordPress</span></div>
+              <div class="mq-badge"><img src="/tech/Elementor.svg" alt="Elementor" width="64" height="32" class="mq-logo" /><span class="mq-name">Elementor</span></div>
+              <div class="mq-badge"><img src="/tech/woocommerce.svg" alt="WooCommerce" width="64" height="32" class="mq-logo" /><span class="mq-name">WooCommerce</span></div>
+              <div class="mq-badge"><img src="/tech/vercel.svg" alt="Vercel" width="64" height="32" class="mq-logo" /><span class="mq-name">Vercel</span></div>
+              <div class="mq-badge"><img src="/tech/netlify.svg" alt="Netlify" width="64" height="32" class="mq-logo" /><span class="mq-name">Netlify</span></div>
+              <div class="mq-badge"><img src="/tech/cloudways.svg" alt="Cloudways" width="64" height="32" class="mq-logo" /><span class="mq-name">Cloudways</span></div>
+              <!-- duplicate for seamless loop -->
+              <div class="mq-badge"><img src="/tech/astro.svg" alt="Astro" width="64" height="32" class="mq-logo" /><span class="mq-name">Astro</span></div>
+              <div class="mq-badge"><img src="/tech/tailwind.svg" alt="Tailwind CSS" width="64" height="32" class="mq-logo" /><span class="mq-name">Tailwind CSS</span></div>
+              <div class="mq-badge"><img src="/tech/wordpress.svg" alt="WordPress" width="64" height="32" class="mq-logo" /><span class="mq-name">WordPress</span></div>
+              <div class="mq-badge"><img src="/tech/Elementor.svg" alt="Elementor" width="64" height="32" class="mq-logo" /><span class="mq-name">Elementor</span></div>
+              <div class="mq-badge"><img src="/tech/woocommerce.svg" alt="WooCommerce" width="64" height="32" class="mq-logo" /><span class="mq-name">WooCommerce</span></div>
+              <div class="mq-badge"><img src="/tech/vercel.svg" alt="Vercel" width="64" height="32" class="mq-logo" /><span class="mq-name">Vercel</span></div>
+              <div class="mq-badge"><img src="/tech/netlify.svg" alt="Netlify" width="64" height="32" class="mq-logo" /><span class="mq-name">Netlify</span></div>
+              <div class="mq-badge"><img src="/tech/cloudways.svg" alt="Cloudways" width="64" height="32" class="mq-logo" /><span class="mq-name">Cloudways</span></div>
             </div>
           </div>
-
-          <!-- Row 2: Deployment & Hosting -->
-          <div>
-            <p style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#9ca3af; text-align:center; margin:0 0 14px;">Deployment &amp; Hosting</p>
-            <div class="tech-row">
-              <div class="tech-pill"><span class="tech-icon">▲</span>Vercel</div>
-              <div class="tech-pill"><span class="tech-icon">◆</span>Netlify</div>
-              <div class="tech-pill"><span class="tech-icon">☁️</span>Cloudflare</div>
-              <div class="tech-pill"><span class="tech-icon">⚙️</span>Cloudways</div>
-            </div>
-          </div>
-
-          <!-- Row 3: Integrations & Tools -->
-          <div>
-            <p style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; color:#9ca3af; text-align:center; margin:0 0 14px;">Integrations &amp; Tools</p>
-            <div class="tech-row">
-              <div class="tech-pill tech-pill-muted"><span class="tech-icon">📊</span>Google Analytics</div>
-              <div class="tech-pill tech-pill-muted"><span class="tech-icon">📱</span>Meta Pixel</div>
-              <div class="tech-pill tech-pill-muted"><span class="tech-icon">✉️</span>Formspree</div>
-              <div class="tech-pill tech-pill-muted"><span class="tech-icon">🚀</span>WP Rocket</div>
-            </div>
-          </div>
-
         </div>
+
+        <!-- Row 2: AI & Dev Tools -->
+        <div class="stack-category">
+          <p class="stack-label">AI &amp; Dev Tools</p>
+          <div class="mq-outer">
+            <div class="mq-fade-l"></div>
+            <div class="mq-fade-r"></div>
+            <div class="mq-track mq-right mq-40">
+              <div class="mq-badge"><img src="/tech/claude.svg" alt="Claude AI" width="64" height="32" class="mq-logo" /><span class="mq-name">Claude AI</span></div>
+              <div class="mq-badge"><img src="/tech/github.svg" alt="GitHub" width="64" height="32" class="mq-logo" /><span class="mq-name">GitHub</span></div>
+              <div class="mq-badge"><img src="/tech/cloudflare.svg" alt="Cloudflare" width="64" height="32" class="mq-logo" /><span class="mq-name">Cloudflare</span></div>
+              <div class="mq-badge"><img src="/tech/stripe.svg" alt="Stripe" width="64" height="32" class="mq-logo" /><span class="mq-name">Stripe</span></div>
+              <div class="mq-badge"><img src="/tech/snipcart.svg" alt="Snipcart" width="64" height="32" class="mq-logo" /><span class="mq-name">Snipcart</span></div>
+              <!-- duplicate for seamless loop -->
+              <div class="mq-badge"><img src="/tech/claude.svg" alt="Claude AI" width="64" height="32" class="mq-logo" /><span class="mq-name">Claude AI</span></div>
+              <div class="mq-badge"><img src="/tech/github.svg" alt="GitHub" width="64" height="32" class="mq-logo" /><span class="mq-name">GitHub</span></div>
+              <div class="mq-badge"><img src="/tech/cloudflare.svg" alt="Cloudflare" width="64" height="32" class="mq-logo" /><span class="mq-name">Cloudflare</span></div>
+              <div class="mq-badge"><img src="/tech/stripe.svg" alt="Stripe" width="64" height="32" class="mq-logo" /><span class="mq-name">Stripe</span></div>
+              <div class="mq-badge"><img src="/tech/snipcart.svg" alt="Snipcart" width="64" height="32" class="mq-logo" /><span class="mq-name">Snipcart</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Analytics & Tracking -->
+        <div class="stack-category">
+          <p class="stack-label">Analytics &amp; Tracking</p>
+          <div class="mq-outer">
+            <div class="mq-fade-l"></div>
+            <div class="mq-fade-r"></div>
+            <div class="mq-track mq-left mq-45">
+              <div class="mq-badge"><img src="/tech/GA4_Logo.svg" alt="Google Analytics" width="64" height="32" class="mq-logo" /><span class="mq-name">Google Analytics</span></div>
+              <div class="mq-badge"><img src="/tech/google-tag-manager.svg" alt="Google Tag Manager" width="64" height="32" class="mq-logo" /><span class="mq-name">Tag Manager</span></div>
+              <div class="mq-badge"><img src="/tech/google-search-console.svg" alt="Google Search Console" width="64" height="32" class="mq-logo" /><span class="mq-name">Search Console</span></div>
+              <div class="mq-badge"><img src="/tech/meta.svg" alt="Meta Pixel" width="64" height="32" class="mq-logo" /><span class="mq-name">Meta Pixel</span></div>
+              <div class="mq-badge"><img src="/tech/tiktok.svg" alt="TikTok Pixel" width="64" height="32" class="mq-logo" /><span class="mq-name">TikTok Pixel</span></div>
+              <!-- duplicate for seamless loop -->
+              <div class="mq-badge"><img src="/tech/GA4_Logo.svg" alt="Google Analytics" width="64" height="32" class="mq-logo" /><span class="mq-name">Google Analytics</span></div>
+              <div class="mq-badge"><img src="/tech/google-tag-manager.svg" alt="Google Tag Manager" width="64" height="32" class="mq-logo" /><span class="mq-name">Tag Manager</span></div>
+              <div class="mq-badge"><img src="/tech/google-search-console.svg" alt="Google Search Console" width="64" height="32" class="mq-logo" /><span class="mq-name">Search Console</span></div>
+              <div class="mq-badge"><img src="/tech/meta.svg" alt="Meta Pixel" width="64" height="32" class="mq-logo" /><span class="mq-name">Meta Pixel</span></div>
+              <div class="mq-badge"><img src="/tech/tiktok.svg" alt="TikTok Pixel" width="64" height="32" class="mq-logo" /><span class="mq-name">TikTok Pixel</span></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="stack-note">Our stack evolves with every project. We always recommend the right tool for your specific needs — not the most expensive one.</p>
+
       </div>
     </section>
 
@@ -1897,44 +1937,154 @@ const reviewsRow2 = [
     margin: 0 auto;
   }
 
-  /* ── Technologies ── */
-  .tech-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
+  /* ── Technologies / Stack Marquee ── */
+  @keyframes mq-scroll-left {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
   }
-  .tech-pill {
-    display: inline-flex;
+  @keyframes mq-scroll-right {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+  }
+
+  .stack-section {
+    background: #f8f8f8;
+    padding: 88px 0;
+  }
+  .stack-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .stack-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .stack-eyebrow {
+    display: inline-block;
+    background: rgba(217, 30, 69, 0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  .stack-h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    line-height: 1.25;
+    margin: 0 0 14px;
+  }
+  .stack-sub {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.75;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .stack-category {
+    margin-bottom: 32px;
+  }
+  .stack-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #6b7280;
+    text-align: center;
+    margin: 0 0 14px;
+  }
+
+  /* Marquee outer: clips overflow, holds fades */
+  .mq-outer {
+    position: relative;
+    overflow: hidden;
+  }
+  .mq-fade-l,
+  .mq-fade-r {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 96px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .mq-fade-l {
+    left: 0;
+    background: linear-gradient(to right, #f8f8f8, transparent);
+  }
+  .mq-fade-r {
+    right: 0;
+    background: linear-gradient(to left, #f8f8f8, transparent);
+  }
+
+  /* Scrolling track */
+  .mq-track {
+    display: flex;
+    width: max-content;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .mq-left  { animation-name: mq-scroll-left; }
+  .mq-right { animation-name: mq-scroll-right; }
+  .mq-35 { animation-duration: 35s; }
+  .mq-40 { animation-duration: 40s; }
+  .mq-45 { animation-duration: 45s; }
+  .mq-outer:hover .mq-track { animation-play-state: paused; }
+
+  /* Each logo badge */
+  .mq-badge {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding: 12px 24px;
-    background: #f9f9f9;
-    border: 1.5px solid #e5e7eb;
-    border-radius: 100px;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: #1a1c1e;
-    transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px 24px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    transition: box-shadow 0.3s, transform 0.3s;
   }
-  .tech-pill:hover {
-    border-color: #d91e45;
-    box-shadow: 0 4px 12px rgba(217,30,69,0.12);
+  .mq-badge:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
   }
-  .tech-pill-muted {
-    color: #6b7280;
-    border-color: #f0f0f0;
-    background: #f9f9f9;
+  .mq-logo {
+    height: 32px;
+    width: auto;
+    display: block;
+    filter: grayscale(1);
+    transition: filter 0.3s;
+  }
+  .mq-badge:hover .mq-logo {
+    filter: grayscale(0);
+  }
+  .mq-name {
+    font-size: 0.6875rem;
     font-weight: 500;
+    color: #6b7280;
+    text-align: center;
+    white-space: nowrap;
   }
-  .tech-pill-muted:hover {
-    border-color: #d91e45;
-    box-shadow: 0 4px 12px rgba(217,30,69,0.08);
+
+  .stack-note {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-align: center;
+    margin: 32px 0 0;
+    line-height: 1.7;
   }
-  .tech-icon {
-    font-size: 1.125rem;
-    line-height: 1;
+
+  /* Mobile: faster scroll */
+  @media (max-width: 640px) {
+    .stack-section { padding: 64px 0; }
+    .mq-35, .mq-40, .mq-45 { animation-duration: 20s; }
+    .mq-fade-l, .mq-fade-r { width: 48px; }
   }
 
 </style>
