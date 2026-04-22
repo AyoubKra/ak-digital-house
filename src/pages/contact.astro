@@ -97,12 +97,14 @@ import Footer from '../components/ui/Footer.astro';
               <h2 class="form-heading">Send Us a Message</h2>
               <p class="form-subheading">Fill out the form and we'll get back to you within 24–72 hours — usually the same day.</p>
 
-              <form id="contact-form" novalidate>
+              <form id="contact-form" name="contact" method="POST" action="/thank-you" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+
+                <input type="hidden" name="form-name" value="contact" />
 
                 <!-- Honeypot anti-spam (hidden from real users) -->
                 <div class="hp-field" aria-hidden="true">
-                  <label for="website">Website</label>
-                  <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+                  <label for="bot-field">Website</label>
+                  <input type="text" id="bot-field" name="bot-field" tabindex="-1" autocomplete="off" />
                 </div>
 
                 <!-- Name + Company row -->
@@ -352,7 +354,7 @@ import Footer from '../components/ui/Footer.astro';
     e.preventDefault();
 
     // Honeypot check — if filled, it's a bot
-    const honeypot = (document.getElementById('website') as HTMLInputElement).value;
+    const honeypot = (document.getElementById('bot-field') as HTMLInputElement).value;
     if (honeypot) return;
 
     let valid = true;
@@ -382,11 +384,7 @@ import Footer from '../components/ui/Footer.astro';
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
 
-    // Replace the line below with Formspree, Netlify Forms, or your API endpoint
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
-    formContainer.hidden = true;
-    successMsg.removeAttribute('hidden');
+    form.submit();
   });
 </script>
 

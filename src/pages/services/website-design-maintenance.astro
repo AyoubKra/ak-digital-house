@@ -851,12 +851,15 @@ const reviewsRow2 = [
 
         <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:48px 40px;">
           <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
+            name="web-design-contact"
             method="POST"
+            action="/thank-you"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
             style="display:flex; flex-direction:column; gap:20px;"
           >
-            <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
-            <input type="hidden" name="_subject" value="New Web Design Inquiry — AK Digital House" />
+            <input type="hidden" name="form-name" value="web-design-contact" />
+            <p hidden><input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></p>
 
             <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
               <div>
