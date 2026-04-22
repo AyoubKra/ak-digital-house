@@ -11,6 +11,10 @@ export default defineConfig({
   site: 'https://akdigitalhouse.com',
   integrations: [mdx(), sitemap()],
 
+  build: {
+    inlineStylesheets: 'always',
+  },
+
   fonts: [
       {
           provider: fontProviders.local(),
