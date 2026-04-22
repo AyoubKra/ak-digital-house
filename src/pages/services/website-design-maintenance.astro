@@ -952,39 +952,21 @@ const reviewsRow2 = [
         <div class="cities-label">Local Triangle cities we serve:</div>
 
         <div class="cities-scroll">
-          <!-- Row 1: scroll left -->
-          <div class="city-row-wrap">
-            <div class="city-row cr-l cr-s1">
-              {['Raleigh','Cary','Durham','Morrisville','Apex','Raleigh','Cary','Durham','Morrisville','Apex'].map(city => (
-                <span class="city-tag">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
-                  {city}
-                </span>
-              ))}
+          {[
+            { dir: 'cr-l', speed: 'cr-s1', cities: ['Raleigh','Cary','Durham','Morrisville','Apex','Wake Forest','Garner','Knightdale','Holly Springs','Fuquay-Varina','Rolesville','Wendell','Zebulon','Clayton'] },
+            { dir: 'cr-r', speed: 'cr-s2', cities: ['Clayton','Zebulon','Wendell','Rolesville','Fuquay-Varina','Holly Springs','Knightdale','Garner','Wake Forest','Apex','Morrisville','Durham','Cary','Raleigh'] },
+          ].map(row => (
+            <div class="city-row-wrap">
+              <div class={`city-row ${row.dir} ${row.speed}`}>
+                {[...row.cities, ...row.cities].map((city, i) => (
+                  <span class={`city-tag${i >= row.cities.length ? ' city-dup' : ''}`}>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#D91E45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    {city}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-          <!-- Row 2: scroll right -->
-          <div class="city-row-wrap">
-            <div class="city-row cr-r cr-s2">
-              {['Wake Forest','Garner','Knightdale','Holly Springs','Fuquay-Varina','Wake Forest','Garner','Knightdale','Holly Springs','Fuquay-Varina'].map(city => (
-                <span class="city-tag">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
-                  {city}
-                </span>
-              ))}
-            </div>
-          </div>
-          <!-- Row 3: scroll left -->
-          <div class="city-row-wrap">
-            <div class="city-row cr-l cr-s3">
-              {['Rolesville','Wendell','Zebulon','Clayton','Rolesville','Wendell','Zebulon','Clayton'].map(city => (
-                <span class="city-tag">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="#D91E45"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/></svg>
-                  {city}
-                </span>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -1513,11 +1495,17 @@ const reviewsRow2 = [
     margin: 0 auto;
     line-height: 1.7;
   }
-  /* City scrolling rows */
+  /* City scrolling rows — all screen sizes */
   @keyframes cr-scroll-left  { from{transform:translateX(0)}    to{transform:translateX(-50%)} }
   @keyframes cr-scroll-right { from{transform:translateX(-50%)} to{transform:translateX(0)}    }
 
-  .cities-scroll { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; overflow: hidden; }
+  .cities-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
   .city-row-wrap { overflow: hidden; }
   .city-row {
     display: flex;
@@ -1526,11 +1514,11 @@ const reviewsRow2 = [
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+  .city-dup { display: inline-flex; }
   .cr-l { animation-name: cr-scroll-left; }
   .cr-r { animation-name: cr-scroll-right; }
-  .cr-s1 { animation-duration: 22s; }
-  .cr-s2 { animation-duration: 28s; }
-  .cr-s3 { animation-duration: 18s; }
+  .cr-s1 { animation-duration: 40s; }
+  .cr-s2 { animation-duration: 50s; }
 
   .city-tag {
     display: inline-flex;
