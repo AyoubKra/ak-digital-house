@@ -12,28 +12,14 @@ import Footer from '../components/ui/Footer.astro';
       description="We received your message and will get back to you within 1 business day."
     />
 
-    <!-- Meta Pixel: Lead conversion -->
+    <!-- Conversion event — picked up by GTM triggers for GA4, Meta, and TikTok -->
     <script is:inline>
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'Lead');
-      }
-    </script>
-
-    <!-- TikTok Pixel: Lead conversion -->
-    <script is:inline>
-      if (typeof ttq !== 'undefined') {
-        ttq.track('SubmitForm');
-      }
-    </script>
-
-    <!-- GA4: form_submission event (requires GA4 to be installed) -->
-    <script is:inline>
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'form_submission', {
-          event_category: 'Contact',
-          event_label: 'Web Design Inquiry'
-        });
-      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'form_submission',
+        event_category: 'Contact',
+        event_label: 'Web Design Inquiry'
+      });
     </script>
   </head>
   <body>
