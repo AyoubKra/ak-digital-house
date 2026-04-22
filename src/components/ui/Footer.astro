@@ -1,7 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import logoWhite from '../../assets/logo-white.png';
-
 const year = new Date().getFullYear();
 
 const menuLinks = [
@@ -32,7 +29,7 @@ const navLinks = [
     <!-- Brand column -->
     <div class="footer-brand">
       <a href="/" class="footer-logo">
-        <Image src={logoWhite} alt="AK Digital House" class="footer-logo-img" width={209} height={96} />
+        <img src="/logo-white.png" alt="AK Digital House" class="footer-logo-img" width="209" height="96" />
       </a>
       <p class="footer-tagline">
         Driving measurable growth for established brands through precision digital marketing and data-driven strategy.

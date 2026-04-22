@@ -1,7 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import logoColor from '../../assets/logo-color.png';
-
 const services = [
   { label: 'Web Design & Development', href: '/services/website-design-development' },
   { label: 'Paid Ads & Lead Generation', href: '/services/paid-ads-lead-generation' },
@@ -19,7 +16,7 @@ const resources = [
 <header class="nav-header">
   <div class="nav-inner">
     <a href="/" class="nav-logo">
-      <Image src={logoColor} alt="AK Digital House" class="nav-logo-img" width={181} height={80} />
+      <img src="/logo-color.png" alt="AK Digital House" class="nav-logo-img" width="181" height="80" />
     </a>
 
     <nav class="nav-links" id="nav-links">
