@@ -98,6 +98,10 @@ const reviewsRow2 = [
           <p class="hero-desc">
             Your next customer just landed on your website, waited 6 seconds for it to load, and left. Right now, that same customer is booking your competitor. We build fast, conversion-ready websites for Raleigh small businesses and startups — live in 3 weeks or less, built to turn every visitor into a booked appointment or a sale.
           </p>
+          <!-- Mobile-only image: shown between desc and buttons on small screens -->
+          <div class="hero-image-wrap hero-image-mobile">
+            <img src="/Web-Design-Development-pic-opt.png" alt="Web Design & Development" class="hero-image" loading="lazy" decoding="async" width="420" height="504" />
+          </div>
           <div class="hero-buttons">
             <a href="#contact" class="btn-primary">Launch My Website →</a>
             <a href="#services" class="btn-secondary">View Pricing ↓</a>
@@ -117,6 +121,10 @@ const reviewsRow2 = [
               <span>1 Year Free Maintenance</span>
             </div>
           </div>
+        </div>
+        <!-- Right: Hero Image (desktop only) -->
+        <div class="hero-image-wrap hero-image-desktop">
+          <img src="/Web-Design-Development-pic-opt.png" alt="Web Design & Development" class="hero-image" loading="lazy" decoding="async" width="420" height="504" />
         </div>
       </div>
     </section>
@@ -230,7 +238,7 @@ const reviewsRow2 = [
                 </div>
                 <div class="wdmc-text">
                   <h3 class="wdmc-title">Launched in 3 Weeks or Less</h3>
-                  <p class="wdmc-body">From strategy call to live website in 21 days or less — guaranteed from the moment the contract is signed.</p>
+                  <p class="wdmc-body">In the rare event we miss the 21-day delivery window due to our delay, we’ll apply a 10% credit to your final invoice. This timeline assumes timely client feedback (within 48 hours) and no changes to the agreed scope.</p>
                 </div>
               </div>
             </div>
@@ -281,7 +289,7 @@ const reviewsRow2 = [
                 </div>
                 <div class="wdmc-text">
                   <h3 class="wdmc-title">95+ Google Lighthouse Score</h3>
-                  <p class="wdmc-body">Every custom static site and landing page scores 95 or higher on Google Lighthouse. Verified before handover, no exceptions.</p>
+                  <p class="wdmc-body">We deliver every site with a 95+ Lighthouse score — or we keep optimizing it for free until it meets the standard.</p>
                 </div>
               </div>
             </div>
@@ -317,6 +325,7 @@ const reviewsRow2 = [
           <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">What We Build</span>
           <h2 class="sub-h2">One Website Type Won't Fit Every Goal. We Build the Right One for Yours.</h2>
           <p class="sub-subtext">Whether you need a campaign page that converts, a store that sells, or a brand presence that ranks — we scope the build around the outcome, not a template.</p>
+          <p class="sub-subtext">We're currently building our Raleigh portfolio, so pricing is lower than it will be long-term. Early clients lock in these rates.</p>
         </div>
 
         <div class="sub-grid">
@@ -324,7 +333,7 @@ const reviewsRow2 = [
           <!-- Card 1 — Landing Pages -->
           <div class="sub-card">
             <div class="sub-card-top">
-              <span class="sub-card-price">Starting from <strong>$1,000</strong></span>
+              <span class="sub-card-price">Starting from <strong>$1,500</strong></span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
             </div>
             <h3 class="sub-card-title">High-Converting Landing Pages</h3>
@@ -348,7 +357,7 @@ const reviewsRow2 = [
           <!-- Card 2 — E-Commerce -->
           <div class="sub-card">
             <div class="sub-card-top">
-              <span class="sub-card-price">Starting from <strong>$1,500</strong></span>
+              <span class="sub-card-price">Starting from <strong>$3,500</strong></span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
             </div>
             <h3 class="sub-card-title">Results-Driven E-Commerce</h3>
@@ -372,7 +381,7 @@ const reviewsRow2 = [
           <!-- Card 3 — Brand & Authority Static Sites -->
           <div class="sub-card">
             <div class="sub-card-top">
-              <span class="sub-card-price">Starting from <strong>$1,000</strong></span>
+              <span class="sub-card-price">Starting from <strong>$2,500</strong></span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v8h4"/><path d="M18 9h2a2 2 0 0 1 2 2v11h-4"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
             </div>
             <h3 class="sub-card-title">Brand &amp; Authority Static Sites</h3>
@@ -589,12 +598,94 @@ const reviewsRow2 = [
     <!-- ─── MID-PAGE CTA ─── -->
     <section class="midcta-section">
       <div class="midcta-inner">
-        <p class="midcta-eyebrow">Ready to Get Started?</p>
-        <h2 class="midcta-heading">Let's Build a Website That Works as Hard as You Do</h2>
-        <p class="midcta-sub">Most projects go live in 3 weeks or less. No fluff, no bloat — just a fast, conversion-ready site built around your goals.</p>
+
+        <p class="midcta-eyebrow">Here's How Your Website Makes You Money</p>
+        <h2 class="midcta-heading">Step by Step.</h2>
+
+        <div class="midcta-story">
+
+          <div class="story-step">
+            <div class="story-num">01</div>
+            <p class="story-text">Someone in Cary Googles <em>"[your service] near me."</em></p>
+          </div>
+
+          <div class="story-connector">→</div>
+
+          <div class="story-step">
+            <div class="story-num">02</div>
+            <p class="story-text">Your site loads in <strong>under 2 seconds</strong> — faster than every competitor they'll see that day.</p>
+          </div>
+
+          <div class="story-connector">→</div>
+
+          <div class="story-step">
+            <div class="story-num">03</div>
+            <p class="story-text">The headline speaks to their problem in the <strong>first 3 seconds.</strong> One CTA. No distractions.</p>
+          </div>
+
+          <div class="story-connector">→</div>
+
+          <div class="story-step story-step-final">
+            <div class="story-num story-num-final">✓</div>
+            <p class="story-text story-text-final">They book.</p>
+          </div>
+
+        </div>
+
+        <p class="midcta-note">That's it. No magic. No "digital transformation." Just a site engineered so that every visitor has one obvious action — and zero reasons to leave before taking it.</p>
+
+        <p class="midcta-note">Most websites in the Triangle miss on all three: they load slow, they talk about the business instead of the customer, and they bury the booking button.</p>
+        <p class="midcta-fix-line">We fix all three. <span>On every build. Every time.</span></p>
+
         <div class="midcta-buttons">
           <a href="#contact" class="btn-primary">Book a Free Strategy Call →</a>
         </div>
+
+      </div>
+    </section>
+
+    <!-- ─── FOUNDER / TRUST ─── -->
+    <section class="founder-section">
+      <div class="founder-inner">
+
+        <div class="founder-grid">
+
+          <!-- Left: avatar + name -->
+          <div class="founder-left">
+            <div class="founder-avatar">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="36" cy="36" r="36" fill="rgba(217,30,69,0.10)"/>
+                <circle cx="36" cy="28" r="12" fill="rgba(217,30,69,0.35)"/>
+                <ellipse cx="36" cy="58" rx="20" ry="12" fill="rgba(217,30,69,0.25)"/>
+              </svg>
+            </div>
+            <p class="founder-name">Ayoub K.</p>
+            <p class="founder-role">Founder, AK Digital House</p>
+            <div class="founder-location">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Raleigh, NC
+            </div>
+          </div>
+
+          <!-- Right: copy -->
+          <div class="founder-right">
+            <span class="founder-eyebrow">Who You're Actually Working With</span>
+            <h2 class="founder-headline">You're not hiring an agency. You're hiring a person.</h2>
+
+            <p class="founder-body">When you work with AK Digital House, you work with a small, focused team that handles your project from the first call to launch day — no account managers, no handoffs, no disappearing acts after the invoice clears.</p>
+
+            <p class="founder-body">I'm Ayoub, the founder. When you reach out, you hear from me first. When a decision needs to be made, you have a direct line to the person responsible for it. Behind me is a team that executes — but you'll never be passed around and left wondering who's actually working on your business.</p>
+
+            <p class="founder-body">We started this agency in Raleigh because we kept seeing the same story: small businesses paying big-agency prices for slow, bloated websites, then getting ignored the moment the project closed. We build differently. We learn your business, we build around your goals, and we don't consider a project done until it's generating results.</p>
+
+            <div class="founder-incentive">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <p>Your growth is what builds our reputation. When you win, we have a case study. When you refer us, we grow. Our incentives are identical to yours — and that's exactly how we want it.</p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -862,7 +953,7 @@ const reviewsRow2 = [
               <div id="faqpanel4" class="faq-panel">
                 <details class="faq-item" open>
                   <summary>How much does a website cost? <span class="faq-icon"></span></summary>
-                  <p class="faq-answer">Our projects start at $1,000 for landing pages and static business websites, and $1,500 for e-commerce stores. Final pricing depends on the number of pages, custom features, integrations, and your specific requirements. We provide a clear, itemized quote after your free strategy call — so you know exactly what you are paying for before committing to anything.</p>
+                 <p class="faq-answer">Our projects start at $1,500 for landing pages, $2,500 for static business websites, and $3,500 for e-commerce stores. Final pricing depends on the number of pages, custom features, integrations, and your specific requirements. We provide a clear, itemized quote after your free strategy call — so you know exactly what you are paying for before committing to anything.</p>
                 </details>
                 <details class="faq-item">
                   <summary>How does payment work? <span class="faq-icon"></span></summary>
@@ -895,6 +986,10 @@ const reviewsRow2 = [
                 <details class="faq-item">
                   <summary>Can you build AI features into my website? <span class="faq-icon"></span></summary>
                   <p class="faq-answer">Absolutely. We can integrate AI-powered chat, lead qualification tools, smart booking systems, and automated follow-up flows. If you have a specific idea, bring it to your strategy call and we will tell you exactly what is possible.</p>
+                </details>
+                <details class="faq-item">
+                  <summary>Why not use AI or Wix instead? <span class="faq-icon"></span></summary>
+                  <p class="faq-answer">You can build a site with AI in an afternoon. It'll look fine. It won't convert. AI generates websites; it doesn't generate customers. What AI can't do: research your specific local market, write copy that speaks to your specific customer's fear, structure the page so one CTA is the only obvious next step, or set up local SEO to actually rank in Cary or Durham. That's the work. The build is the easy part.</p>
                 </details>
               </div>
 
@@ -1178,11 +1273,15 @@ const reviewsRow2 = [
     align-items: center;
     justify-content: center;
   }
+  .hero-image-mobile { display: none; }
+  .hero-image-desktop { display: flex; }
   .hero-image {
     width: 100%;
-    max-width: 520px;
+    max-width: 420px;
     height: auto;
     display: block;
+    border-radius: 20px;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.10);
   }
 
   /* ── Sub-services section ── */
@@ -1548,8 +1647,9 @@ const reviewsRow2 = [
     .sub-services-section { padding: 64px 24px; }
     .hero-section { padding: 32px 24px 64px; }
     .hero-inner { grid-template-columns: 1fr; gap: 8px; }
-    .hero-image-wrap { order: -1; width: 100%; }
-    .hero-image { max-width: 100%; width: 100%; margin: 0 auto; }
+    .hero-image-mobile { display: flex; width: 100%; margin: 20px 0 28px; }
+    .hero-image-desktop { display: none; }
+    .hero-image { max-width: 420px; width: 100%; margin: 0 auto; }
     .hero-content { text-align: center; }
     .hero-buttons { justify-content: center; }
     .hero-badges { justify-content: center; flex-wrap: wrap; gap: 10px; }
@@ -2193,37 +2293,175 @@ const reviewsRow2 = [
   /* Mid-page CTA */
   .midcta-section {
     background: #1A1C1E;
-    padding: 80px 24px;
+    padding: 88px 24px;
   }
   .midcta-inner {
-    max-width: 720px;
+    max-width: 1100px;
     margin: 0 auto;
     text-align: center;
   }
   .midcta-eyebrow {
     display: inline-block;
     background: rgba(217, 30, 69, 0.18);
-    color: #d91e45;
+    color: #f9f9f9;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 6px 16px;
     border-radius: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .midcta-heading {
-    font-size: clamp(1.6rem, 3vw, 2.1rem);
-    font-weight: 800;
-    color: #fff;
-    margin: 0 0 16px;
+    font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    color: #f9f9f9;
+    margin: 0 0 48px;
     line-height: 1.25;
   }
-  .midcta-sub {
+  /* Story steps — horizontal */
+  .midcta-story {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .story-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 24px 18px;
+    flex: 1;
+  }
+  .story-step-final {
+    background: rgba(217,30,69,0.12);
+    border-color: rgba(217,30,69,0.3);
+  }
+  .story-connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    color: rgba(255,255,255,0.2);
+    font-size: 1.2rem;
+    align-self: center;
+  }
+  .story-num {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(217,30,69,0.15);
+    border: 1.5px solid rgba(217,30,69,0.4);
+    color: #f9f9f9;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .story-num-final {
+    background: #d91e45;
+    border-color: #d91e45;
+    color: #fff;
     font-size: 1rem;
-    color: #9ca3af;
+  }
+  .story-text {
+    font-size: 0.875rem;
+    color: #f9f9f9;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .story-text strong { color: #f9f9f9; }
+  .story-text em { color: #d91e45; font-style: normal; font-weight: 600; }
+  .story-text-final {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .midcta-note {
+    font-size: 0.9375rem;
+    color: #f9f9f9;
+    line-height: 1.75;
+    margin: 0 0 24px;
+  }
+  /* Miss block */
+  .midcta-misses {
+    margin-bottom: 40px;
+  }
+  .midcta-misses-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(249,249,249,0.4);
+    margin: 0 0 20px;
+  }
+  .midcta-misses-grid {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .miss-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 16px 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+  }
+  .miss-x {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    background: rgba(217,30,69,0.15);
+    border-radius: 50%;
+    color: #d91e45;
+    font-size: 0.7rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  .miss-text {
+    font-size: 0.875rem;
+    color: rgba(249,249,249,0.6);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .midcta-fix-line {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 800;
+    color: #f9f9f9;
     margin: 0 0 32px;
-    line-height: 1.7;
+    line-height: 1.4;
+  }
+  .midcta-fix-line span { color: #d91e45; }
+  .midcta-fix {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 800;
+    color: #f9f9f9;
+    line-height: 1.4;
+  }
+  .midcta-fix span {
+    color: #d91e45;
   }
   .midcta-buttons {
     display: flex;
@@ -2241,6 +2479,119 @@ const reviewsRow2 = [
   }
   .midcta-link:hover {
     color: #fff;
+  }
+  @media (max-width: 700px) {
+    .midcta-story { flex-direction: column; align-items: center; }
+    .story-connector { width: auto; height: 24px; transform: rotate(90deg); }
+    .story-step { width: 100%; }
+  }
+
+  /* ── Founder / Trust ── */
+  .founder-section {
+    background: #fff;
+    padding: 96px 24px;
+    border-top: 1px solid #f0f0f0;
+  }
+  .founder-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .founder-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .founder-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 32px;
+  }
+  .founder-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 16px;
+    background: rgba(217,30,69,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(217,30,69,0.15);
+  }
+  .founder-name {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #1a1c1e;
+    margin: 0 0 4px;
+  }
+  .founder-role {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin: 0 0 10px;
+  }
+  .founder-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.78rem;
+    color: #6b7280;
+  }
+  .founder-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .founder-eyebrow {
+    display: inline-block;
+    align-self: flex-start;
+    background: rgba(217,30,69,0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+  .founder-headline {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    line-height: 1.3;
+    margin: 0 0 32px;
+  }
+  .founder-body {
+    font-size: 0.9375rem;
+    color: #4b5563;
+    line-height: 1.8;
+    margin: 0 0 20px;
+  }
+  .founder-incentive {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: rgba(217,30,69,0.05);
+    border: 1px solid rgba(217,30,69,0.15);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+  .founder-incentive svg { flex-shrink: 0; margin-top: 3px; }
+  .founder-incentive p {
+    font-size: 0.9375rem;
+    color: #374151;
+    line-height: 1.75;
+    margin: 0;
+    font-weight: 500;
+  }
+  @media (max-width: 900px) {
+    .founder-grid { grid-template-columns: 1fr; gap: 40px; }
+    .founder-left { position: static; flex-direction: row; text-align: left; gap: 16px; align-items: center; }
+    .founder-avatar { margin-bottom: 0; flex-shrink: 0; }
   }
 
   .stack-section {
@@ -2489,16 +2840,23 @@ const reviewsRow2 = [
   }
 
   .ai-vs-label {
+    display: inline-block;
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #9ca3af;
+    color: #6b7280;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 100px;
+    padding: 5px 12px;
     margin: 0 0 20px;
   }
 
   .ai-vs-label-red {
-    color: #d91e45;
+    color: #fff;
+    background: #d91e45;
+    border-color: #d91e45;
   }
 
   .ai-vs-list {
