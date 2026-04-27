@@ -3,25 +3,6 @@ import BaseHead from '../../components/BaseHead.astro';
 import Navigation from '../../components/ui/Navigation.astro';
 import Footer from '../../components/ui/Footer.astro';
 
-const reviewsRow1 = [
-  { name: "Alex M.", role: "Business Owner", location: "United States", bg: "d91e45", text: "AKDH was amazing, exceeded expectations, and super happy to work with him, will be working with him again immediately after this project." },
-  { name: "Rachel T.", role: "Entrepreneur", location: "United States", bg: "1e3a5f", text: "AKDH was amazing. My sales landing page looks amazing. Will definitely be using him for more projects in the future!" },
-  { name: "Jordan K.", role: "Startup Founder", location: "United States", bg: "14532d", text: "Great experience with AKDH. He goes above and beyond and he is really professional. Did a wonderful job." },
-  { name: "Priya S.", role: "Small Business Owner", location: "United States", bg: "4c1d95", text: "It was my first time working with a freelancer and the experience has been great. AKDH is very responsive, works great with requirements, and even provides opinions based on his experience, making the process collaborative." },
-  { name: "Daniel W.", role: "Site Owner", location: "United States", bg: "7c2d12", text: "AKDH quickly pinpointed the problems on my site and resolved them, boosting its performance. Communication was clear, no hidden fees, just great work at a fair price. He truly exceeded my expectations!" },
-  { name: "Chris B.", role: "E-commerce Owner", location: "United States", bg: "1e3a5f", text: "AKDH completed the job successfully and on time and he was responsive to my feedback." },
-  { name: "Leila K.", role: "Brand Strategist", location: "United States", bg: "14532d", text: "It's been an absolute pleasure working with AKDH. He combines professionalism with forward-thinking strategies, patience, and excellent time management. Thank you sincerely for your support." },
-];
-
-const reviewsRow2 = [
-  { name: "Mia L.", role: "Creative Director", location: "United States", bg: "d91e45", text: "Went above and beyond with making edits to my website. Definitely has an eye for detail. Communication is quick, easy, and on point." },
-  { name: "Thomas R.", role: "Marketing Manager", location: "United States", bg: "1e3a5f", text: "Very responsive, fast delivery and a fine result. Many thanks." },
-  { name: "Sofia N.", role: "Sales Manager", location: "United States", bg: "14532d", text: "AKDH exceeded my expectations. He was very responsive and helpful. Together we worked on a sales landing page that ended up looking great. Even after completing his job AKDH remained available to assist." },
-  { name: "Marcus H.", role: "Business Owner", location: "United States", bg: "7c2d12", text: "He was great — exceeded my expectations and did a great job ahead of schedule. Easy to communicate with and very knowledgeable and creative. Loved what we did for my landing page." },
-  { name: "Natalie K.", role: "Agency Owner", location: "United States", bg: "4c1d95", text: "Great experience with AKDH. He goes above and beyond and he is really professional. Did a wonderful job." },
-  { name: "Omar P.", role: "Product Manager", location: "United States", bg: "1e3a5f", text: "AKDH is very responsive and has done a great job working with the requirements and making adjustments after review. Making the process truly collaborative." },
-  { name: "Brianna F.", role: "E-commerce Founder", location: "United States", bg: "d91e45", text: "Went above and beyond with making edits to my website. Definitely has an eye for detail. Communication is quick, easy, and on point." },
-];
 ---
 
 <!doctype html>
@@ -784,63 +765,73 @@ const reviewsRow2 = [
       </div>
     </section>
 
-<!-- ─── 9. TESTIMONIALS ─── -->
-    <section style="background:#1A1C1E; padding:88px 0; overflow:hidden;">
-      <div style="max-width:1100px; margin:0 auto; padding:0 24px; text-align:center; margin-bottom:56px;">
-        <span style="display:inline-block; background:rgba(217,30,69,0.18); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Client Results</span>
-        <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#fff; margin:0;">What Our Clients Say</h2>
-      </div>
+<!-- ─── 9. PERFORMANCE PROOF ─── -->
+    <section style="background:#1A1C1E; padding:96px 24px;">
+      <div style="max-width:1100px; margin:0 auto;">
 
-      <!-- Row 1: scrolls left -->
-      <div class="review-outer" style="margin-bottom:20px;">
-        <div class="review-track">
-          {[...reviewsRow1, ...reviewsRow1].map((r) => (
-            <div class="review-card">
-              <div style="display:flex; gap:3px; margin-bottom:16px;">
-                {[...Array(5)].map(() => <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>)}
-              </div>
-              <p class="review-text">"{r.text}"</p>
-              <div class="review-author">
-                <img
-                  src={`https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(r.name)}&backgroundColor=${r.bg}&textColor=ffffff&radius=50&fontSize=38&fontWeight=700`}
-                  alt={r.name}
-                  class="review-avatar-img"
-                  loading="lazy"
-                />
-                <div>
-                  <p class="review-name">{r.name}</p>
-                  <p class="review-role">{r.role} · {r.location}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+        <!-- Header -->
+        <div style="text-align:center; margin-bottom:64px;">
+          <span style="display:inline-block; background:rgba(12,206,107,0.12); color:#0cce6b; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:20px;">Proven Performance</span>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.5rem); font-weight:800; color:#fff; margin:0 0 16px; max-width:760px; margin-left:auto; margin-right:auto; line-height:1.25;">The Page You're On Right Now<br>Scores 100 on Google.</h2>
+          <p style="font-size:1rem; color:rgba(255,255,255,0.5); max-width:520px; margin:0 auto; line-height:1.7;">Not a claim. A live result you can verify yourself in 30 seconds.</p>
         </div>
-      </div>
 
-      <!-- Row 2: scrolls right -->
-      <div class="review-outer">
-        <div class="review-track review-track-reverse">
-          {[...reviewsRow2, ...reviewsRow2].map((r) => (
-            <div class="review-card">
-              <div style="display:flex; gap:3px; margin-bottom:16px;">
-                {[...Array(5)].map(() => <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>)}
-              </div>
-              <p class="review-text">"{r.text}"</p>
-              <div class="review-author">
-                <img
-                  src={`https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(r.name)}&backgroundColor=${r.bg}&textColor=ffffff&radius=50&fontSize=38&fontWeight=700`}
-                  alt={r.name}
-                  class="review-avatar-img"
-                  loading="lazy"
-                />
-                <div>
-                  <p class="review-name">{r.name}</p>
-                  <p class="review-role">{r.role} · {r.location}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+        <!-- Score circles -->
+        <div class="perf-circles">
+          <div class="perf-circle-wrap">
+            <svg class="perf-svg" viewBox="0 0 100 100" aria-label="Performance score 100">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+              <circle class="perf-arc perf-arc--100" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
+              <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">100</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Performance</text>
+            </svg>
+          </div>
+          <div class="perf-circle-wrap">
+            <svg class="perf-svg" viewBox="0 0 100 100" aria-label="Accessibility score 100">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+              <circle class="perf-arc perf-arc--100" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
+              <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">100</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Accessibility</text>
+            </svg>
+          </div>
+          <div class="perf-circle-wrap">
+            <svg class="perf-svg" viewBox="0 0 100 100" aria-label="Best Practices score 96">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+              <circle class="perf-arc perf-arc--96" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
+              <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">96</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Best Practices</text>
+            </svg>
+          </div>
+          <div class="perf-circle-wrap">
+            <svg class="perf-svg" viewBox="0 0 100 100" aria-label="SEO score 100">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+              <circle class="perf-arc perf-arc--100" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
+              <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">100</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">SEO</text>
+            </svg>
+          </div>
         </div>
+
+        <!-- Speed metrics row -->
+        <div class="perf-metrics">
+          <div class="perf-metric"><span class="perf-metric-val">0.3s</span><span class="perf-metric-label">First Contentful Paint</span></div>
+          <div class="perf-metric-divider"></div>
+          <div class="perf-metric"><span class="perf-metric-val">0.5s</span><span class="perf-metric-label">Largest Contentful Paint</span></div>
+          <div class="perf-metric-divider"></div>
+          <div class="perf-metric"><span class="perf-metric-val">0 ms</span><span class="perf-metric-label">Total Blocking Time</span></div>
+          <div class="perf-metric-divider"></div>
+          <div class="perf-metric"><span class="perf-metric-val">0</span><span class="perf-metric-label">Cumulative Layout Shift</span></div>
+          <div class="perf-metric-divider"></div>
+          <div class="perf-metric"><span class="perf-metric-val">0.4s</span><span class="perf-metric-label">Speed Index</span></div>
+        </div>
+
+        <!-- Body copy -->
+        <div style="max-width:720px; margin:0 auto; text-align:center;">
+          <p style="font-size:1rem; color:rgba(255,255,255,0.7); line-height:1.8; margin:0 0 20px;">Every website we build is engineered to hit 95 or higher across all four Lighthouse categories — Performance, Accessibility, Best Practices, and SEO. Most WordPress sites in the Triangle score between 50 and 70. That gap is not cosmetic — it's the difference between a visitor who stays and one who leaves before your page finishes loading.</p>
+          <p style="font-size:1rem; color:rgba(255,255,255,0.7); line-height:1.8; margin:0 0 36px;">We don't patch scores after the fact. We build for them from line one of code.</p>
+          <p class="perf-cta-line">→ Run the test yourself: <a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer" class="perf-cta-link">pagespeed.web.dev</a><br>paste <code class="perf-cta-code">akdigitalhouse.com/services/website-design-development/</code> and see the same number we see.</p>
+        </div>
+
       </div>
     </section>
 
@@ -1419,69 +1410,86 @@ const reviewsRow2 = [
     text-decoration: underline;
   }
 
-  /* ── Review infinite scroll ── */
-  @keyframes review-left {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  /* ── Performance Proof ── */
+  @keyframes perf-fill-100 {
+    from { stroke-dashoffset: 263.89; }
+    to   { stroke-dashoffset: 0; }
   }
-  @keyframes review-right {
-    0%   { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
+  @keyframes perf-fill-96 {
+    from { stroke-dashoffset: 263.89; }
+    to   { stroke-dashoffset: 10.56; }
   }
-  .review-outer {
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
-  }
-  .review-track {
+  .perf-circles {
     display: flex;
-    gap: 20px;
-    width: max-content;
-    padding: 8px 0 16px;
-    animation: review-left 50s linear infinite;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
   }
-  .review-track:hover { animation-play-state: paused; }
-  .review-track-reverse { animation-name: review-right; }
-  .review-card {
-    flex-shrink: 0;
-    width: 320px;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
+  .perf-circle-wrap { text-align: center; }
+  .perf-svg { width: 148px; height: 148px; }
+  .perf-arc--100 {
+    animation: perf-fill-100 1.6s cubic-bezier(0.4,0,0.2,1) 0.4s forwards;
+  }
+  .perf-arc--96 {
+    animation: perf-fill-96 1.6s cubic-bezier(0.4,0,0.2,1) 0.4s forwards;
+  }
+  .perf-metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
     border-radius: 16px;
-    padding: 28px 24px;
+    padding: 28px 40px;
+    margin: 0 auto 56px;
+    max-width: 900px;
+  }
+  .perf-metric {
     display: flex;
     flex-direction: column;
-  }
-  .review-text {
-    font-size: 0.9375rem;
-    color: rgba(255,255,255,0.8);
-    line-height: 1.75;
-    margin: 0 0 24px;
-    flex: 1;
-  }
-  .review-author {
-    display: flex;
     align-items: center;
-    gap: 12px;
-    margin-top: auto;
+    padding: 12px 28px;
+    gap: 6px;
   }
-  .review-avatar-img {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    object-fit: cover;
+  .perf-metric-val {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0cce6b;
+    line-height: 1;
   }
-  .review-name {
-    font-size: 0.875rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-  }
-  .review-role {
-    font-size: 0.75rem;
+  .perf-metric-label {
+    font-size: 0.7rem;
     color: rgba(255,255,255,0.4);
+    text-align: center;
+    line-height: 1.4;
+  }
+  .perf-metric-divider {
+    width: 1px;
+    height: 44px;
+    background: rgba(255,255,255,0.08);
+    flex-shrink: 0;
+  }
+  .perf-cta-line {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.7;
     margin: 0;
+  }
+  .perf-cta-link {
+    color: #0cce6b;
+    text-decoration: none;
+  }
+  .perf-cta-link:hover { text-decoration: underline; }
+  .perf-cta-code {
+    background: rgba(255,255,255,0.08);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.55);
+    word-break: break-all;
   }
 
   /* ── FAQ ── */
