@@ -783,7 +783,7 @@ import Footer from '../../components/ui/Footer.astro';
               <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
               <circle class="perf-arc perf-arc--100" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
               <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">100</text>
-              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Performance</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="9.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Performance</text>
             </svg>
           </div>
           <div class="perf-circle-wrap">
@@ -791,7 +791,7 @@ import Footer from '../../components/ui/Footer.astro';
               <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
               <circle class="perf-arc perf-arc--100" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
               <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">100</text>
-              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Accessibility</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="9.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Accessibility</text>
             </svg>
           </div>
           <div class="perf-circle-wrap">
@@ -799,7 +799,7 @@ import Footer from '../../components/ui/Footer.astro';
               <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
               <circle class="perf-arc perf-arc--96" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
               <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">96</text>
-              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Best Practices</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="9.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">Best Practices</text>
             </svg>
           </div>
           <div class="perf-circle-wrap">
@@ -807,7 +807,7 @@ import Footer from '../../components/ui/Footer.astro';
               <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
               <circle class="perf-arc perf-arc--100" cx="50" cy="50" r="42" fill="none" stroke="#0cce6b" stroke-width="4" stroke-linecap="round" stroke-dasharray="263.89" stroke-dashoffset="263.89" transform="rotate(-90 50 50)"/>
               <text x="50" y="45" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="20" font-weight="800" font-family="Plus Jakarta Sans,system-ui,sans-serif">100</text>
-              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">SEO</text>
+              <text x="50" y="61" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="9.5" font-family="Plus Jakarta Sans,system-ui,sans-serif">SEO</text>
             </svg>
           </div>
         </div>
@@ -1015,81 +1015,115 @@ import Footer from '../../components/ui/Footer.astro';
       </div>
     </section>
 
-    <!-- ─── 12. CTA / CONTACT FORM ─── -->
+    <!-- ─── 12. CTA / CONTACT ─── -->
     <section id="contact" style="background:#F9F9F9; padding:88px 24px;">
-      <div style="max-width:860px; margin:0 auto;">
-        <div style="text-align:center; margin-bottom:48px;">
+      <div style="max-width:1100px; margin:0 auto;">
+
+        <!-- Section header -->
+        <div style="text-align:center; margin-bottom:56px;">
           <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Get Started</span>
           <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0 0 16px;">Ready for a Website That Works?</h2>
-          <p style="font-size:0.9375rem; color:#6b7280; max-width:520px; margin:0 auto; line-height:1.75;">Tell us about your project. No commitment, no pressure — just a real conversation about your goals and how we can help.</p>
+          <p style="font-size:0.9375rem; color:#6b7280; max-width:520px; margin:0 auto; line-height:1.75;">No commitment, no pressure — just a real conversation about your goals.</p>
         </div>
 
-        <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:48px 40px;">
-          <form
-            name="web-design-contact"
-            method="POST"
-            action="/thank-you"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            style="display:flex; flex-direction:column; gap:20px;"
-          >
-            <input type="hidden" name="form-name" value="web-design-contact" />
-            <p hidden><input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></p>
+        <!-- Two-column layout -->
+        <div class="contact-cols">
 
-            <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-              <div>
-                <label for="wd-name" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Full Name <span style="color:#d91e45;">*</span></label>
-                <input type="text" id="wd-name" name="name" required placeholder="Jane Smith"
-                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
-              </div>
-              <div>
-                <label for="wd-company" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Company Name</label>
-                <input type="text" id="wd-company" name="company" placeholder="Acme Inc."
-                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
-              </div>
+          <!-- LEFT: Book a call -->
+          <div class="contact-col contact-col--primary">
+            <div class="contact-col-inner">
+              <p class="contact-col-eyebrow">Fastest path forward</p>
+              <h3 class="contact-col-heading">Ready to get started?</h3>
+              <p class="contact-col-body">Pick a time that works for you and we'll talk about your project — goals, timeline, budget, and what it takes to get your site live.</p>
+              <!-- Calendly inline widget begin -->
+              <div class="calendly-inline-widget" data-url="https://calendly.com/contact-akdigitalhouse/30min?primary_color=d91e45" style="min-width:280px;height:700px;"></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+              <!-- Calendly inline widget end -->
             </div>
+          </div>
 
-            <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-              <div>
-                <label for="wd-email" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Email Address <span style="color:#d91e45;">*</span></label>
-                <input type="email" id="wd-email" name="email" required placeholder="jane@company.com"
-                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
-              </div>
-              <div>
-                <label for="wd-phone" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Phone Number</label>
-                <input type="tel" id="wd-phone" name="phone" placeholder="(919) 555-0100"
-                  style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none;" />
-              </div>
+          <!-- Divider -->
+          <div class="contact-divider">
+            <div class="contact-divider-line"></div>
+            <span class="contact-divider-label">or</span>
+            <div class="contact-divider-line"></div>
+          </div>
+
+          <!-- RIGHT: Contact form -->
+          <div class="contact-col contact-col--secondary">
+            <div class="contact-col-inner">
+              <p class="contact-col-eyebrow">Prefer to write it out?</p>
+              <h3 class="contact-col-heading">Send us the details first.</h3>
+              <p class="contact-col-body">Fill out the form and we'll get back to you within 24 hours with next steps.</p>
+
+              <form
+                name="web-design-contact"
+                method="POST"
+                action="/thank-you"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                style="display:flex; flex-direction:column; gap:16px; margin-top:24px;"
+              >
+                <input type="hidden" name="form-name" value="web-design-contact" />
+                <p hidden><input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></p>
+
+                <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                  <div>
+                    <label for="wd-name" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Full Name <span style="color:#d91e45;">*</span></label>
+                    <input type="text" id="wd-name" name="name" required placeholder="Jane Smith"
+                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                  </div>
+                  <div>
+                    <label for="wd-company" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Company Name</label>
+                    <input type="text" id="wd-company" name="company" placeholder="Acme Inc."
+                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                  </div>
+                </div>
+
+                <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                  <div>
+                    <label for="wd-email" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Email Address <span style="color:#d91e45;">*</span></label>
+                    <input type="email" id="wd-email" name="email" required placeholder="jane@company.com"
+                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                  </div>
+                  <div>
+                    <label for="wd-phone" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Phone Number</label>
+                    <input type="tel" id="wd-phone" name="phone" placeholder="(919) 555-0100"
+                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="wd-package" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">What service are you looking for?</label>
+                  <select id="wd-package" name="package"
+                    style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none; appearance:none; cursor:pointer;">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="static-appointment">Static Website & Appointment Booking</option>
+                    <option value="landing-page">Landing Page Design</option>
+                    <option value="ecommerce">E-Commerce Website</option>
+                    <option value="maintenance">Website Care & Maintenance Plan</option>
+                    <option value="unsure">Not sure yet — I need guidance</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="wd-message" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Tell us about your project <span style="color:#d91e45;">*</span></label>
+                  <textarea id="wd-message" name="message" required rows="4"
+                    placeholder="What kind of website do you need? What's your timeline? Any existing site we should know about?"
+                    style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; resize:vertical; outline:none; line-height:1.6;"></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">
+                  Send My Project Details <span aria-hidden="true">→</span>
+                </button>
+
+                <p style="font-size:0.8125rem; color:#6b7280; text-align:center; margin:0;">
+                  We respond within 24 hours. No spam, no unsolicited follow-ups.
+                </p>
+              </form>
             </div>
+          </div>
 
-            <div>
-              <label for="wd-package" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">What service are you looking for?</label>
-              <select id="wd-package" name="package"
-                style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; outline:none; appearance:none; cursor:pointer;">
-                <option value="" disabled selected>Select a service</option>
-                <option value="static-appointment">Static Website & Appointment Booking</option>
-                <option value="landing-page">Landing Page Design</option>
-                <option value="ecommerce">E-Commerce Website</option>
-                <option value="maintenance">Website Care & Maintenance Plan</option>
-                <option value="unsure">Not sure yet — I need guidance</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="wd-message" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Tell us about your project <span style="color:#d91e45;">*</span></label>
-              <textarea id="wd-message" name="message" required rows="5"
-                placeholder="What kind of website do you need? What's your timeline? Any existing site we should know about?"
-                style="width:100%; box-sizing:border-box; padding:12px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fafafa; resize:vertical; outline:none; line-height:1.6;"></textarea>
-            </div>
-
-            <button type="submit" class="form-submit-btn">
-              Send My Project Details <span aria-hidden="true">→</span>
-            </button>
-
-            <p style="font-size:0.8125rem; color:#6b7280; text-align:center; margin:0;">
-              We typically respond within 24 hours. No spam, no unsolicited follow-ups.
-            </p>
-          </form>
         </div>
       </div>
     </section>
@@ -1424,9 +1458,9 @@ import Footer from '../../components/ui/Footer.astro';
     justify-content: center;
     gap: 48px;
     margin-bottom: 48px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
-  .perf-circle-wrap { text-align: center; }
+  .perf-circle-wrap { text-align: center; flex-shrink: 0; }
   .perf-svg { width: 148px; height: 148px; }
   .perf-arc--100 {
     animation: perf-fill-100 1.6s cubic-bezier(0.4,0,0.2,1) 0.4s forwards;
@@ -1490,6 +1524,33 @@ import Footer from '../../components/ui/Footer.astro';
     font-size: 0.8125rem;
     color: rgba(255,255,255,0.55);
     word-break: break-all;
+  }
+  @media (max-width: 640px) {
+    .perf-circles { gap: 8px; }
+    .perf-svg { width: 92px; height: 92px; }
+    .perf-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 20px 16px;
+      gap: 0;
+    }
+    .perf-metric-divider { display: none; }
+    .perf-metric { padding: 14px 8px; }
+    .perf-metric-val { font-size: 1.1rem; }
+    /* 5th metric (nth-child 9 counting dividers) spans both columns */
+    .perf-metrics .perf-metric:nth-child(9) { grid-column: 1 / -1; }
+    /* row borders */
+    .perf-metrics .perf-metric:nth-child(1),
+    .perf-metrics .perf-metric:nth-child(3),
+    .perf-metrics .perf-metric:nth-child(5),
+    .perf-metrics .perf-metric:nth-child(7) {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    /* right border on left cells */
+    .perf-metrics .perf-metric:nth-child(1),
+    .perf-metrics .perf-metric:nth-child(5) {
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
   }
 
   /* ── FAQ ── */
@@ -1701,6 +1762,83 @@ import Footer from '../../components/ui/Footer.astro';
     .form-submit-btn { font-size: 0.9375rem; }
     .tech-grid { grid-template-columns: repeat(2, 1fr) !important; }
     .nc-coverage { grid-template-columns: 1fr !important; }
+  }
+
+  /* ── Contact two-column ── */
+  .contact-cols {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+    align-items: start;
+  }
+  .contact-col-inner {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 40px 36px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .contact-col-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #d91e45;
+    margin: 0 0 12px;
+  }
+  .contact-col-heading {
+    font-size: clamp(1.25rem,2vw,1.5rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    margin: 0 0 12px;
+    line-height: 1.25;
+  }
+  .contact-col-body {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.75;
+    margin: 0 0 28px;
+  }
+  .contact-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+    align-self: stretch;
+    gap: 12px;
+  }
+  .contact-divider-line {
+    flex: 1;
+    width: 1px;
+    background: #e5e7eb;
+    min-height: 40px;
+  }
+  .contact-divider-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: #F9F9F9;
+    padding: 4px 0;
+  }
+  @media (max-width: 860px) {
+    .contact-cols {
+      grid-template-columns: 1fr;
+    }
+    .contact-divider {
+      flex-direction: row;
+      padding: 24px 0;
+      align-self: auto;
+    }
+    .contact-divider-line {
+      flex: 1;
+      width: auto;
+      height: 1px;
+      min-height: unset;
+    }
   }
 /* ── Service Area ── */
   .service-area {
