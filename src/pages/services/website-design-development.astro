@@ -525,10 +525,10 @@ import Footer from '../../components/ui/Footer.astro';
 
             <div class="founder-incentive">
               <div class="founder-incentive-header">
-                <h4 class="founder-incentive-title">Aligned Incentives</h4>
+                <h4 class="founder-incentive-title">Your growth is our reputation.</h4>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
               </div>
-              <p>Your growth is what builds our reputation. When you win, we have a case study. When you refer us, we grow. Our incentives are identical to yours — and that's exactly how we want it.</p>
+              <p>When you win, we have a case study. When you refer us, we grow. Our incentives are identical to yours — and that's exactly how we want it.</p>
             </div>
 
           </div>
@@ -776,7 +776,7 @@ import Footer from '../../components/ui/Footer.astro';
     </section>
 
 <!-- ─── 9. PERFORMANCE PROOF ─── -->
-    <section style="background:#1A1C1E; padding:96px 24px;">
+    <section class="perf-section" style="background:#1A1C1E; padding:96px 24px;">
       <div style="max-width:1100px; margin:0 auto;">
 
         <!-- Header -->
@@ -901,7 +901,7 @@ import Footer from '../../components/ui/Footer.astro';
     </section>
 
     <!-- ─── 11. FAQ ─── -->
-    <section id="faq" style="background:#F9F9F9; padding:88px 24px; position:relative; overflow:hidden;">
+    <section id="faq" class="faq-section" style="background:#F9F9F9; padding:88px 24px; position:relative; overflow:hidden;">
       <div style="position:absolute;top:-120px;right:-120px;width:480px;height:480px;background:radial-gradient(circle,rgba(217,30,69,0.07) 0%,transparent 65%);pointer-events:none;"></div>
       <div style="position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(0,144,255,0.05) 0%,transparent 65%);pointer-events:none;"></div>
 
@@ -1081,7 +1081,7 @@ import Footer from '../../components/ui/Footer.astro';
     </section>
 
     <!-- ─── 12. CTA / CONTACT ─── -->
-    <section id="contact" style="background:#ffffff; padding:88px 24px;">
+    <section id="contact" class="contact-section" style="background:linear-gradient(135deg,#fff 0%,rgba(217,30,69,0.06) 50%,#fff 100%); padding:88px 24px;">
       <div style="max-width:1100px; margin:0 auto;">
 
         <!-- Section header -->
@@ -1727,6 +1727,16 @@ import Footer from '../../components/ui/Footer.astro';
   .faq-arr { display: none !important; }
 
   /* FAQ responsive */
+  @media (min-width: 769px) {
+    .faq-grid {
+      display: grid !important;
+      grid-template-columns: 260px 1fr !important;
+      gap: 32px;
+      align-items: start;
+    }
+    .faq-panels { display: block !important; }
+    .faq-nav-outer { display: block !important; }
+  }
   @media (max-width: 768px) {
     .faq-grid { display: block; }
     .faq-panels { display: none; }
@@ -2201,7 +2211,7 @@ import Footer from '../../components/ui/Footer.astro';
     .wdmc-header { margin-bottom: 40px; }
   }
   @media (max-width: 600px) {
-    .wdmc-section { padding: 48px 20px; }
+    .wdmc-section { padding: 30px 16px; }
     .wdmc-card { border-radius: 12px; }
   }
 
@@ -2318,40 +2328,42 @@ import Footer from '../../components/ui/Footer.astro';
     .proc-wave-svg { display: none; }
     .proc-steps {
       grid-template-columns: 1fr;
-      gap: 28px;
+      gap: 20px;
     }
     .proc-step {
-      flex-direction: row;
+      flex-direction: row-reverse;
       text-align: left;
-      align-items: flex-start;
+      align-items: center;
       gap: 16px;
-      padding: 0;
+      padding: 16px;
+      background: #fff;
+      border: 1px solid #E8E8E8;
+      border-radius: 12px;
     }
     .proc-icon-col {
       flex-direction: column;
       align-items: center;
-      flex: 0 0 90px;
+      flex: 0 0 72px;
       min-width: 0;
       position: relative;
     }
     .proc-circle {
-      width: 64px;
-      height: 64px;
+      width: 56px;
+      height: 56px;
       margin-bottom: 0;
       position: relative;
     }
     .proc-num-badge {
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
+      position: static;
+      transform: none;
       width: auto;
       height: 20px;
       padding: 0 8px;
       font-size: 0.5625rem;
       margin-bottom: 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      z-index: 3;
+      margin-top: 6px;
+      box-shadow: none;
+      z-index: auto;
     }
     .proc-text-col {
       display: flex;
@@ -2360,11 +2372,11 @@ import Footer from '../../components/ui/Footer.astro';
       flex: 1;
       min-width: 0;
     }
-    .proc-title { margin-bottom: 6px; }
+    .proc-title { margin-bottom: 4px; }
   }
   @media (max-width: 600px) {
-    .proc-section { padding: 64px 20px; }
-    .proc-header { margin-bottom: 48px; }
+    .proc-section { padding: 30px 16px; }
+    .proc-header { margin-bottom: 24px; }
   }
 
   /* ── Why AK Digital House ── */
@@ -2481,7 +2493,7 @@ import Footer from '../../components/ui/Footer.astro';
   }
   @media (max-width: 600px) {
     .why-grid { grid-template-columns: 1fr; }
-    .why-section { padding: 48px 20px; }
+    .why-section { padding: 30px 16px; }
   }
 
   /* ── Section inner (width constraint) ── */
@@ -2693,7 +2705,19 @@ import Footer from '../../components/ui/Footer.astro';
   @media (max-width: 700px) {
     .midcta-story { flex-direction: column; align-items: center; }
     .story-connector { width: auto; height: 24px; transform: rotate(90deg); }
-    .story-step { width: 100%; }
+    .story-step,
+    .story-step-final {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: center;
+      text-align: left !important;
+      gap: 16px;
+    }
+    .story-step .story-text,
+    .story-step-final .story-text {
+      text-align: left !important;
+    }
+    .story-step .story-num { flex-shrink: 0; }
   }
 
   /* ── Founder / Trust ── */
@@ -2805,12 +2829,30 @@ import Footer from '../../components/ui/Footer.astro';
     color: #374151;
     line-height: 1.75;
     margin: 0;
-    font-weight: 500;
+    font-weight: 400;
   }
   @media (max-width: 900px) {
     .founder-grid { grid-template-columns: 1fr; gap: 40px; }
-    .founder-left { position: static; flex-direction: row; text-align: left; align-items: flex-start; gap: 16px; }
-    .founder-avatar { margin-bottom: 0; flex-shrink: 0; }
+    .founder-left {
+      position: static;
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      grid-template-rows: auto auto auto;
+      column-gap: 16px;
+      align-items: start;
+      text-align: left;
+    }
+    .founder-avatar {
+      grid-column: 1;
+      grid-row: 1 / 4;
+      margin-bottom: 0;
+      flex-shrink: 0;
+      width: 72px;
+      height: 72px;
+    }
+    .founder-name { grid-column: 2; grid-row: 1; margin-bottom: 2px; }
+    .founder-role { grid-column: 2; grid-row: 2; margin-bottom: 4px; }
+    .founder-location { grid-column: 2; grid-row: 3; }
   }
 
   .stack-section {
@@ -2994,7 +3036,7 @@ import Footer from '../../components/ui/Footer.astro';
 
   /* Mobile: faster scroll */
   @media (max-width: 640px) {
-    .stack-section { padding: 64px 0; }
+    .stack-section { padding: 30px 0; }
     .mq-35, .mq-40, .mq-45 { animation-duration: 20s; }
     .mq-fade-l, .mq-fade-r { width: 48px; }
   }
@@ -3180,8 +3222,22 @@ import Footer from '../../components/ui/Footer.astro';
   }
 
   @media (max-width: 480px) {
-    .ai-section { padding: 56px 20px; }
+    .ai-section { padding: 30px 16px; }
     .ai-boxes { grid-template-columns: 1fr; }
+  }
+
+  /* ── Consistent 30px vertical padding on all non-hero sections (mobile) ── */
+  @media (max-width: 600px) {
+    .sub-services-section { padding: 30px 16px !important; }
+    .service-area { padding: 30px 16px !important; }
+    .midcta-section { padding: 30px 16px !important; }
+    .founder-section { padding: 30px 16px !important; }
+    .perf-section { padding: 30px 16px !important; }
+    .faq-section { padding: 30px 16px !important; }
+    .contact-section { padding: 30px 16px !important; }
+    .proc-section { padding: 30px 16px !important; }
+    .wdmc-section { padding: 30px 16px !important; }
+    .why-section { padding: 30px 16px !important; }
   }
 
 </style>
