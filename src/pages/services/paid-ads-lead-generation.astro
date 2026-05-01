@@ -1141,10 +1141,11 @@ import Footer from '../../components/ui/Footer.astro';
         nav.dataset.mobileInit = '1';
         var labels = Array.from(nav.querySelectorAll('.faq-navitem'));
         var panels = Array.from(panelsContainer.querySelectorAll('.faq-panel'));
+        /* Hide before moving — avoids forced reflow from reading layout after DOM mutation */
+        panels.forEach(function (p) { p.style.display = 'none'; });
         labels.forEach(function (label, i) {
           if (panels[i]) label.insertAdjacentElement('afterend', panels[i]);
         });
-        panels.forEach(function (p) { p.style.display = 'none'; });
         labels.forEach(function (label, i) {
           label.addEventListener('click', function () {
             if (!isMobile()) return;
