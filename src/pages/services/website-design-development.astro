@@ -311,7 +311,7 @@ import Footer from '../../components/ui/Footer.astro';
       <div class="sub-services-inner">
 
         <div class="sub-services-header">
-          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">What We Build</span>
+          <span class="sub-eyebrow">What We Build</span>
           <h2 class="sub-h2">One Website Type Won't Fit Every Goal. We Build the Right One for Yours.</h2>
           <p class="sub-subtext">Whether you need a campaign page that converts, a store that sells, or a brand presence that ranks — we scope the build around the outcome, not a template.</p>
           <p class="sub-subtext">We're currently building our portfolio, so pricing is lower than it will be long-term. Early clients lock in these rates.</p>
@@ -776,14 +776,14 @@ import Footer from '../../components/ui/Footer.astro';
     </section>
 
 <!-- ─── 9. PERFORMANCE PROOF ─── -->
-    <section class="perf-section" style="background:#1A1C1E; padding:96px 24px;">
-      <div style="max-width:1100px; margin:0 auto;">
+    <section class="perf-section">
+      <div class="perf-inner">
 
         <!-- Header -->
-        <div style="text-align:center; margin-bottom:64px;">
-          <span style="display:inline-block; background:rgba(12,206,107,0.12); color:#0cce6b; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:20px;">Proven Performance</span>
-          <h2 style="font-size:clamp(1.75rem,3vw,2.5rem); font-weight:800; color:#fff; margin:0 0 16px; max-width:760px; margin-left:auto; margin-right:auto; line-height:1.25;">The Page You're On Right Now<br>Scores 100 on Google.</h2>
-          <p style="font-size:1rem; color:rgba(255,255,255,0.5); max-width:520px; margin:0 auto; line-height:1.7;">Not a claim. A live result you can verify yourself in 30 seconds.</p>
+        <div class="perf-header">
+          <span class="perf-eyebrow">Proven Performance</span>
+          <h2 class="perf-h2">The Page You're On Right Now<br>Scores 100 on Google.</h2>
+          <p class="perf-sub">Not a claim. A live result you can verify yourself in 30 seconds.</p>
         </div>
 
         <!-- Score circles -->
@@ -836,9 +836,9 @@ import Footer from '../../components/ui/Footer.astro';
         </div>
 
         <!-- Body copy -->
-        <div style="max-width:720px; margin:0 auto; text-align:center;">
-          <p style="font-size:1rem; color:rgba(255,255,255,0.7); line-height:1.8; margin:0 0 20px;">Every website we build is engineered to hit 95 or higher across all four Lighthouse categories — Performance, Accessibility, Best Practices, and SEO. Most WordPress sites in the Triangle score between 50 and 70. That gap is not cosmetic — it's the difference between a visitor who stays and one who leaves before your page finishes loading.</p>
-          <p style="font-size:1rem; color:rgba(255,255,255,0.7); line-height:1.8; margin:0 0 36px;">We don't patch scores after the fact. We build for them from line one of code.</p>
+        <div class="perf-body">
+          <p>Every website we build is engineered to hit 95 or higher across all four Lighthouse categories — Performance, Accessibility, Best Practices, and SEO. Most WordPress sites in the Triangle score between 50 and 70. That gap is not cosmetic — it's the difference between a visitor who stays and one who leaves before your page finishes loading.</p>
+          <p class="perf-body-gap">We don't patch scores after the fact. We build for them from line one of code.</p>
           <p class="perf-cta-line">→ Run the test yourself: <a href="https://pagespeed.web.dev" target="_blank" rel="noopener noreferrer" class="perf-cta-link">pagespeed.web.dev</a><br>paste <code class="perf-cta-code">akdigitalhouse.com/services/website-design-development/</code> and see the same number we see.</p>
         </div>
 
@@ -901,15 +901,15 @@ import Footer from '../../components/ui/Footer.astro';
     </section>
 
     <!-- ─── 11. FAQ ─── -->
-    <section id="faq" class="faq-section" style="background:#F9F9F9; padding:88px 24px; position:relative; overflow:hidden;">
-      <div style="position:absolute;top:-120px;right:-120px;width:480px;height:480px;background:radial-gradient(circle,rgba(217,30,69,0.07) 0%,transparent 65%);pointer-events:none;"></div>
-      <div style="position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(0,144,255,0.05) 0%,transparent 65%);pointer-events:none;"></div>
+    <section id="faq" class="faq-section">
+      <div class="faq-grad-tr" aria-hidden="true"></div>
+      <div class="faq-grad-bl" aria-hidden="true"></div>
 
-      <div style="max-width:1100px; margin:0 auto;">
-        <div style="text-align:center; margin-bottom:64px;">
-          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Got Questions?</span>
-          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0 0 16px;">Everything You Need to Know Before We Start</h2>
-          <p style="font-size:0.9375rem; color:#6b7280; max-width:560px; margin:0 auto; line-height:1.75;">No fluff, no runaround. Here are the real answers small businesses and startups ask us before signing on.</p>
+      <div class="faq-inner">
+        <div class="faq-header">
+          <span class="faq-eyebrow">Got Questions?</span>
+          <h2 class="faq-h2">Everything You Need to Know Before We Start</h2>
+          <p class="faq-sub">No fluff, no runaround. Here are the real answers small businesses and startups ask us before signing on.</p>
         </div>
 
         <div class="faq-wrapper">
@@ -1081,14 +1081,14 @@ import Footer from '../../components/ui/Footer.astro';
     </section>
 
     <!-- ─── 12. CTA / CONTACT ─── -->
-    <section id="contact" class="contact-section" style="background:linear-gradient(135deg,#fff 0%,rgba(217,30,69,0.06) 50%,#fff 100%); padding:88px 24px;">
-      <div style="max-width:1100px; margin:0 auto;">
+    <section id="contact" class="contact-section">
+      <div class="contact-inner">
 
         <!-- Section header -->
-        <div style="text-align:center; margin-bottom:56px;">
-          <span style="display:inline-block; background:rgba(217,30,69,0.1); color:#d91e45; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px;">Get Started</span>
-          <h2 style="font-size:clamp(1.75rem,3vw,2.25rem); font-weight:800; color:#1a1c1e; margin:0 0 16px;">Ready for a Website That Works?</h2>
-          <p style="font-size:0.9375rem; color:#6b7280; max-width:520px; margin:0 auto; line-height:1.75;">No commitment, no pressure — just a real conversation about your goals.</p>
+        <div class="contact-header">
+          <span class="contact-eyebrow">Get Started</span>
+          <h2 class="contact-h2">Ready for a Website That Works?</h2>
+          <p class="contact-sub">No commitment, no pressure — just a real conversation about your goals.</p>
         </div>
 
         <!-- Two-column layout -->
@@ -1127,41 +1127,36 @@ import Footer from '../../components/ui/Footer.astro';
                 action="/thank-you"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                style="display:flex; flex-direction:column; gap:16px; margin-top:24px;"
+                class="contact-form"
               >
                 <input type="hidden" name="form-name" value="web-design-contact" />
                 <p hidden><input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></p>
 
-                <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div class="form-row">
                   <div>
-                    <label for="wd-name" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Full Name <span style="color:#d91e45;">*</span></label>
-                    <input type="text" id="wd-name" name="name" required placeholder="Jane Smith"
-                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                    <label for="wd-name" class="form-label">Full Name <span class="form-required">*</span></label>
+                    <input type="text" id="wd-name" name="name" required placeholder="Jane Smith" class="form-input" />
                   </div>
                   <div>
-                    <label for="wd-company" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Company Name</label>
-                    <input type="text" id="wd-company" name="company" placeholder="Acme Inc."
-                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                    <label for="wd-company" class="form-label">Company Name</label>
+                    <input type="text" id="wd-company" name="company" placeholder="Acme Inc." class="form-input" />
                   </div>
                 </div>
 
-                <div class="form-row" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div class="form-row">
                   <div>
-                    <label for="wd-email" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Email Address <span style="color:#d91e45;">*</span></label>
-                    <input type="email" id="wd-email" name="email" required placeholder="jane@company.com"
-                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                    <label for="wd-email" class="form-label">Email Address <span class="form-required">*</span></label>
+                    <input type="email" id="wd-email" name="email" required placeholder="jane@company.com" class="form-input" />
                   </div>
                   <div>
-                    <label for="wd-phone" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Phone Number</label>
-                    <input type="tel" id="wd-phone" name="phone" placeholder="(919) 555-0100"
-                      style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none;" />
+                    <label for="wd-phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="wd-phone" name="phone" placeholder="(919) 555-0100" class="form-input" />
                   </div>
                 </div>
 
                 <div>
-                  <label for="wd-package" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">What service are you looking for?</label>
-                  <select id="wd-package" name="package"
-                    style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; outline:none; appearance:none; cursor:pointer;">
+                  <label for="wd-package" class="form-label">What service are you looking for?</label>
+                  <select id="wd-package" name="package" class="form-select">
                     <option value="" disabled selected>Select a service</option>
                     <option value="static-appointment">Static Website & Appointment Booking</option>
                     <option value="landing-page">Landing Page Design</option>
@@ -1172,17 +1167,17 @@ import Footer from '../../components/ui/Footer.astro';
                 </div>
 
                 <div>
-                  <label for="wd-message" style="display:block; font-size:0.875rem; font-weight:600; color:#1a1c1e; margin-bottom:6px;">Tell us about your project <span style="color:#d91e45;">*</span></label>
+                  <label for="wd-message" class="form-label">Tell us about your project <span class="form-required">*</span></label>
                   <textarea id="wd-message" name="message" required rows="4"
                     placeholder="What kind of website do you need? What's your timeline? Any existing site we should know about?"
-                    style="width:100%; box-sizing:border-box; padding:11px 14px; border:1px solid #e5e7eb; border-radius:8px; font-size:0.9375rem; font-family:inherit; color:#242729; background:#fff; resize:vertical; outline:none; line-height:1.6;"></textarea>
+                    class="form-textarea"></textarea>
                 </div>
 
                 <button type="submit" class="form-submit-btn">
                   Send My Project Details <span aria-hidden="true">→</span>
                 </button>
 
-                <p style="font-size:0.8125rem; color:#6b7280; text-align:center; margin:0;">
+                <p class="form-note">
                   We respond within 24 hours. No spam, no unsolicited follow-ups.
                 </p>
               </form>
@@ -1263,14 +1258,6 @@ import Footer from '../../components/ui/Footer.astro';
     padding: 6px 16px;
     border-radius: 100px;
     margin-bottom: 24px;
-  }
-  .hero-headline {
-    font-size: clamp(0.875rem, 1.2vw, 1rem);
-    font-weight: 700;
-    color: #d91e45;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin: 0 0 14px;
   }
   .hero-subheadline {
     font-size: clamp(1.75rem, 3.5vw, 2.75rem);
@@ -1359,6 +1346,18 @@ import Footer from '../../components/ui/Footer.astro';
   html { overflow-x: hidden; }
 
   /* ── Sub-services section ── */
+  .sub-eyebrow {
+    display: inline-block;
+    background: rgba(217,30,69,0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
   .sub-services-section {
     background: linear-gradient(135deg, #fff 0%, rgba(217,30,69,0.06) 50%, #fff 100%);
     padding: 88px 24px;
@@ -1784,14 +1783,8 @@ import Footer from '../../components/ui/Footer.astro';
     .hero-buttons { justify-content: center; }
     .hero-badges { justify-content: center; flex-wrap: wrap; gap: 10px; }
     .badge { font-size: 0.75rem; gap: 5px; }
-    .two-col-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-    .pkg-grid { grid-template-columns: 1fr !important; }
-    .guarantee-grid { grid-template-columns: repeat(2, 1fr) !important; }
-    .testimonial-grid { grid-template-columns: 1fr !important; }
-    .tech-grid { grid-template-columns: repeat(2, 1fr) !important; }
   }
   @media (max-width: 600px) {
-    .guarantee-grid { grid-template-columns: 1fr !important; }
     .form-row { grid-template-columns: 1fr !important; }
   }
   .form-submit-btn {
@@ -1817,10 +1810,8 @@ import Footer from '../../components/ui/Footer.astro';
     transform: translateY(-2px);
     box-shadow: 0 10px 28px rgba(217,30,69,0.3);
   }
-  /* close the media query that was open above */
   @media (max-width: 600px) {
     .form-submit-btn { font-size: 0.9375rem; }
-    .tech-grid { grid-template-columns: repeat(2, 1fr) !important; }
     .nc-coverage { grid-template-columns: 1fr !important; }
   }
 
@@ -2185,20 +2176,6 @@ import Footer from '../../components/ui/Footer.astro';
     color: #6b7280;
     line-height: 1.7;
     margin: 0;
-  }
-  /* Number badge */
-  .wdmc-badge {
-    flex-shrink: 0;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #d91e45;
-    color: #fff;
-    font-size: 0.875rem;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   /* Responsive */
   @media (max-width: 900px) {
@@ -2617,57 +2594,6 @@ import Footer from '../../components/ui/Footer.astro';
     line-height: 1.75;
     margin: 0 0 24px;
   }
-  /* Miss block */
-  .midcta-misses {
-    margin-bottom: 40px;
-  }
-  .midcta-misses-label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(249,249,249,0.4);
-    margin: 0 0 20px;
-  }
-  .midcta-misses-grid {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 28px;
-  }
-  .miss-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 10px;
-    padding: 16px 20px;
-    flex: 1;
-    min-width: 200px;
-    text-align: left;
-  }
-  .miss-x {
-    flex-shrink: 0;
-    width: 22px;
-    height: 22px;
-    background: rgba(217,30,69,0.15);
-    border-radius: 50%;
-    color: #d91e45;
-    font-size: 0.7rem;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1px;
-  }
-  .miss-text {
-    font-size: 0.875rem;
-    color: rgba(249,249,249,0.6);
-    line-height: 1.55;
-    margin: 0;
-  }
   .midcta-fix-line {
     font-size: clamp(1.1rem, 2vw, 1.4rem);
     font-weight: 800;
@@ -2676,31 +2602,12 @@ import Footer from '../../components/ui/Footer.astro';
     line-height: 1.4;
   }
   .midcta-fix-line span { color: #d91e45; }
-  .midcta-fix {
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    font-weight: 800;
-    color: #f9f9f9;
-    line-height: 1.4;
-  }
-  .midcta-fix span {
-    color: #d91e45;
-  }
   .midcta-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-  }
-  .midcta-link {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: #9ca3af;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .midcta-link:hover {
-    color: #fff;
   }
   @media (max-width: 700px) {
     .midcta-story { flex-direction: column; align-items: center; }
@@ -3224,6 +3131,228 @@ import Footer from '../../components/ui/Footer.astro';
   @media (max-width: 480px) {
     .ai-section { padding: 30px 16px; }
     .ai-boxes { grid-template-columns: 1fr; }
+  }
+
+  /* ── Performance Proof section structure ── */
+  .perf-section {
+    background: #1A1C1E;
+    padding: 96px 24px;
+  }
+  .perf-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .perf-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .perf-eyebrow {
+    display: inline-block;
+    background: rgba(12,206,107,0.12);
+    color: #0cce6b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+  .perf-h2 {
+    font-size: clamp(1.75rem,3vw,2.5rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 16px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.25;
+  }
+  .perf-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.5);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  .perf-body {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .perf-body p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.8;
+    margin: 0 0 20px;
+  }
+  .perf-body-gap { margin-bottom: 36px !important; }
+
+  /* ── FAQ section structure ── */
+  .faq-section {
+    background: #F9F9F9;
+    padding: 88px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .faq-grad-tr {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(217,30,69,0.07) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .faq-grad-bl {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0,144,255,0.05) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .faq-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .faq-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .faq-eyebrow {
+    display: inline-block;
+    background: rgba(217,30,69,0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+  .faq-h2 {
+    font-size: clamp(1.75rem,3vw,2.25rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    margin: 0 0 16px;
+  }
+  .faq-sub {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  /* ── Contact section structure ── */
+  .contact-section {
+    background: linear-gradient(135deg, #fff 0%, rgba(217,30,69,0.06) 50%, #fff 100%);
+    padding: 88px 24px;
+  }
+  .contact-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .contact-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .contact-eyebrow {
+    display: inline-block;
+    background: rgba(217,30,69,0.1);
+    color: #d91e45;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+  .contact-h2 {
+    font-size: clamp(1.75rem,3vw,2.25rem);
+    font-weight: 800;
+    color: #1a1c1e;
+    margin: 0 0 16px;
+  }
+  .contact-sub {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  /* ── Contact form fields ── */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1a1c1e;
+    margin-bottom: 6px;
+  }
+  .form-required { color: #d91e45; }
+  .form-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-family: inherit;
+    color: #242729;
+    background: #fff;
+    outline: none;
+  }
+  .form-select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-family: inherit;
+    color: #242729;
+    background: #fff;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  .form-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-family: inherit;
+    color: #242729;
+    background: #fff;
+    resize: vertical;
+    outline: none;
+    line-height: 1.6;
+  }
+  .form-note {
+    font-size: 0.8125rem;
+    color: #6b7280;
+    text-align: center;
+    margin: 0;
+  }
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus {
+    border-color: rgba(217,30,69,0.4);
+    box-shadow: 0 0 0 3px rgba(217,30,69,0.08);
   }
 
   /* ── Consistent 30px vertical padding on all non-hero sections (mobile) ── */

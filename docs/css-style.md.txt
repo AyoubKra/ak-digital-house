@@ -1,0 +1,98 @@
+Brand Colors
+
+Use only these colors:
+
+```txt
+#1a1c1e  dark
+#d91e45  accent
+#b81a3a  accent hover
+#ffffff  white
+#f8f8f8  off-white
+#e5e7eb  border
+#242729  body text
+#6b7280  muted text
+Rules:
+
+Do not introduce blue, purple, orange, green, gradients, or extra grays.
+Do not use #d91e45 for body copy.
+Use the accent color only for CTAs, links, icons, and active states.
+Typography
+Font: Plus Jakarta Sans.
+
+Use Tailwind type scale or rem units.
+
+Recommended classes:
+
+H1: text-5xl md:text-6xl font-bold tracking-tight
+H2: text-3xl md:text-4xl font-bold tracking-tight
+H3: text-xl md:text-2xl font-semibold
+Body: text-base or text-lg
+Line height:
+
+Headings: tight, about 1.1–1.2
+Body: comfortable, about 1.6–1.7
+Buttons
+All buttons must be rounded-full.
+
+Primary CTA:
+
+bg-[#d91e45] text-white px-8 py-3.5 rounded-full font-semibold hover:bg-[#b81a3a] transition-all
+Secondary CTA:
+
+border border-[#e5e7eb] text-[#242729] px-8 py-3.5 rounded-full hover:border-[#242729] transition-all
+Layout
+Use the existing site patterns first.
+
+Default content wrapper:
+
+max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+Use Tailwind grid utilities for layouts.
+
+Build mobile-first. Every page must work cleanly at 375px width.
+
+SEO
+Every page must use SEOHead.astro.
+
+Include:
+
+Title: [Page Title] | AK Digital House — Raleigh Digital Marketing Agency
+Meta description, 150–160 characters where possible
+Canonical URL using https://akdigitalhouse.com/...
+Open Graph title, description, image, and URL
+robots: index, follow
+JSON-LD where relevant
+Never use example.com.
+
+Homepage and service pages must naturally mention Raleigh, NC, Raleigh, North Carolina, or Triangle area near the top of the page.
+
+Copy Style
+Write plainly for small business owners.
+
+Rules:
+
+Lead with outcomes, not tasks
+Use active voice
+Keep paragraphs to 2–3 sentences
+Use local references naturally
+CTAs must describe the action and outcome
+Avoid filler and jargon
+Do not use phrases like:
+
+“In today’s digital landscape”
+“We are passionate about”
+“Leverage synergies”
+“Data-driven solutions”
+“Results-focused agency”
+Quality Checklist
+Before finishing, verify:
+
+Canonical URL uses akdigitalhouse.com
+No emoji UI icons
+Buttons are rounded-full
+Colors match the approved palette
+Images have alt text plus explicit width and height
+Font is Plus Jakarta Sans
+Page uses semantic HTML
+Mobile layout works at 375px
+SEO metadata is present
+Lighthouse SEO target is 100
