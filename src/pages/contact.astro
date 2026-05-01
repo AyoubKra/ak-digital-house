@@ -99,14 +99,17 @@ import Footer from '../components/ui/Footer.astro';
               <h2 class="form-heading">Send Us a Message</h2>
               <p class="form-subheading">Fill out the form and we'll get back to you within 24–72 hours — usually the same day.</p>
 
-              <form id="contact-form" name="contact" method="POST" action="/thank-you" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+              <form id="contact-form" name="contact" method="POST" action="https://api.web3forms.com/submit" novalidate>
 
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="access_key" value="09218837-605d-4056-a4e3-2d51ce2baad0" />
+                <input type="hidden" name="subject" value="New Contact Form Submission — AK Digital House" />
+                <input type="hidden" name="from_name" value="AK Digital House Website" />
+                <input type="hidden" name="redirect" value="https://www.akdigitalhouse.com/thank-you/" />
 
                 <!-- Honeypot anti-spam (hidden from real users) -->
                 <div class="hp-field" aria-hidden="true">
-                  <label for="bot-field">Website</label>
-                  <input type="text" id="bot-field" name="bot-field" tabindex="-1" autocomplete="off" />
+                  <label for="botcheck">Website</label>
+                  <input type="checkbox" name="botcheck" id="botcheck" tabindex="-1" autocomplete="off" style="display:none" />
                 </div>
 
                 <!-- Name + Company row -->
@@ -357,8 +360,8 @@ import Footer from '../components/ui/Footer.astro';
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Honeypot check — if filled, it's a bot
-    const honeypot = (document.getElementById('bot-field') as HTMLInputElement).value;
+    // Honeypot check — if checked, it's a bot
+    const honeypot = (document.getElementById('botcheck') as HTMLInputElement).checked;
     if (honeypot) return;
 
     let valid = true;
@@ -388,7 +391,17 @@ import Footer from '../components/ui/Footer.astro';
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
 
-    form.submit();
+    const data = new FormData(form);
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
+    const json = await res.json();
+
+    if (json.success) {
+      window.location.href = '/thank-you/';
+    } else {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Book My Free Strategy Call';
+      alert('Something went wrong. Please try again or email us directly.');
+    }
   });
 </script>
 

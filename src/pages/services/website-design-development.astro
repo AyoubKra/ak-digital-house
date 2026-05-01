@@ -1124,13 +1124,14 @@ import Footer from '../../components/ui/Footer.astro';
               <form
                 name="web-design-contact"
                 method="POST"
-                action="/thank-you"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
+                action="https://api.web3forms.com/submit"
                 class="contact-form"
               >
-                <input type="hidden" name="form-name" value="web-design-contact" />
-                <p hidden><input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></p>
+                <input type="hidden" name="access_key" value="2f673ddc-a94f-4c77-9c5c-53c026642f9c" />
+                <input type="hidden" name="subject" value="New Web Design Inquiry — AK Digital House" />
+                <input type="hidden" name="from_name" value="AK Digital House Website" />
+                <input type="hidden" name="redirect" value="https://www.akdigitalhouse.com/thank-you/" />
+                <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" />
 
                 <div class="form-row">
                   <div>
