@@ -436,18 +436,6 @@ import Footer from '../../components/ui/Footer.astro';
             <p class="section-sub centered">Most agencies hide pricing behind a 45-minute call. We don't. Pick the plan that fits your stage — the strategy call confirms the fit, not the number.</p>
           </div>
 
-          <!-- Offer cards -->
-          <div class="pricing-offers">
-            <div class="pricing-offer-card">
-              <span class="pricing-offer-tag">Web + Ads Bundle</span>
-              <p class="pricing-offer-text">"Launch your site with us and your first 30 days of ad management are on us. We run the campaigns, you keep every lead."</p>
-            </div>
-            <div class="pricing-offer-card">
-              <span class="pricing-offer-tag">Ads-Only Clients</span>
-              <p class="pricing-offer-text">"Stay for two months, and month three is free — by then your campaigns will be optimised and the results will speak for themselves."</p>
-            </div>
-          </div>
-
           <div class="pricing-grid">
 
             <!-- Launchpad -->
@@ -504,9 +492,24 @@ import Footer from '../../components/ui/Footer.astro';
 
           </div>
 
-          <!-- Safety net CTA -->
-          <div class="pricing-unsure">
-            <p>Not sure which plan fits? <a href="#contact">Book a free 30-minute call</a> — we'll tell you exactly which one makes sense for your business, and why.</p>
+          <!-- Offer cards — below pricing grid -->
+          <div class="pricing-offers-wrap">
+            <h3 class="pricing-offers-headline">Current Offers</h3>
+            <div class="pricing-offers">
+              <div class="pricing-offer-card">
+                <span class="pricing-offer-tag">New Website + 30 Days Ads Managed Free</span>
+                <p class="pricing-offer-text">We build your site and launch your campaigns, first 30 days of ad management included. No delays. No handoffs. You start generating leads immediately.</p>
+              </div>
+              <div class="pricing-offers-or">
+                <div class="contact-divider-line"></div>
+                <span class="contact-divider-label">or</span>
+                <div class="contact-divider-line"></div>
+              </div>
+              <div class="pricing-offer-card">
+                <span class="pricing-offer-tag">Give Us 60 Days to Prove It</span>
+                <p class="pricing-offer-text">Stay for 2 months, month 3 is free. If the campaigns aren’t improving, you don’t pay for the third.</p>
+              </div>
+            </div>
           </div>
 
           <p class="pricing-footnote"><em>Ad spend is paid directly to Google, Meta, or LinkedIn — never to us. Our fee covers management only. No hidden percentage of your budget. Ever.</em></p>
@@ -708,11 +711,15 @@ import Footer from '../../components/ui/Footer.astro';
             <div class="founder-avatar">
               <img src="/Ayoub-Kra.webp" alt="Ayoub Kra, founder of AK Digital House" loading="lazy" decoding="async" width="360" height="450" style="width:100%; height:100%; object-fit:cover; display:block;" />
             </div>
-            <p class="founder-name">Ayoub K.</p>
-            <p class="founder-role">Founder, AK Digital House</p>
-            <div class="founder-location">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Raleigh, NC
+            <div class="founder-meta">
+              <span class="founder-name">Ayoub K.</span>
+              <span class="founder-meta-sep">·</span>
+              <span class="founder-role">Founder, AK Digital House</span>
+              <span class="founder-meta-sep">·</span>
+              <span class="founder-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Raleigh, NC
+              </span>
             </div>
           </div>
 
@@ -728,11 +735,7 @@ import Footer from '../../components/ui/Footer.astro';
             <p class="founder-body">We started this agency in Raleigh because we kept seeing the same story: small businesses paying big-agency prices for slow, bloated websites, then getting ignored the moment the project closed. We build differently. We learn your business, we build around your goals, and we don't consider a project done until it's generating results.</p>
 
             <div class="founder-incentive">
-              <div class="founder-incentive-header">
-                <p class="founder-incentive-title">Your growth is our reputation.</p>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d91e45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <p>When you win, we have a case study. When you refer us, we grow. Our incentives are identical to yours — and that's exactly how we want it.</p>
+              <p><strong>Your growth is our reputation.</strong> When you win, we have a case study. When you refer us, we grow. Our incentives are identical to yours — and that's exactly how we want it.</p>
             </div>
 
           </div>
@@ -1195,7 +1198,7 @@ import Footer from '../../components/ui/Footer.astro';
   .hero-image { width: 100%; max-width: 420px; height: auto; display: block; border-radius: 20px; box-shadow: 0 16px 48px rgba(0,0,0,0.10); }
 
   /* ── Pain / AI Objection ── */
-  .ai-section { background: #f9f9f9; padding: 80px 24px; content-visibility: auto; contain-intrinsic-size: auto 800px; }
+  .ai-section { background: #f9f9f9; padding: 88px 24px; content-visibility: auto; contain-intrinsic-size: auto 800px; }
   .ai-inner { max-width: 960px; margin: 0 auto; text-align: center; }
   .ai-eyebrow { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #d91e45; background: rgba(217,30,69,0.08); padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
   .ai-h2 { font-size: clamp(1.5rem, 2.5vw, 1.75rem); font-weight: 700; letter-spacing: -0.01em; color: #1a1c1e; margin: 0 0 16px; line-height: 1.2; }
@@ -1228,26 +1231,18 @@ import Footer from '../../components/ui/Footer.astro';
   .ai-box-sub { font-size: 0.8rem; color: #6b7280; line-height: 1.5; margin: 0; }
   .ai-close { font-size: 0.9375rem; color: #6b7280; line-height: 1.7; margin: 0; text-align: center; }
   @media (max-width: 700px) {
-    .cmp-table { border-spacing: 8px 0; margin: 0 -8px 48px; }
-    .cmp-col-center { width: 40px; }
-    .cmp-header, .cmp-cell { padding: 10px 10px; }
-    .cmp-cell-center { padding-left: 0; padding-right: 0; }
-    .ai-boxes { grid-template-columns: 1fr 1fr; }
-  }
-  @media (max-width: 480px) {
-    .ai-section { padding: 30px 16px; }
-    .ai-boxes { grid-template-columns: 1fr; }
-    .cmp-table { border-spacing: 6px 0; margin: 0 -6px 48px; }
+    .cmp-table { border-spacing: 6px 0; margin: 0 0 48px; width: 100%; }
     .cmp-col-center { width: 32px; }
-    .cmp-header, .cmp-cell { padding: 9px 8px; }
+    .cmp-header, .cmp-cell { padding: 9px 7px; }
     .cmp-cell-center { padding-left: 0; padding-right: 0; }
     .cmp-row-text { font-size: 0.72rem; }
-    .cmp-icon-wrap { width: 30px; height: 30px; }
+    .cmp-icon-wrap { width: 28px; height: 28px; }
+    .ai-boxes { grid-template-columns: 1fr 1fr; }
   }
 
 
   /* ── How It Works ── */
-  .proc-section { background: #f8f8f8; padding: 96px 24px; content-visibility: auto; contain-intrinsic-size: auto 500px; }
+  .proc-section { background: #f8f8f8; padding: 88px 24px; content-visibility: auto; contain-intrinsic-size: auto 500px; }
   .proc-header { text-align: center; max-width: 680px; margin: 0 auto 64px; }
   .proc-eyebrow { display: inline-block; background: rgba(217,30,69,0.1); color: #d91e45; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 16px; border-radius: 100px; margin-bottom: 16px; }
   .proc-h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 800; color: #1a1c1e; line-height: 1.25; margin: 0; }
@@ -1272,18 +1267,17 @@ import Footer from '../../components/ui/Footer.astro';
     .proc-title { margin-bottom: 4px; }
   }
   @media (max-width: 600px) {
-    .proc-section { padding: 30px 16px; }
     .proc-header { margin-bottom: 24px; }
   }
 
   /* ── Pricing ── */
-  .pricing-section { background: #f8f8f8; padding: 80px 24px; content-visibility: auto; contain-intrinsic-size: auto 900px; }
+  .pricing-section { background: #f8f8f8; padding: 88px 24px; content-visibility: auto; contain-intrinsic-size: auto 900px; }
   .pricing-header { text-align: center; margin-bottom: 32px; }
-  .pricing-offers { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 820px; margin: 0 auto 40px; }
-  .pricing-offer-card { background: #fff; border: 1px solid rgba(217,30,69,0.2); border-left: 3px solid #d91e45; border-radius: 10px; padding: 18px 20px; }
-  .pricing-offer-tag { display: inline-block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #d91e45; background: rgba(217,30,69,0.08); padding: 3px 10px; border-radius: 999px; margin-bottom: 10px; }
+  .pricing-offers { display: flex; flex-direction: column; max-width: 620px; margin: 0 auto 40px; gap: 0; }
+  .pricing-offers-or { display: flex; flex-direction: row; align-items: center; gap: 16px; padding: 12px 0; }
+  .pricing-offer-card { background: #fff; border: 1px solid rgba(217,30,69,0.2); border-left: 3px solid #d91e45; border-radius: 10px; padding: 20px 24px; }
+  .pricing-offer-tag { display: block; font-size: 0.9375rem; font-weight: 700; color: #1a1c1e; margin-bottom: 6px; }
   .pricing-offer-text { font-size: 0.875rem; color: #374151; line-height: 1.6; margin: 0; font-style: italic; }
-  @media (max-width: 580px) { .pricing-offers { grid-template-columns: 1fr; } }
   .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
   .pricing-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 32px 28px; display: flex; flex-direction: column; position: relative; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.2s ease, box-shadow 0.2s ease; }
   .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
@@ -1308,11 +1302,13 @@ import Footer from '../../components/ui/Footer.astro';
   .pricing-unsure a { color: #d91e45; font-weight: 600; text-decoration: none; }
   .pricing-unsure a:hover { text-decoration: underline; }
   .pricing-footnote { text-align: center; font-size: 0.875rem; color: #9ca3af; max-width: 620px; margin: 0 auto; line-height: 1.7; }
+  .pricing-offers-wrap { margin-bottom: 24px; }
+  .pricing-offers-headline { font-size: 1.125rem; font-weight: 800; color: #1a1c1e; text-align: center; margin: 0 0 16px; }
 
 
 
   /* ── AI Objection + Disqualifier ── */
-  .objection-section { background: #ffffff; padding: 80px 24px; content-visibility: auto; contain-intrinsic-size: auto 700px; }
+  .objection-section { background: #ffffff; padding: 88px 24px; content-visibility: auto; contain-intrinsic-size: auto 700px; }
   .objection-inner { max-width: 1040px; margin: 0 auto; }
   .objection-header { text-align: center; max-width: 680px; margin: 0 auto 40px; }
   .objection-eyebrow { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #d91e45; background: rgba(217,30,69,0.08); padding: 4px 12px; border-radius: 8px; margin-bottom: 16px; }
@@ -1340,10 +1336,6 @@ import Footer from '../../components/ui/Footer.astro';
   @media (max-width: 480px) { .objection-disqualifier-grid { grid-template-columns: 1fr; } }
   @media (max-width: 768px) {
     .objection-grid { grid-template-columns: 1fr; gap: 32px; }
-    .objection-section { padding: 56px 16px; }
-  }
-  @media (max-width: 480px) {
-    .objection-section { padding: 40px 16px; }
   }
 
   /* ── FAQ ── */
@@ -1523,13 +1515,11 @@ import Footer from '../../components/ui/Footer.astro';
     .hero-content { text-align: center; }
     .hero-buttons { justify-content: center; }
     .hero-badges {justify-content:center; gap: 10px; }
-    .pricing-section, .ai-section { padding: 56px 16px; }
-    .contact-section { padding: 56px 16px; }
     .contact-form-wrap { max-width: 100%; }
   }
 
   /* ─── HOW WE DO IT SECTION ─── */
-  .howwe-section { background: #ffffff; padding: 72px 24px; content-visibility: auto; contain-intrinsic-size: auto 600px; }
+  .howwe-section { background: #ffffff; padding: 88px 24px; content-visibility: auto; contain-intrinsic-size: auto 600px; }
   .howwe-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
 
   .howwe-header { text-align: center; max-width: 640px; margin: 0 auto 8px; }
@@ -1569,7 +1559,7 @@ import Footer from '../../components/ui/Footer.astro';
 /* ── Founder / Trust ── */
   .founder-section {
     background: #F9F9F9;
-    padding: 96px 24px;
+    padding: 88px 24px;
     border-top: 1px solid #f0f0f0;
     content-visibility: auto;
     contain-intrinsic-size: auto 600px;
@@ -1598,16 +1588,22 @@ import Footer from '../../components/ui/Footer.astro';
     margin-bottom: 16px;
     background: rgba(217,30,69,0.07);
   }
+  .founder-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+  .founder-meta-sep { display: none; }
   .founder-name {
     font-size: 1rem;
     font-weight: 800;
     color: #1a1c1e;
-    margin: 0 0 4px;
   }
   .founder-role {
     font-size: 0.8rem;
     color: #6b7280;
-    margin: 0 0 10px;
   }
   .founder-location {
     display: flex;
@@ -1653,19 +1649,6 @@ import Footer from '../../components/ui/Footer.astro';
     padding: 20px 24px;
     margin-top: 8px;
   }
-  .founder-incentive-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8px;
-  }
-  .founder-incentive-title {
-    font-size: 0.875rem;
-    font-weight: 700;
-    color: #1a1c1e;
-    margin: 0;
-  }
-  .founder-incentive svg { flex-shrink: 0; }
   .founder-incentive p {
     font-size: 0.9375rem;
     color: #374151;
@@ -1675,24 +1658,18 @@ import Footer from '../../components/ui/Footer.astro';
   }
   @media (max-width: 900px) {
     .founder-grid { grid-template-columns: 1fr; gap: 40px; }
-    .founder-left {
-      position: static;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      align-items: start;
-      text-align: left;
-    }
-    .founder-avatar { margin-bottom: 20px; aspect-ratio: 4 / 5; width: 100%; height: auto; }
-    .founder-name { margin-bottom: 2px; }
-    .founder-role { margin-bottom: 4px; }
+    .founder-left { align-items: center; text-align: center; }
+    .founder-avatar { margin-bottom: 16px; }
+  }
+  @media (max-width: 768px) {
+    .founder-meta { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 4px 6px; }
+    .founder-meta-sep { display: inline; color: #d1d5db; font-size: 0.8rem; }
   }
 
   /* ── Service Area ── */
   .service-area {
     background: #ffffff;
-    padding: 80px 24px;
+    padding: 88px 24px;
     border-top: 1px solid #E8E8E8;
     content-visibility: auto;
     contain-intrinsic-size: auto 600px;
@@ -1816,5 +1793,36 @@ import Footer from '../../components/ui/Footer.astro';
   .nc-item-title { font-size: 0.9375rem; font-weight: 700; color: #1A1C1E; margin: 0 0 4px; }
   .nc-item-sub { font-size: 0.8125rem; color: #666; line-height: 1.5; margin: 0; }
 
+  /* ── ai-boxes mobile: icon left of title, text full width below ── */
+  @media (max-width: 768px) {
+    .ai-boxes { grid-template-columns: 1fr; }
+    .ai-box { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; row-gap: 4px; align-items: center; }
+    .ai-box-header { display: contents; }
+    .ai-box-icon { grid-column: 1; grid-row: 1; align-self: center; order: -1; }
+    .ai-box-title { grid-column: 2; grid-row: 1; }
+    .ai-box-sub { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* ── howwe-cards mobile: icon left of title, text full width below ── */
+  @media (max-width: 768px) {
+    .howwe-row4, .howwe-row-bottom { grid-template-columns: 1fr; }
+    .howwe-card { display: grid; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 2px; align-items: center; padding: 14px 16px; }
+    .howwe-card-icon { grid-column: 1; grid-row: 1 / 3; align-self: center; margin-bottom: 0; }
+    .howwe-card-label { grid-column: 2; grid-row: 1; margin: 0; }
+    .howwe-card-sublabel { grid-column: 2; grid-row: 2; margin: 0; }
+    .howwe-card-desc { grid-column: 1 / -1; grid-row: 3; margin-top: 6px; }
+  }
+
+  /* ── disqualifier-grid mobile: inherits howwe-card grid, just collapse to 1 col ── */
+  @media (max-width: 768px) {
+    .objection-disqualifier-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── Consistent mobile section padding ── */
+  @media (max-width: 768px) {
+    .ai-section, .howwe-section, .pricing-section, .objection-section,
+    .proc-section, .founder-section, .service-area, .faq-section,
+    .contact-section { padding: 30px 16px !important; }
+  }
 
 </style>
